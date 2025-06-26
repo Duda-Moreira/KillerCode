@@ -1,0 +1,184 @@
+[
+    {
+        "nome": "Estrogonofe de Palmito",
+        "ingredientes": ["palmito picado", "margarina", "cebola", "catchup", "mostarda", "molho inglês", "creme de leite", "champignon"],
+        "dieta": "vegetariana",
+        "modo_preparo": "Refogue a cebola com a margarina, coloque o palmito e os cogumelos picados, deixe ferver um pouquinho, acrescente o catchup, mostarda e molho inglês, quando der uma encorpada acrescente o creme de leite, mexa e antes de ferver, desligue",
+        "imagem": "https://static.itdg.com.br/images/640-440/59000d51ce63916cb70bb1bf5f6de131/306271-original.jpg"
+    },
+
+    {
+        "nome": "Lasanha de Berinjela",
+        "ingredientes": ["berinjelas", "molho de tomate", "coentro", "azeitona", "queijo mussarela", "azeite", "catupiry"],
+        "dieta": "vegetariana",
+        "modo_preparo": "Corte as berinjelas em fatias finas, em uma assadeira retangular refratária, coloque no fundo, as duas colheres de azeite e um pouco de molho de tomate, coloque então uma camada de berinjela, cubra com molho de tomate e por cima coloque uma camada de queijo mussarela, repita os passos até cobrir a assadeira, salpique com azeitonas e coentro, coloque por cima da última camada queijo catupiry a gosto e cubra a assadeira com papel alumínio, leve ao forno em temperatura de 180º C graus por cerca de 30 minutos para cozinhar, após isso, retire o papel-alumínio e deixe por mais 5 a 10 minutos para gratinar. Sirva quente.",
+        "imagem": "https://p2.trrsf.com/image/fget/cf/940/0/images.terra.com/2023/07/17/886559530-lasanha-berinjela-frango.jpg"
+    },
+
+    {
+        "nome": "Moqueca de Banana da Terra",
+        "ingredientes": ["tomate grande picado em cubinhos, sem pele e sem semente", "cebola", "alho", "colorau", "azeite", "sal", "banana da terra grande cortada em 3 partes", "coentro", "água"],
+        "dieta": "vegetariana",
+        "modo_preparo": "Refogue no azeite a metade da cebola, alho e colorau, acrescente metade do tomate, refogue bem e espalhe pelo fundo da panela, coloque as bananas e cubra com o restante do tomate, da cebola e do coentro, arrumando bem, tampe a panela e deixe que ferva até que as bananas estejam macias, sempre verificando a água e acertando o sal se necessário.",
+        "imagem": "https://bakeandcakegourmet.com.br/uploads/site/receitas/moqueca-de-banana-da-terra-cx7tuusj.jpg"
+    },
+
+    {
+        "nome": "Escondidinho de Abóbora com Grão-de-bico",
+        "ingredientes": ["purê de abóbora", "grão-de-bico cozido e temperado", "queijo"],
+        "dieta": "vegetariana",
+        "modo_preparo": "Faça o purê, refogue o grão-de-bico. Monte o escondidinho com o purê por cima e leve ao forno para gratinar.",
+        "imagem": "https://www.mundoboaforma.com.br/wp-content/uploads/2022/09/Escondidinho-de-grao-de-bico.jpg"
+    },
+
+    {
+        "nome": "Hambúrguer de Lentilha",
+        "ingredientes": ["lentilha", "água", "alho", "cheiro verde picado", "azeite", "cebola", "sal", "cominho", "farelo de aveia", "farinha de arroz integral"],
+        "dieta": "vegetariana",
+        "modo_preparo": "Cozinhe a lentilha e coloque-a juntamente com 4 xícaras de água na panela de pressão e deixe cozinhando por mais 15 minutos, escorra e coloque em uma vasilha, adicione o alho, a cebola, o cheiro verde, azeite, sal, tempere com cominho a gosto e misure, acrescente o farelo de aveia e a farinha de arroz aos poucos até dar o ponto de modelar, divida a massa em 5 partes iguais e passe um fio de óleo nas mãos, modele os hambúrgueres, coloque em uma forma untada ou com papel manteiga e leve ao freezer por 1 hora, retire com cuidado, frite em uma frigideira com um fio de óleo e vire quando estiver bem douradinho, ou asse por cerca de 40 minutos em 180°C, mas vá observando até ele ficar douradinho.",
+        "imagem": "https://www.receitasnestle.com.br/sites/default/files/srh_recipes/e9bc354a1dd0aa0008243b83c1cf566a.jpg"
+    },
+
+    {
+        "nome": "Risoto de Cogumelos",
+        "ingredientes": ["arroz arbóreo", "cebola picada", "cogumelos", "vinho branco seco", "caldo de legumes", "manteiga/margarina", "queijo parmesão ralado"],
+        "dieta": "vegetariana",
+        "modo_preparo": "Refogue a cebola com 1 colher de manteiga, adicione os cogumelos e refogue até dourar, adicione o arroz e misture por 1 minuto, coloque o vinho branco e mexa até evaporar, vá adicionando o caldo quente aos poucos mexendo sempre, quando o arroz estiver al dente e cremoso desligue o fogo, finalize com uma colher de manteiga e queijo parmesão.",
+        "imagem": "https://s2-receitas.glbimg.com/APk8pOrM29fQle4OjOHifg9mUHg=/0x0:1080x608/924x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_e84042ef78cb4708aeebdf1c68c6cbd6/internal_photos/bs/2022/2/7/7NkGZzQpWTB3ryM8kEFQ/capa-materia-gshow-2022-01-29t135328.257.png"
+    },
+
+    {
+        "nome": "Tabule (salada árabe)",
+        "ingredientes": ["trigo para quibe", "tomate", "pepino", "cebola roxa", "salsinha e hortelã", "suco de 1 limão", "azeite", "sal", "pimenta"],
+        "dieta": "vegetariana",
+        "modo_preparo": "Hidrate o trigo com água quente por 20 minutos, escorra bem, misture o trigo com os demais ingredientes todos picados, tempere com sal, limão e azeite, leve à geladeira por 30 minutos antes de servir.",
+        "imagem": "https://receitatodahora.com.br/wp-content/uploads/2024/05/tabule-0905-1200x900.jpg"
+    },
+
+    {
+        "nome": "Torta de Legumes de Liquidificador",
+        "ingredientes": ["farinha de trigo", "leite", "óleo", "ovos", "fermento", "sal", "queijo", "cenoura, ervilha e abobrinha (todos refogados)"],
+        "dieta": "vegetariana",
+        "modo_preparo": "Bata a farinha, o leite, o óleo, os ovos, fermento e sal no liquidificador, em uma assadeira untada, despeje metade da massa, coloque o recheio por cima e cubra com o restante da massa, asse em forno pré-aquecido a 180°C por cerca de 40 minutos. ",
+        "imagem": "https://sabores-new.s3.amazonaws.com/public/2024/11/torta-cremosa-de-legumes.jpg"
+    },
+
+    {
+        "nome": "Curry de Grão-de-bico",
+        "ingredientes": ["grão-de-bico cozido", "cebola picada", "alho", "curry em pó", "tomate picado", "leite de coco", "coentro, sal e pimenta"],
+        "dieta": "vegetariana",
+        "modo_preparo": "Refogue a cebola e o alho até dourar, adicione o curry, misture e junte o tomate, quando o tomate estiver macio adicione o grão-de-bico, junte o leite de coco e cozinhe por 10 minutos, finalize com coentro picado e sirva com arroz.",
+        "imagem": "https://nazareuniluz.org.br/wp-content/uploads/2023/08/institucional-blog-receitas-curry-de-grao-de-bico.jpg"
+    },
+
+    {
+        "nome": "Macarrão ao Pesto de Espinafre",
+        "ingredientes": ["macarrão", "espinafre cru", "azeite", "alho", "nozes ou castanhas", "suco de limão", "sal e pimenta"],
+        "dieta": "vegetariana",
+        "modo_preparo": "Cozinhe o macarrão e reserve, bata no liquidificador o espinafre, alho, castanhas, limão e azeite até formar um molho, tempere com sal e pimenta, misture com o macarrão cozido e sirva.",
+        "imagem": "https://www.agendasaudavel.com.br/wp-content/uploads/2019/04/Farfalle-com-pesto-de-espinafre.jpg"
+    },
+
+    {
+        "nome": "",
+        "ingredientes": [""],
+        "dieta": "vegana",
+        "modo_preparo": "",
+        "imagem": ""
+    },
+
+    {
+        "nome": "",
+        "ingredientes": [""],
+        "dieta": "vegana",
+        "modo_preparo": "",
+        "imagem": ""
+    },
+
+    {
+        "nome": "",
+        "ingredientes": [""],
+        "dieta": "vegana",
+        "modo_preparo": "",
+        "imagem": ""
+    },
+
+    {
+        "nome": "",
+        "ingredientes": [""],
+        "dieta": "vegana",
+        "modo_preparo": "",
+        "imagem": ""
+    },
+
+    {
+        "nome": "",
+        "ingredientes": [""],
+        "dieta": "vegana",
+        "modo_preparo": "",
+        "imagem": ""
+    },
+
+    {
+        "nome": "",
+        "ingredientes": [""],
+        "dieta": "vegana",
+        "modo_preparo": "",
+        "imagem": ""
+    },
+
+    {
+        "nome": "",
+        "ingredientes": [""],
+        "dieta": "vegana",
+        "modo_preparo": "",
+        "imagem": ""
+    },
+
+    {
+        "nome": "",
+        "ingredientes": [""],
+        "dieta": "vegana",
+        "modo_preparo": "",
+        "imagem": ""
+    },
+
+    {
+        "nome": "",
+        "ingredientes": [""],
+        "dieta": "vegana",
+        "modo_preparo": "",
+        "imagem": ""
+    },
+
+    {
+        "nome": "",
+        "ingredientes": [""],
+        "dieta": "vegana",
+        "modo_preparo": "",
+        "imagem": ""
+    },
+
+
+]
+
+
+zero lactose
+zero glúten
+low carb
+jejum intermitente
+dukan
+dieta mediterranea
+dieta dash
+fitness
+
+10 receitas de cada
+
+
+{
+    "nome": "",
+    "ingredientes": [""],
+    "dieta": "",
+    "modo_preparo": "",
+    "imagem": ""
+},
