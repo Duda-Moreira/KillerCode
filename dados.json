@@ -159,11 +159,89 @@
         "imagem": "https://www.receitasnestle.com.br/sites/default/files/srh_recipes/d3c3d4e9888ad888064a55de5337020c.jpg"
     },
 
+    {
+        "nome": "Purê de Batata com Leite de Coco",
+        "ingredientes": ["batata", "leite de coco", "margarina", "alho", "cebola", "sal"],
+        "dieta": "zero lactose",
+        "modo_preparo": "Cozinhe as batatas até ficarem macias, amasse bem e misture com leite de coco, margarina e os temperos, mexa até ficar cremoso e ajuste o sal.",
+        "imagem": "https://www.receiteria.com.br/wp-content/uploads/pure-de-batata-com-leite-de-coco-07-730x548.jpg"
+    },
+
+    {
+        "nome": "Panqueca de Banana com Aveia",
+        "ingredientes": ["banana", "aveia", "ovo", "canela"],
+        "dieta": "zero lactose",
+        "modo_preparo": "Amasse a banana, misture os outros ingredientes até formar uma massinha, aqueça uma frigideira e coloque porções da massa, doure dos dois lados e sirva com frutas ou melado.",
+        "imagem": "https://static.itdg.com.br/images/1200-630/53e47bf452300d58b8e741ae370eae4f/365870-original.jpg"
+    },
+
+    {
+        "nome": "Arroz Doce com Leite de Amêndoas",
+        "ingredientes": ["arroz", "leite de amêndoas", "açúcar demerara", "canela em pau", "casca de limão"],
+        "dieta": "zero lactose",
+        "modo_preparo": "Cozinhe o arroz com água até amaciar, escorra e adicione o leite vegetal, açúcar, canela e a casca do limão. Cozinhe mexendo até engrossar.",
+        "imagem": "https://receitadaboa.com.br/wp-content/uploads/2024/07/iStock-840279550.jpg"
+    },
+
+    {
+        "nome": "Pão de Queijo (zero lactose)",
+        "ingredientes": ["polvilho doce", "polvilho azedo", "batata-doce", "óleo", "sal"],
+        "dieta": "zero lactose",
+        "modo_preparo": "Cozinhe e amasse as batatas, misture com o resto dos ingredientes até formar uma massa, modele bolinhas e asse por 180°C por 30 minutos.",
+        "imagem": "https://s2.glbimg.com/RcMQlr5WiBmb140kzK0YfH__c_4=/620x413/smart/e.glbimg.com/og/ed/f/original/2022/07/18/receita-de-pao-de-queijo-sem-lactose.jpg"
+    },
+
+    {
+        "nome": "Bolo de Cenoura Sem Lactose",
+        "ingredientes": ["cenoura", "ovo", "óleo", "açúcar", "farinha de trigo", "fermento"],
+        "dieta": "zero lactose",
+        "modo_preparo": "Bata no liquidificador: cenoura, ovos, óleo e açúcar, misture à farinha e ao fermento e asse por 40 minutos a 180°C.",
+        "imagem": "https://semglutensemlactose.com/wp-content/uploads/2009/04/dreamstime_m_24113586.jpg"
+    },
+
+    {
+        "nome": "Escondidinho de Batata com Proteína de Soja",
+        "ingredientes": ["batata", "margarina", "leite de coco", "alho", "cebola", "sal", "molho de tomate", "proteína de soja texturizada(PVT)"],
+        "dieta": "zero lactose",
+        "modo_preparo": "Cozinhe as batatas até ficarem macias, amasse bem e misture com leite de coco, margarina e os temperos, mexa até ficar cremoso e ajuste o sal. Hidrate a PVT em água quente por 15 minutos e escorra. Refogue com alho, cebola, molho e temperos e monte o escondidinho com purê por cima e leve ao forno. ",
+        "imagem": "https://www.agendasaudavel.com.br/wp-content/uploads/2019/07/612_escondidinho-de-pts_39c1d89ddd.jpg"
+    },
+
+    {
+        "nome": "Tapioca com Recheio Doce ou Salgado",
+        "ingredientes": ["goma de tapioca", "banana", "canela", "pasta de amendoim", "tofu", "tomate", "orégano"],
+        "dieta": "zero lactose",
+        "modo_preparo": "Aqueça uma frigideira sem óleo, espalhe a goma de tapioca hidratada com uma colher até cobrir o fundo. Cozinhe por cerca de 1 minuto até unir os grãos, vire e adicione os recheios doce ou salgado e dobre ao meio.",
+        "imagem": "https://saude.abril.com.br/wp-content/uploads/2016/09/o-que-e-que-a-tapioca-tem.jpg"
+    },
+
+    {
+        "nome": "Mingau de Aveia com Leite de Coco",
+        "ingredientes": ["aveia em flocos finos", "leite de coco", "açúcar", "canela"],
+        "dieta": "zero lactose",
+        "modo_preparo": "Coloque tudo em uma panela pequena, leve ao fogo baixo mexendo sempre até engrossar e sirva quente com frutas picadas, castanhas ou coco ralado.",
+        "imagem": "https://receitadaboa.com.br/wp-content/uploads/2024/08/Imagem-ilustrativa-de-mingau-de-aveia-1.webp"
+    },
+
+    {
+        "nome": "Moqueca de Legumes Zero Lactose",
+        "ingredientes": ["cenoura", "batata", "abobrinha", "pimentão vermelho", "tomate", "cebola", "leite de coco", "azeite de dendê", "coentro", "sal", "pimenta"],
+        "dieta": "zero lactose",
+        "modo_preparo": "Em uma panela refogue a cebola e o pimentão, acrescente os legumes picados, cubra com água e cozinhe até amaciarem, adicione o leite de coco, azeite de dendê e os temperos. Cozinhe por mais 5 minutos e finalize com coentro fresco.",
+        "imagem": "https://www.mundoboaforma.com.br/wp-content/uploads/2020/03/Moqueca-vegetariana-de-legumes-com-ovo.jpg"
+    },
+
+    {
+        "nome": "Sorvete de Banana com Cacau",
+        "ingredientes": ["banana", "cacau em pó", "pasta de amendoim"],
+        "dieta": "zero lactose",
+        "modo_preparo": "Corte as bananas em rodelas e congele-as. Retire as bananas do congelador e bata no processador até formar um creme, adicione o cacau e a pasta de amendoim e bata até incorporar bem.",
+        "imagem": "https://vitat.com.br/receitas/images/recipeshandler.jpg"
+    },
+
 
 ]
 
-
-zero lactose
 zero glúten
 low carb -1
 jejum intermitente
