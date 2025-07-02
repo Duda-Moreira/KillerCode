@@ -80,83 +80,83 @@
     },
 
     {
-        "nome": "",
-        "ingredientes": [""],
+        "nome": "Almôndegas de Lentilha",
+        "ingredientes": ["lentilha cozida", "cebola", "alho", "aveia em flocos", "farinha de trigo (ou de arroz)", "sal", "pimenta", "cominho"],
         "dieta": "vegana",
-        "modo_preparo": "",
-        "imagem": ""
+        "modo_preparo": "Amasse bem a lentilha com um garfo ou processador, misture os ingredientes até formar uma massa moldável, modele as bolinhas e asse a 200°C por 20 minutos (ou frite/airfry), sirva com molho de tomate e arroz",
+        "imagem": "https://souvegan.com.br/wp-content/uploads/2025/03/Almondegas-de-Lentilha-com-Molho-1024x683.png"
     },
 
     {
-        "nome": "",
-        "ingredientes": [""],
+        "nome": "Bobó de Mandioquinha",
+        "ingredientes": ["mandioquinha cozida e amassada", "leite de coco", "cebola", "alho", "azeite de dendê", "coentro", "sal"],
         "dieta": "vegana",
-        "modo_preparo": "",
-        "imagem": ""
+        "modo_preparo": "Refogue a cebola e alho no azeite, acrescente o purê de mandioquinha e misture, adicione o leite de coco e mexa até ficar cremoso, finalize com coentro e sal.",
+        "imagem": "https://s2-receitas.glbimg.com/QH0E_3nTvnciDhOtC5imOmIudEA=/1200x/smart/filters:cover():strip_icc()/i.s3.glbimg.com/v1/AUTH_1f540e0b94d8437dbbc39d567a1dee68/internal_photos/bs/2024/F/M/a5vtg3TCu6SKNy0QT6aQ/bobo-de-mandioquinha.jpg"
     },
 
     {
-        "nome": "",
-        "ingredientes": [""],
+        "nome": "Tofu Grelhado com Legumes Salteados",
+        "ingredientes": ["tofu", "shoyu", "alho", "limão", "gengibre", "brócolis", "cenoura", "abobrinha"],
         "dieta": "vegana",
-        "modo_preparo": "",
-        "imagem": ""
+        "modo_preparo": "Corte o tofu em cubos e deixe marinando com o shoyu, alho, limão e gengibre por 30 minutos, grelhe o tofu até dourar, salteie os legumes com azeite e um pouco de shoyu.",
+        "imagem": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRWqJv_IamC_CZXsAzH4kg56hLiw4-WmPZWVQ&s"
     },
 
     {
-        "nome": "",
-        "ingredientes": [""],
-        "dieta": "vegana",
-        "modo_preparo": "",
-        "imagem": ""
+        "nome": "Arroz de Couve-Flor",
+        "ingredientes": ["couve-flor", "azeite", "alho", "sal", "cheiro-verde"],
+        "dieta": "vegana" "low carb",
+        "modo_preparo": "Triture a couve-flor crua no processador até virar grãos, refogue o alho no azeite, adicione a couve-flor e cozinhe por 5 minutos, tempere com sal e cheiro-verde.",
+        "imagem": "https://m.ftscrt.com/static/recipe/d3826a3a-ee31-4769-97fd-1271ab986a48_fs2.jpg"
     },
 
     {
-        "nome": "",
-        "ingredientes": [""],
+        "nome": "Bolinho de Grão-de-bico (Falafel)",
+        "ingredientes": ["grão-de-bico", "cebola", "alho", "coentro", "salsinha", "sal", "cominho", "farinha de trigo"],
         "dieta": "vegana",
-        "modo_preparo": "",
-        "imagem": ""
+        "modo_preparo": "Triture todos os ingredientes até formar uma massa, modele bolinhos e asse ou frite",
+        "imagem": "https://chefinhanatural.com.br/wp-content/uploads/2020/12/falafels-30.jpg"
     },
 
     {
-        "nome": "",
-        "ingredientes": [""],
+        "nome": "Espaguete de Abobrinha ao Molho Pesto Vegano",
+        "ingredientes": ["abobrinha", "manjericão", "castanhas", "alho", "azeite", "limão", "sal"],
         "dieta": "vegana",
-        "modo_preparo": "",
-        "imagem": ""
+        "modo_preparo": "Rale a abobrinha em tiras. Para o pesto, bata no liquidificador o manjericão, as castanhas, alho, azeite, limão e sal. Salteie rapidamente a abobrinha em uma frigideira com azeite, misture com o molho pesto e sirva.",
+        "imagem": "https://www.comidanamesa.com.br/wp-content/uploads/2022/05/espaguete-de-abobrinha.jpg"
     },
 
     {
-        "nome": "",
-        "ingredientes": [""],
+        "nome": "Panqueca de Aveia com Recheio de Legumes",
+        "ingredientes": ["aveia em flocos", "água", "sal", "cúrcuma", "cenoura", "espinafre", "cogumelhos"],
         "dieta": "vegana",
-        "modo_preparo": "",
-        "imagem": ""
+        "modo_preparo": "Refogue os legumes para o recheio, bata os ingredientes da massa no liquidificador, unte uma frigideira e cozinhe as panquecas dos dois lados, recheie com os legumes e enrole. Pode cobrir com molho de tomate.",
+        "imagem": "https://www.receitasnestle.com.br/sites/default/files/srh_recipes/e2f5a9b5191f3e1d4a5f9ea1ea7a749b.jpg"
     },
 
     {
-        "nome": "",
-        "ingredientes": [""],
+        "nome": "Quibe Vegano de Abóbora",
+        "ingredientes": ["abóbora", "trigo para quibe", "hortelã", "cebola", "sal", "pimenta síria"],
         "dieta": "vegana",
-        "modo_preparo": "",
-        "imagem": ""
+        "modo_preparo": "Cozinhe a abóbora e amasse, hidrate o trigo por 20 minutos e escorra bem, misture com a abóbora e os temperos, coloque em uma assadeira untada e asse a 200°C por 30 minutos. Pode rechear com tofu ou legumes refogados.",
+        "imagem": "https://www.becel.com.br/-/media/Project/Upfield/Brands/Becel-NL/Becel-BR/Assets/Recipes/1f68d1e6-c8da-4a78-9ab5-b6a0c330e9db.jpg?rev=a4adf925c08d45f0ba97bfa715d97873&w=900"
     },
 
     {
-        "nome": "",
-        "ingredientes": [""],
+        "nome": "Cuscuz Paulista Vegano",
+        "ingredientes": ["farinha de milho flocada", "tomate", "cenoura", "pimentão", "cebola", "azeitonas", "milho", "ervilha", "caldo de legumes", "sal", "azeite"],
         "dieta": "vegana",
-        "modo_preparo": "",
-        "imagem": ""
+        "modo_preparo": "Refogue os vegetais no azeite com sal e caldo, adicione a farinha de milho aos poucos, mexendo. Quando desgrudar da panela coloque em uma froma untada, deixe firmar e desenforme.",
+        "imagem": "https://img77.uenicdn.com/image/upload/v1611520832/business/3f865f7d5eb44ae9b553cae3d3a1499c.jpg"
     },
 
     {
-        "nome": "",
-        "ingredientes": [""],
+        "nome": "Doce de Banana com Cacau (sem açúcar)",
+        "ingredientes": ["banana", "cacau em pó", "canela"],
         "dieta": "vegana",
-        "modo_preparo": "",
-        "imagem": ""
+        "modo_preparo": "Amasse as bananas e coloque em uma panela, cozinhe em fogo baixo até virar um creme, adicione o cacau e a canela e misture até incorporar. Deixe esfriar, leve à geladeira e sirva como sobremesa.",
+        "imagem": "https://www.receitasnestle.com.br/sites/default/files/srh_recipes/d3c3d4e9888ad888064a55de5337020c.jpg"
     },
 
 
@@ -165,7 +165,7 @@
 
 zero lactose
 zero glúten
-low carb
+low carb -1
 jejum intermitente
 dukan
 dieta mediterranea
