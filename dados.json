@@ -1,9 +1,9 @@
 [
     {
         "nome": "Estrogonofe de Palmito",
-        "ingredientes": ["palmito picado", "margarina", "cebola", "catchup", "mostarda", "molho inglês", "creme de leite", "champignon"],
+        "ingredientes": ["palmito", "margarina", "cebola", "catchup", "mostarda", "molho inglês", "creme de leite", "champignon"],
         "dieta": "vegetariana",
-        "modo_preparo": "Refogue a cebola com a margarina, coloque o palmito e os cogumelos picados, deixe ferver um pouquinho, acrescente o catchup, mostarda e molho inglês, quando der uma encorpada acrescente o creme de leite, mexa e antes de ferver, desligue",
+        "modo_preparo": "Refogue a cebola com a margarina, coloque o palmito picado e os cogumelos picados, deixe ferver um pouquinho, acrescente o catchup, mostarda e molho inglês, quando der uma encorpada acrescente o creme de leite, mexa e antes de ferver, desligue",
         "imagem": "https://static.itdg.com.br/images/640-440/59000d51ce63916cb70bb1bf5f6de131/306271-original.jpg"
     },
 
@@ -17,23 +17,23 @@
 
     {
         "nome": "Moqueca de Banana da Terra",
-        "ingredientes": ["tomate grande picado em cubinhos, sem pele e sem semente", "cebola", "alho", "colorau", "azeite", "sal", "banana da terra grande cortada em 3 partes", "coentro", "água"],
+        "ingredientes": ["tomate", "cebola", "alho", "colorau", "azeite", "sal", "banana da terra", "coentro", "água"],
         "dieta": "vegetariana",
-        "modo_preparo": "Refogue no azeite a metade da cebola, alho e colorau, acrescente metade do tomate, refogue bem e espalhe pelo fundo da panela, coloque as bananas e cubra com o restante do tomate, da cebola e do coentro, arrumando bem, tampe a panela e deixe que ferva até que as bananas estejam macias, sempre verificando a água e acertando o sal se necessário.",
+        "modo_preparo": "Pique o tomate sem pele e sem semente e corte a banana da terra em 3 partes, refogue no azeite a metade da cebola, alho e colorau, acrescente metade do tomate, refogue bem e espalhe pelo fundo da panela, coloque as bananas e cubra com o restante do tomate, da cebola e do coentro, arrumando bem, tampe a panela e deixe que ferva até que as bananas estejam macias, sempre verificando a água e acertando o sal se necessário.",
         "imagem": "https://bakeandcakegourmet.com.br/uploads/site/receitas/moqueca-de-banana-da-terra-cx7tuusj.jpg"
     },
 
     {
         "nome": "Escondidinho de Abóbora com Grão-de-bico",
-        "ingredientes": ["purê de abóbora", "grão-de-bico cozido e temperado", "queijo"],
+        "ingredientes": ["purê de abóbora", "grão-de-bico", "queijo"],
         "dieta": "vegetariana",
-        "modo_preparo": "Faça o purê, refogue o grão-de-bico. Monte o escondidinho com o purê por cima e leve ao forno para gratinar.",
+        "modo_preparo": "Cozinhe o grão-de-bico e tempere, faça o purê, refogue o grão-de-bico. Monte o escondidinho com o purê por cima e leve ao forno para gratinar.",
         "imagem": "https://www.mundoboaforma.com.br/wp-content/uploads/2022/09/Escondidinho-de-grao-de-bico.jpg"
     },
 
     {
         "nome": "Hambúrguer de Lentilha",
-        "ingredientes": ["lentilha", "água", "alho", "cheiro verde picado", "azeite", "cebola", "sal", "cominho", "farelo de aveia", "farinha de arroz integral"],
+        "ingredientes": ["lentilha", "água", "alho", "cheiro-verde", "azeite", "cebola", "sal", "cominho", "farelo de aveia", "farinha de arroz integral"],
         "dieta": "vegetariana",
         "modo_preparo": "Cozinhe a lentilha e coloque-a juntamente com 4 xícaras de água na panela de pressão e deixe cozinhando por mais 15 minutos, escorra e coloque em uma vasilha, adicione o alho, a cebola, o cheiro verde, azeite, sal, tempere com cominho a gosto e misure, acrescente o farelo de aveia e a farinha de arroz aos poucos até dar o ponto de modelar, divida a massa em 5 partes iguais e passe um fio de óleo nas mãos, modele os hambúrgueres, coloque em uma forma untada ou com papel manteiga e leve ao freezer por 1 hora, retire com cuidado, frite em uma frigideira com um fio de óleo e vire quando estiver bem douradinho, ou asse por cerca de 40 minutos em 180°C, mas vá observando até ele ficar douradinho.",
         "imagem": "https://www.receitasnestle.com.br/sites/default/files/srh_recipes/e9bc354a1dd0aa0008243b83c1cf566a.jpg"
@@ -41,15 +41,15 @@
 
     {
         "nome": "Risoto de Cogumelos",
-        "ingredientes": ["arroz arbóreo", "cebola picada", "cogumelos", "vinho branco seco", "caldo de legumes", "manteiga/margarina", "queijo parmesão ralado"],
+        "ingredientes": ["arroz arbóreo", "cebola", "cogumelos", "vinho branco seco", "caldo de legumes", "manteiga/margarina", "queijo parmesão ralado"],
         "dieta": "vegetariana",
-        "modo_preparo": "Refogue a cebola com 1 colher de manteiga, adicione os cogumelos e refogue até dourar, adicione o arroz e misture por 1 minuto, coloque o vinho branco e mexa até evaporar, vá adicionando o caldo quente aos poucos mexendo sempre, quando o arroz estiver al dente e cremoso desligue o fogo, finalize com uma colher de manteiga e queijo parmesão.",
+        "modo_preparo": "Pique e refogue a cebola com 1 colher de manteiga, adicione os cogumelos e refogue até dourar, adicione o arroz e misture por 1 minuto, coloque o vinho branco e mexa até evaporar, vá adicionando o caldo quente aos poucos mexendo sempre, quando o arroz estiver al dente e cremoso desligue o fogo, finalize com uma colher de manteiga e queijo parmesão.",
         "imagem": "https://s2-receitas.glbimg.com/APk8pOrM29fQle4OjOHifg9mUHg=/0x0:1080x608/924x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_e84042ef78cb4708aeebdf1c68c6cbd6/internal_photos/bs/2022/2/7/7NkGZzQpWTB3ryM8kEFQ/capa-materia-gshow-2022-01-29t135328.257.png"
     },
 
     {
         "nome": "Tabule (salada árabe)",
-        "ingredientes": ["trigo para quibe", "tomate", "pepino", "cebola roxa", "salsinha e hortelã", "suco de 1 limão", "azeite", "sal", "pimenta"],
+        "ingredientes": ["trigo para quibe", "tomate", "pepino", "cebola roxa", "salsinha", "hortelã", "suco de 1 limão", "azeite", "sal", "pimenta"],
         "dieta": "vegetariana",
         "modo_preparo": "Hidrate o trigo com água quente por 20 minutos, escorra bem, misture o trigo com os demais ingredientes todos picados, tempere com sal, limão e azeite, leve à geladeira por 30 minutos antes de servir.",
         "imagem": "https://receitatodahora.com.br/wp-content/uploads/2024/05/tabule-0905-1200x900.jpg"
@@ -57,7 +57,7 @@
 
     {
         "nome": "Torta de Legumes de Liquidificador",
-        "ingredientes": ["farinha de trigo", "leite", "óleo", "ovos", "fermento", "sal", "queijo", "cenoura, ervilha e abobrinha (todos refogados)"],
+        "ingredientes": ["farinha de trigo", "leite", "óleo", "ovos", "fermento", "sal", "queijo", "cenoura", "ervilha", "abobrinha"],
         "dieta": "vegetariana",
         "modo_preparo": "Bata a farinha, o leite, o óleo, os ovos, fermento e sal no liquidificador, em uma assadeira untada, despeje metade da massa, coloque o recheio por cima e cubra com o restante da massa, asse em forno pré-aquecido a 180°C por cerca de 40 minutos. ",
         "imagem": "https://sabores-new.s3.amazonaws.com/public/2024/11/torta-cremosa-de-legumes.jpg"
@@ -65,15 +65,15 @@
 
     {
         "nome": "Curry de Grão-de-bico",
-        "ingredientes": ["grão-de-bico cozido", "cebola picada", "alho", "curry em pó", "tomate picado", "leite de coco", "coentro, sal e pimenta"],
+        "ingredientes": ["grão-de-bico", "cebola", "alho", "curry em pó", "tomate", "leite de coco", "coentro", "sal", "pimenta"],
         "dieta": "vegetariana",
-        "modo_preparo": "Refogue a cebola e o alho até dourar, adicione o curry, misture e junte o tomate, quando o tomate estiver macio adicione o grão-de-bico, junte o leite de coco e cozinhe por 10 minutos, finalize com coentro picado e sirva com arroz.",
+        "modo_preparo": "Refogue a cebola picada e o alho até dourar, adicione o curry, misture e junte o tomate picado, quando o tomate estiver macio adicione o grão-de-bico cozido, junte o leite de coco e cozinhe por 10 minutos, finalize com coentro picado e sirva com arroz.",
         "imagem": "https://nazareuniluz.org.br/wp-content/uploads/2023/08/institucional-blog-receitas-curry-de-grao-de-bico.jpg"
     },
 
     {
         "nome": "Macarrão ao Pesto de Espinafre",
-        "ingredientes": ["macarrão", "espinafre cru", "azeite", "alho", "nozes ou castanhas", "suco de limão", "sal e pimenta"],
+        "ingredientes": ["macarrão", "espinafre", "azeite", "alho", "nozes ou castanhas", "suco de limão", "sal", "pimenta"],
         "dieta": "vegetariana",
         "modo_preparo": "Cozinhe o macarrão e reserve, bata no liquidificador o espinafre, alho, castanhas, limão e azeite até formar um molho, tempere com sal e pimenta, misture com o macarrão cozido e sirva.",
         "imagem": "https://www.agendasaudavel.com.br/wp-content/uploads/2019/04/Farfalle-com-pesto-de-espinafre.jpg"
@@ -81,17 +81,17 @@
 
     {
         "nome": "Almôndegas de Lentilha",
-        "ingredientes": ["lentilha cozida", "cebola", "alho", "aveia em flocos", "farinha de trigo (ou de arroz)", "sal", "pimenta", "cominho"],
+        "ingredientes": ["lentilha", "cebola", "alho", "aveia em flocos", "farinha de trigo", "sal", "pimenta", "cominho"],
         "dieta": "vegana",
-        "modo_preparo": "Amasse bem a lentilha com um garfo ou processador, misture os ingredientes até formar uma massa moldável, modele as bolinhas e asse a 200°C por 20 minutos (ou frite/airfry), sirva com molho de tomate e arroz",
+        "modo_preparo": "Cozinhe e amasse bem a lentilha com um garfo ou processador, misture os ingredientes até formar uma massa moldável, modele as bolinhas e asse a 200°C por 20 minutos (ou frite/airfry), sirva com molho de tomate e arroz",
         "imagem": "https://souvegan.com.br/wp-content/uploads/2025/03/Almondegas-de-Lentilha-com-Molho-1024x683.png"
     },
 
     {
         "nome": "Bobó de Mandioquinha",
-        "ingredientes": ["mandioquinha cozida e amassada", "leite de coco", "cebola", "alho", "azeite de dendê", "coentro", "sal"],
+        "ingredientes": ["mandioquinha", "leite de coco", "cebola", "alho", "azeite de dendê", "coentro", "sal"],
         "dieta": "vegana",
-        "modo_preparo": "Refogue a cebola e alho no azeite, acrescente o purê de mandioquinha e misture, adicione o leite de coco e mexa até ficar cremoso, finalize com coentro e sal.",
+        "modo_preparo": "Cozinhe e amasse a mandioquinha, refogue a cebola e alho no azeite, acrescente o purê de mandioquinha e misture, adicione o leite de coco e mexa até ficar cremoso, finalize com coentro e sal.",
         "imagem": "https://s2-receitas.glbimg.com/QH0E_3nTvnciDhOtC5imOmIudEA=/1200x/smart/filters:cover():strip_icc()/i.s3.glbimg.com/v1/AUTH_1f540e0b94d8437dbbc39d567a1dee68/internal_photos/bs/2024/F/M/a5vtg3TCu6SKNy0QT6aQ/bobo-de-mandioquinha.jpg"
     },
 
@@ -106,7 +106,7 @@
     {
         "nome": "Arroz de Couve-Flor",
         "ingredientes": ["couve-flor", "azeite", "alho", "sal", "cheiro-verde"],
-        "dieta": "vegana" "low carb",
+        "dieta": ["vegana", "low carb"],
         "modo_preparo": "Triture a couve-flor crua no processador até virar grãos, refogue o alho no azeite, adicione a couve-flor e cozinhe por 5 minutos, tempere com sal e cheiro-verde.",
         "imagem": "https://m.ftscrt.com/static/recipe/d3826a3a-ee31-4769-97fd-1271ab986a48_fs2.jpg"
     },
@@ -239,11 +239,81 @@
         "imagem": "https://vitat.com.br/receitas/images/recipeshandler.jpg"
     },
 
+    {
+        "nome": "Omelete Recheado",
+        "ingredientes": ["ovo", "cebola", "tomate", "queijo", "sal", "orégano", "azeite"],
+        "dieta": "low carb",
+        "modo_preparo": "Bata os ovos com o sal e o orégano, aqueça uma frigideira com azeite e despeje a mistura, quando firmar a base, adicione os recheios e dobre ao meio, cozinhe até o queijo derreter e sirva com salada.",
+        "imagem": "https://www.kitano.com.br/wp-content/uploads/2019/07/SSP_1993-Omelete-de-pizza-mussarela-ore%CC%81gano-e-tomate.jpg"
+    },
+    
+    {
+        "nome": "Arroz de Repolho Low Carb",
+        "ingredientes": ["repolho", "azeite", "alho", "cebola", "sal", "pimenta-do-reino", "cheiro verde"],
+        "dieta": "low carb",
+        "modo_preparo": "Pique o repolho, a cebola, o alho e o cheiro verde. Em uma frigideira aqueça p azeite e refogue a cebola até ficar transparente, adicione o alho e deixe dourar, junte o repolho e refogue em fogo médio mexendo bem, coloque sal, pimenta-do-reino e, se quiser, um toque de cúrcuma e/ou páprica, cozinhe por 5 a 8 minutos ou até o repolho murchar e ficar levemente douradinho, finalize com cheiro verde e sirva.",
+        "imagem": "https://lowcarbafrica-com.translate.goog/wp-content/uploads/2019/09/Riced-Cabbage-blog-3.jpg"
+    },
 
+    {
+        "nome": "Abobrinha Recheada",
+        "ingredientes": ["abobrinha", "carne moída", "cebola", "alho", "tomate", "azeite", "orégano", "sal"],
+        "dieta": "low carb",
+        "modo_preparo": "Corte as abobrinhas ao meio e retire a parte do miolo, refogue a carne moída com o azeite, cebola, alho, tomate e o sal, recheie as abobrinhas e leve ao forno por 20 minutos a 200°C.",
+        "imagem": "https://receitanatureba.com/wp-content/uploads/2017/01/Abobrinha-Recheada-de-Forno.jpg"
+    },
+
+    {
+        "nome": "Pãozinho de Frigideira Low Carb",
+        "ingredientes": ["ovo", "farinha de amêndoas", "fermento", "sal"],
+        "dieta": "low carb",
+        "modo_preparo": "Misture todos os ingredientes e coloque em uma frigideira antiaderente untada e deixe cozinhar dos dois lados até dourar. Pode servir com recheios low carb.",
+        "imagem": "https://www.adrianalauffer.com.br/wp-content/uploads/2017/12/pao-multigraos-de-frigideira-na-mesa-1024x768.jpg"
+    },
+
+    {
+        "nome": "Espaguete de Abobrinha ao Alho e Óleo",
+        "ingredientes": ["abobrinha", "alho", "azeite", "sal", "pimenta"],
+        "dieta": "low carb",
+        "modo_preparo": "Rale a abobrina em tiras e corte em espiral, refogue o alho no azeite, junte a abobrinha e mexa por 3-5 minutos, tempere e sirva.",
+        "imagem": "https://catracalivre.com.br/wp-content/uploads/2025/03/macarrao-de-abobrinha-2.png"
+    },
+
+    {
+        "nome": "Salada de Ovos com Abacate",
+        "ingredientes": ["pepino", "ovo cozido", "abacate", "suco de limão", "azeite", "sal", "pimenta"],
+        "dieta": "low carb",
+        "modo_preparo": "Corte os ovos, o pepino e o abacate em cubos, misture com o azeite, limão, sal e pimenta. Sirva gelado como acompanhamento ou lanche.",
+        "imagem": "https://ogimg.infoglobo.com.br/in/23532019-b6b-fd8/FT1086A/760/81471067_ElSalada-de-abacate-ovo-e-couve-de-bruxelas.-Shutterstock.jpg"
+    },
+
+    {
+        "nome": "Hambúrguer Low Carb de Frango",
+        "ingredientes": ["frango", "ovo", "farelo de aveia", "alho", "cebola", "sal", "coentro", "cheiro verde"],
+        "dieta": "low carb",
+        "modo_preparo": "Desfie o frango e misture com todos os outros ingredientes até formar uma massa moldável, modele os hambúrgueres e grelhe dos dois lados.",
+        "imagem": "https://saude.mpu.mp.br/nutricao/receitas/imagens/hamburguerfrango.png"
+    },
+
+    {
+        "nome": "Pizza Low Carb com Base de Couve-flor",
+        "ingredientes": ["couve-flor", "ovo", "farinha de amêndoas", "sal", "orégano"],
+        "dieta": "low carb",
+        "modo_preparo": "Rale a couve-flor e cozinhe no vapor, depois esprema bem, misture com o ovo, a farinha e os temperos, modele a base em uma assadeira e asse por 15 minutos, adicione o molho, recheios e leve de volta ao forno até dourar.",
+        "imagem": "https://img.cybercook.com.br/receitas/866/pizza-de-couve-flor-low-carb.jpeg"
+    },
+
+    {
+        "nome": "Panqueca Low Carb de Coco",
+        "ingredientes": ["ovo", "coco ralado", "farinha de coco", "canela", "sal", "óleo de coco"],
+        "dieta": "low carb",
+        "modo_preparo": "Misture todos os ingredientes até formar uma massa leve, aqueça uma frigideira com óleo de coco e despeje porções, doure dos dois lados e sirva com pasta de amendoim ou frutas low carb.",
+        "imagem": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcShorK8Ei0_BSTS8e_RKO4C7NAtEajDNHsX7w&s"
+    },
+    
 ]
 
 zero glúten
-low carb -1
 jejum intermitente
 dukan
 dieta mediterranea
