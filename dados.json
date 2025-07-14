@@ -310,10 +310,90 @@
         "modo_preparo": "Misture todos os ingredientes até formar uma massa leve, aqueça uma frigideira com óleo de coco e despeje porções, doure dos dois lados e sirva com pasta de amendoim ou frutas low carb.",
         "imagem": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcShorK8Ei0_BSTS8e_RKO4C7NAtEajDNHsX7w&s"
     },
+
+    {
+        "nome": "Pão de Queijo de Tapioca (Sem Glúten)",
+        "ingredientes": ["polvilho azedo", "leite", "óleo", "ovo", "queijo ralado", "sal"],
+        "dieta": "zero glúten",
+        "modo_preparo": "Misture todos os ingredientes até formar uma massa cremosa, modele bolinhas com a mão untada e asse a 200°C por cerca de 25 minutos ou até dourar.",
+        "imagem": "https://guiadacozinha.com.br/wp-content/uploads/2006/01/pao-de-queijo-de-tapioca.jpg"
+    },
+
+    {
+        "nome": "Crepioca Simples",
+        "ingredientes": ["ovo", "goma de tapioca hidratada", "sal", "orégano"],
+        "dieta": "zero glúten",
+        "modo_preparo": "Misture bem o ovo com a tapioca e os temperos, despeje em frigideira antiaderente untada e cozinhe dos dois lados. Pode rechear com legumes, frango, tofu, guacamole, etc.",
+        "imagem": "https://s2-receitas.glbimg.com/y1OG3_6xsECT8el1j6FiQOTZwa0=/1200x0/filters:format(jpeg)/https://i.s3.glbimg.com/v1/AUTH_1f540e0b94d8437dbbc39d567a1dee68/internal_photos/bs/2024/R/k/xG8LzGQ0eKYP07rLUvCg/crepioca-simples.jpg"
+    },
+
+    {
+        "nome": "Bolo de Fubá Sem Glúten",
+        "ingredientes": ["fubá", "açúcar", "ovo", "leite vegetal", "óleo", "fermento"],
+        "dieta": "zero glúten",
+        "modo_preparo": "Bata tudo no liquidificador (menos o fermento), misture o fermento por último e despeje em forma untada, asse a 180°C por 30 a 35 minutos.",
+        "imagem": "https://receitadaboa.com.br/wp-content/uploads/2024/08/Imagem-ilustrativa-de-bolo-de-fuba-2.webp"
+    },
+
+    {
+        "nome": "Panqueca de Banana com Farinha de Arroz",
+        "ingredientes": ["banana", "ovo", "farinha de arroz", "canela"],
+        "dieta": "zero glúten",
+        "modo_preparo": "Amasse a banana e misture com todos os outros ingredientes, aqueça uma frigideira antiaderente e cozinhe dos dois lados até dourar. Sirva com frutas ou pasta de amendoim.",
+        "imagem": "https://www.rampinelli.com.br/uploads/receita/receita-de-panqueca-de-banana-com-farinha-de-arroz-1688400537.png"
+    },
+
+    {
+        "nome": "Pizza com Massa de Batata-doce",
+        "ingredientes": ["batata-doce", "polvilho doce", "sal", "azeite", "orégano", "molho de tomate"],
+        "dieta": "zero glúten",
+        "modo_preparo": "Cozinhe e amasse a batata-doce, misture com o polvilho, sal, azeite e orégano até formar uma massa firme e moldável, abra com as mãos sobre o papel manteiga e asse por 15 minutos, depois adicione o molho de tomate e os recheios e asse por mais 10 minutos",
+        "imagem": "https://www.sabornamesa.com.br/media/k2/items/cache/9fadb6d3e28e2be47da4c87e012c5962_XL.jpg"
+    },
+
+    {
+        "nome": "Cookies Sem Glúten com Amendoim",
+        "ingredientes": ["pasta de amendoim", "açúcar mascavo", "ovo", "fermento"],
+        "dieta": "zero glúten",
+        "modo_preparo": "Misture tudo até virar uma massa grossa, modele bolinhas e achate em assadeira com papel manteiga, asse a 180°C por 12 a 15 minutos.",
+        "imagem": "https://irmaosnacozinha.com/wp-content/uploads/2024/10/Cookie-de-Amendoim-1-scaled.jpg"
+    },
+
+    {
+        "nome": "Mingau de Polvilho",
+        "ingredientes": ["polvilho doce", "leite vegetal", "açúcar", "canela"],
+        "dieta": "zero glúten",
+        "modo_preparo": "Dissolva o polvilho no leite frio, leve ao fogo mexendo sempre até engrossar, adicione o açúcar e canela a gosto, sirva quente.",
+        "imagem": "https://www.sabornamesa.com.br/media/k2/items/cache/e791ab626e6785062374d45b25cc6e7f_L.jpg"
+    },
+
+    {
+        "nome": "Quibe de Abóbora com Quinoa",
+        "ingredientes": ["abóbora", "quinoa", "cebola", "hortelã", "sal", "azeite", "pimenta síria"],
+        "dieta": "zero glúten",
+        "modo_preparo": "Cozinhe e amasse a abóbora, cozinhe a quinoa e misture com o resto dos ingredientes, modele em forma untada e asse a 200°C por 30 minutos. Pode rechear com tofu, legumes ou castanhas.",
+        "imagem": "https://i.ytimg.com/vi/3qs3V2jf50k/maxresdefault.jpg"
+    },
+
+    {
+        "nome": "Bolo de Chocolate com Farinha de Coco",
+        "ingredientes": ["ovo", "cacau em pó", "farinha de coco", "açúcar mascavo", "leite vegetal", "fermento"],
+        "dieta": "zero glúten",
+        "modo_preparo": "Misture todos os ingredientes (menos o fermento) até formar uma massa homogênea, adicione o fermento e asse a 180°C por 30 minutos.",
+        "imagem": "https://receitanatureba.com/wp-content/uploads/2018/02/Bolo-de-Chocolate-com-Farinha-de-Coco.jpg"
+    },
+
+    {
+        "nome": "Tortinha de Legumes com Massa de Grão-de-bico",
+        "ingredientes": ["grão-de-bico", "azeite", "sal", "cenoura", "brócolis", "milho"],
+        "dieta": "zero glúten",
+        "modo_preparo": "Refogue os legumes no azeite, cozinhe o grão-de-bico, bata os ingredientes da massa no processador até virar uma pastinha firme, forre forminhas de empada e pré-asse por 10 minutos, recheie com os legumes e asse por mais 15 minutos a 200°C.",
+        "imagem": "https://cdn0.tudoreceitas.com/pt/posts/8/1/0/quiche_de_brocolis_com_massa_de_grao_de_bico_7018_orig.jpg"
+    },
     
 ]
 
-zero glúten
+
 jejum intermitente
 dukan
 dieta mediterranea
@@ -321,7 +401,6 @@ dieta dash
 fitness
 
 10 receitas de cada
-
 
 {
     "nome": "",
