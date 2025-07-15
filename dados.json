@@ -35,13 +35,13 @@
         "nome": "Hambúrguer de Lentilha",
         "ingredientes": ["lentilha", "água", "alho", "cheiro-verde", "azeite", "cebola", "sal", "cominho", "farelo de aveia", "farinha de arroz integral"],
         "dieta": "vegetariana",
-        "modo_preparo": "Cozinhe a lentilha e coloque-a juntamente com 4 xícaras de água na panela de pressão e deixe cozinhando por mais 15 minutos, escorra e coloque em uma vasilha, adicione o alho, a cebola, o cheiro verde, azeite, sal, tempere com cominho a gosto e misure, acrescente o farelo de aveia e a farinha de arroz aos poucos até dar o ponto de modelar, divida a massa em 5 partes iguais e passe um fio de óleo nas mãos, modele os hambúrgueres, coloque em uma forma untada ou com papel manteiga e leve ao freezer por 1 hora, retire com cuidado, frite em uma frigideira com um fio de óleo e vire quando estiver bem douradinho, ou asse por cerca de 40 minutos em 180°C, mas vá observando até ele ficar douradinho.",
+        "modo_preparo": "Cozinhe a lentilha e coloque-a juntamente com 4 xícaras de água na panela de pressão e deixe cozinhando por mais 15 minutos, escorra e coloque em uma vasilha, adicione o alho, a cebola, o cheiro-verde, azeite, sal, tempere com cominho a gosto e misure, acrescente o farelo de aveia e a farinha de arroz aos poucos até dar o ponto de modelar, divida a massa em 5 partes iguais e passe um fio de óleo nas mãos, modele os hambúrgueres, coloque em uma forma untada ou com papel manteiga e leve ao freezer por 1 hora, retire com cuidado, frite em uma frigideira com um fio de óleo e vire quando estiver bem douradinho, ou asse por cerca de 40 minutos em 180°C, mas vá observando até ele ficar douradinho.",
         "imagem": "https://www.receitasnestle.com.br/sites/default/files/srh_recipes/e9bc354a1dd0aa0008243b83c1cf566a.jpg"
     },
 
     {
         "nome": "Risoto de Cogumelos",
-        "ingredientes": ["arroz arbóreo", "cebola", "cogumelos", "vinho branco seco", "caldo de legumes", "manteiga/margarina", "queijo parmesão ralado"],
+        "ingredientes": ["arroz arbóreo", "cebola", "cogumelo", "vinho branco seco", "caldo de legumes", "manteiga/margarina", "queijo parmesão ralado"],
         "dieta": "vegetariana",
         "modo_preparo": "Pique e refogue a cebola com 1 colher de manteiga, adicione os cogumelos e refogue até dourar, adicione o arroz e misture por 1 minuto, coloque o vinho branco e mexa até evaporar, vá adicionando o caldo quente aos poucos mexendo sempre, quando o arroz estiver al dente e cremoso desligue o fogo, finalize com uma colher de manteiga e queijo parmesão.",
         "imagem": "https://s2-receitas.glbimg.com/APk8pOrM29fQle4OjOHifg9mUHg=/0x0:1080x608/924x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_e84042ef78cb4708aeebdf1c68c6cbd6/internal_photos/bs/2022/2/7/7NkGZzQpWTB3ryM8kEFQ/capa-materia-gshow-2022-01-29t135328.257.png"
@@ -57,7 +57,7 @@
 
     {
         "nome": "Torta de Legumes de Liquidificador",
-        "ingredientes": ["farinha de trigo", "leite", "óleo", "ovos", "fermento", "sal", "queijo", "cenoura", "ervilha", "abobrinha"],
+        "ingredientes": ["farinha de trigo", "leite", "óleo", "ovo", "fermento", "sal", "queijo", "cenoura", "ervilha", "abobrinha"],
         "dieta": "vegetariana",
         "modo_preparo": "Bata a farinha, o leite, o óleo, os ovos, fermento e sal no liquidificador, em uma assadeira untada, despeje metade da massa, coloque o recheio por cima e cubra com o restante da massa, asse em forno pré-aquecido a 180°C por cerca de 40 minutos. ",
         "imagem": "https://sabores-new.s3.amazonaws.com/public/2024/11/torta-cremosa-de-legumes.jpg"
@@ -129,7 +129,7 @@
 
     {
         "nome": "Panqueca de Aveia com Recheio de Legumes",
-        "ingredientes": ["aveia em flocos", "água", "sal", "cúrcuma", "cenoura", "espinafre", "cogumelhos"],
+        "ingredientes": ["aveia em flocos", "água", "sal", "cúrcuma", "cenoura", "espinafre", "cogumelo"],
         "dieta": "vegana",
         "modo_preparo": "Refogue os legumes para o recheio, bata os ingredientes da massa no liquidificador, unte uma frigideira e cozinhe as panquecas dos dois lados, recheie com os legumes e enrole. Pode cobrir com molho de tomate.",
         "imagem": "https://www.receitasnestle.com.br/sites/default/files/srh_recipes/e2f5a9b5191f3e1d4a5f9ea1ea7a749b.jpg"
@@ -249,9 +249,9 @@
     
     {
         "nome": "Arroz de Repolho Low Carb",
-        "ingredientes": ["repolho", "azeite", "alho", "cebola", "sal", "pimenta-do-reino", "cheiro verde"],
+        "ingredientes": ["repolho", "azeite", "alho", "cebola", "sal", "pimenta-do-reino", "cheiro-verde"],
         "dieta": "low carb",
-        "modo_preparo": "Pique o repolho, a cebola, o alho e o cheiro verde. Em uma frigideira aqueça p azeite e refogue a cebola até ficar transparente, adicione o alho e deixe dourar, junte o repolho e refogue em fogo médio mexendo bem, coloque sal, pimenta-do-reino e, se quiser, um toque de cúrcuma e/ou páprica, cozinhe por 5 a 8 minutos ou até o repolho murchar e ficar levemente douradinho, finalize com cheiro verde e sirva.",
+        "modo_preparo": "Pique o repolho, a cebola, o alho e o cheiro-verde. Em uma frigideira aqueça p azeite e refogue a cebola até ficar transparente, adicione o alho e deixe dourar, junte o repolho e refogue em fogo médio mexendo bem, coloque sal, pimenta-do-reino e, se quiser, um toque de cúrcuma e/ou páprica, cozinhe por 5 a 8 minutos ou até o repolho murchar e ficar levemente douradinho, finalize com cheiro-verde e sirva.",
         "imagem": "https://lowcarbafrica-com.translate.goog/wp-content/uploads/2019/09/Riced-Cabbage-blog-3.jpg"
     },
 
@@ -281,7 +281,7 @@
 
     {
         "nome": "Salada de Ovos com Abacate",
-        "ingredientes": ["pepino", "ovo cozido", "abacate", "suco de limão", "azeite", "sal", "pimenta"],
+        "ingredientes": ["pepino", "ovo", "abacate", "suco de limão", "azeite", "sal", "pimenta"],
         "dieta": "low carb",
         "modo_preparo": "Corte os ovos, o pepino e o abacate em cubos, misture com o azeite, limão, sal e pimenta. Sirva gelado como acompanhamento ou lanche.",
         "imagem": "https://ogimg.infoglobo.com.br/in/23532019-b6b-fd8/FT1086A/760/81471067_ElSalada-de-abacate-ovo-e-couve-de-bruxelas.-Shutterstock.jpg"
@@ -289,7 +289,7 @@
 
     {
         "nome": "Hambúrguer Low Carb de Frango",
-        "ingredientes": ["frango", "ovo", "farelo de aveia", "alho", "cebola", "sal", "coentro", "cheiro verde"],
+        "ingredientes": ["frango", "ovo", "farelo de aveia", "alho", "cebola", "sal", "coentro", "cheiro-verde"],
         "dieta": "low carb",
         "modo_preparo": "Desfie o frango e misture com todos os outros ingredientes até formar uma massa moldável, modele os hambúrgueres e grelhe dos dois lados.",
         "imagem": "https://saude.mpu.mp.br/nutricao/receitas/imagens/hamburguerfrango.png"
@@ -390,15 +390,172 @@
         "modo_preparo": "Refogue os legumes no azeite, cozinhe o grão-de-bico, bata os ingredientes da massa no processador até virar uma pastinha firme, forre forminhas de empada e pré-asse por 10 minutos, recheie com os legumes e asse por mais 15 minutos a 200°C.",
         "imagem": "https://cdn0.tudoreceitas.com/pt/posts/8/1/0/quiche_de_brocolis_com_massa_de_grao_de_bico_7018_orig.jpg"
     },
+
+    {
+        "nome": "Ovos mexidos com espinafre e tomate",
+        "ingredientes": ["ovo", "tomate", "espinafre", "sal", "pimenta", "azeite"],
+        "dieta": "paleolítica",
+        "modo_preparo": "Pique o tomate e refogue com o espinafre rapidamente em uma frigideira com azeite, bata os ovos e despeje por cima, mexa em fogo baixo até cozinhar e ficar cremoso, tempere e sirva.",
+        "imagem": "https://img.freepik.com/fotos-premium/ovos-mexidos-com-espinafre-e-tomate-em-um-prato-branco-em-uma-mesa-de-madeira_80295-3885.jpg"
+    },
+
+    {
+        "nome": "Guacamole com chips de cenoura",
+        "ingredientes": ["abacate", "cebola roxa", "tomate", "suco de 1 limão", "sal", "pimenta", "cenoura"],
+        "dieta": "paleolítica",
+        "modo_preparo": "Misture o abacate amassado com os temperos, cebola picada e tomate, corte a cenoura em fatias finas e asse no forno com azeite por 20-25 minutos até ficar crocante.",
+        "imagem": "https://s2.glbimg.com/yemtcxJ0270JYqokuHAodcZHqWE=/e.glbimg.com/og/ed/f/original/2015/02/27/untitled-1_4.jpg"
+    },
+
+    {
+        "nome": "Frango grelhado com crosta de gergelim",
+        "ingredientes": ["filé de peito de frango", "gergelim", "alho", "sal", "limão", "azeite"],
+        "dieta": "paleolítica",
+        "modo_preparo": "Tempere o frango com alho picado, limão e sal, empane no gergelim pressionando bem, grelhe em frigideira antiaderente até dourar os dois lados.",
+        "imagem": "https://kifrango.com.br/wp-content/uploads/elementor/thumbs/Receitas_FilePeitoGergilim-qh65r5i7bys3gfo2ekf16dtv9eejs9n4angxuoy3ya.jpg"
+    },
+
+    {
+        "nome": "Panqueca de banana com ovo e coco",
+        "ingredientes": ["banana", "ovo", "coco ralado", "canela", "óleo de coco"],
+        "dieta": "paleolítica",
+        "modo_preparo": "Amasse a banana e misture com os ovos e o coco ralado, aqueça uma frigideira com óleo de coco e despeje a massa, cozinhe dos dois lados até firmar e dourar.",
+        "imagem": "https://vivasaudedigital.com.br/wp-content/uploads/2022/03/banana-com-coco-vira-uma-deliciosa-panqueca-confira-a-receita-4882.jpg"
+    },
+
+    {
+        "nome": "Carne de panela com legumes",
+        "ingredientes": ["carne", "cenoura", "chuchu", "abobrinha", "tomate", "cebola", "alho", "sal", "páprica", "azeite", "cheiro-verde"],
+        "dieta": "paleolítica",
+        "modo_preparo": "Refogue a carne (pode ser acém, músculo, coxão mole) até dourar, adicione os temperos e a água, cozinhe por 30 minutos na pressão, adicione os legumes e cozinhe até ficarem macios, finalize com cheiro-verde.",
+        "imagem": "https://www.minhareceita.com.br/app/uploads/2022/01/ensopado-de-costela-com-ragu-de-legumes-portal-minha-receita.jpg"
+    },
+
+    {
+        "nome": "Salada morna com ovos e abacate",
+        "ingredientes": ["ovo", "abacate", "alface", "manjericão", "rúcula", "agrião", "espinafre", "almeirão", "acelga", "tomae-cereja", "azeite", "sal", "pimenta", "limão"],
+        "dieta": "paleolítica",
+        "modo_preparo": "Monte sua salada com as folhas, abacate e tomates, fatie os ovos cozidos e arrume por cima, tempere com azeite, limão, sal e pimenta.",
+        "imagem": "https://s2.glbimg.com/ZDZpQTMMNptfMfe5RV9WNgKXEvQ=/620x455/e.glbimg.com/og/ed/f/original/2021/10/18/receita-salada-abacate-ovo-tomate-alface-lamare.jpg"
+    },
+
+    {
+        "nome": "Espaguete de abobrinha com molho bolonhesa paleo",
+        "ingredientes": ["abobrinha", "carne moída", "tomate", "extrato de tomate", "alho", "cebola", "orégano"],
+        "dieta": "paleolítica",
+        "modo_preparo": "Rale o tomate e a abobrinha em tiras, refogue a carne com alho e cebola, adicione o tomate, extrato e temperos, cozinhe a abobrinha por 1-2 minutos no vapor ou água quente, sirva a carne sobre a abobrinha.",
+        "imagem": "https://cdn.awsli.com.br/600x450/311/311570/produto/53120112/715cdc53f8.jpg"
+    },
+
+    {
+        "nome": "Omelete de cogumelos e espinafre",
+        "ingredientes": ["ovo", "cogumelo", "espinafre", "sal", "pimenta", "azeite"],
+        "dieta": "paleolítica",
+        "modo_preparo": "Fatie os cogumelos e refogue com o espinafre no azeite, bata os ovos, tempere e despeje na frigideira, cozinhe tampado em fogo baixo até firmar.",
+        "imagem": "https://static.wixstatic.com/media/540f1d_0a656b12aaa145b0ab1472e6a3e8e345~mv2.jpg/v1/fill/w_568,h_340,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/540f1d_0a656b12aaa145b0ab1472e6a3e8e345~mv2.jpg"
+    },
+
+    {
+        "nome": "Charuto de folha de couve recheado com carne",
+        "ingredientes": ["couve-flor", "carne moída", "cebola", "alho", "sal", "páprica", "azeite", "limão"],
+        "dieta": "paleolítica",
+        "modo_preparo": "Refogue a carne com cebola, alho e temperos, passe as folhas de couve por água quente por 10 segundos para amolecer, recheie e enrole como charuto. Coloque em uma assadeira, regue com azeite e asse por 15-20 minutos.",
+        "imagem": "https://s2-receitas.glbimg.com/tlUQoNOwgc0Fg21k8Z_zweFKbqw=/0x0:1200x800/984x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_1f540e0b94d8437dbbc39d567a1dee68/internal_photos/bs/2022/9/M/85nUQhS3AISsB04pXiHQ/charuto-de-couve-com-linguica-calabresa.jpeg"
+    },
+
+    {
+        "nome": "Maçã assada com canela e castanhas",
+        "ingredientes": ["maçã", "canela", "castanhas"],
+        "dieta": "paleolítica",
+        "modo_preparo": "Corte a maçã ao meio, retire as sementes, coloque as castanhas no centro, polvilhe canela, leve ao forno a 180°C por 20 minutos.",
+        "imagem": "https://i.panelinha.com.br/i1/bk-4305-maca-com-granola.webp"
+    },
+
+    {
+        "nome": "",
+        "ingredientes": [""],
+        "dieta": "dukan",
+        "modo_preparo": "",
+        "imagem": ""
+    },
+
+    {
+        "nome": "",
+        "ingredientes": [""],
+        "dieta": "dukan",
+        "modo_preparo": "",
+        "imagem": ""
+    },
+
+    {
+        "nome": "",
+        "ingredientes": [""],
+        "dieta": "dukan",
+        "modo_preparo": "",
+        "imagem": ""
+    },
+
+    {
+        "nome": "",
+        "ingredientes": [""],
+        "dieta": "dukan",
+        "modo_preparo": "",
+        "imagem": ""
+    },
+
+    {
+        "nome": "",
+        "ingredientes": [""],
+        "dieta": "dukan",
+        "modo_preparo": "",
+        "imagem": ""
+    },
+
+    {
+        "nome": "",
+        "ingredientes": [""],
+        "dieta": "dukan",
+        "modo_preparo": "",
+        "imagem": ""
+    },
+
+    {
+        "nome": "",
+        "ingredientes": [""],
+        "dieta": "dukan",
+        "modo_preparo": "",
+        "imagem": ""
+    },
+
+    {
+        "nome": "",
+        "ingredientes": [""],
+        "dieta": "dukan",
+        "modo_preparo": "",
+        "imagem": ""
+    },
+
+    {
+        "nome": "",
+        "ingredientes": [""],
+        "dieta": "dukan",
+        "modo_preparo": "",
+        "imagem": ""
+    },
+
+    {
+        "nome": "",
+        "ingredientes": [""],
+        "dieta": "dukan",
+        "modo_preparo": "",
+        "imagem": ""
+    },
     
 ]
 
-
-jejum intermitente
-dukan
 dieta mediterranea
 dieta dash
-fitness
+dieta cetogênica
 
 10 receitas de cada
 
