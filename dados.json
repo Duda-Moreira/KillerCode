@@ -472,9 +472,89 @@
     },
 
     {
+        "nome": "Pão de micro-ondas Dukan (Ataque)",
+        "ingredientes": ["ovo", "farelo de aveia", "iogurte natural desnatado", "fermento", "sal"],
+        "dieta": "dukan",
+        "modo_preparo": "Misture tudo em uma caneca grande ou potinho, leve ao micro-ondas por 2-3 minutos. Pode cortar ao meio e rechear com presunto magro ou cottage zero",
+        "imagem": "https://d2qcpt1idvpipw.cloudfront.net/recipes/2020/10/panini-dukan.jpg"
+    },
+
+    {
+        "nome": "Omelete de Atum Light (Ataque ou Cruzeiro)",
+        "ingredientes": ["ovo", "atum", "sal", "orégano", "páprica", "requeijão zero"],
+        "dieta": "dukan",
+        "modo_preparo": "Escorra o atum, bata os ovos, misture com o atum escorrido e os temperos, aqueça uma frigideira antiaderente e despeje a mistura, cozinhe dos dois lados e sirva quente.",
+        "imagem": "https://receitadaboa.com.br/wp-content/uploads/2024/10/iStock-1438023213.jpg"
+    },
+
+    {
+        "nome": "Almôndegas Dukan de Carne (Ataque ou Cruzeiro)",
+        "ingredientes": ["carne moída", "ovo", "farelo de aveia", "sal", "alho em pó", "salsinha"],
+        "dieta": "dukan",
+        "modo_preparo": "Misture tudo até dar ponto de enrolar, modele as bolinhas e asse no forno ou air fryer por 20 minutos. Sirva com molho de iogurte ou mostarda Dukan.",
+        "imagem": "https://i.ytimg.com/vi/ZyEvhZi-Qao/hq720.jpg"
+    },
+
+    {
+        "nome": "Frango desfiado com iogurte e ervas (Cruzeiro PP ou PL)",
+        "ingredientes": ["peito de frango", "iogurte desnatado", "limão", "orégano", "pimenta", "sal"],
+        "dieta": "dukan",
+        "modo_preparo": "Cozinhe e desfie o frango, misture com o iogurte, limão, orégano, pimenta e o sal, leve a geladeira por 30 minutos pra pegar gosto. Sirva como recheio de panqueca Dukan ou com salada.",
+        "imagem": "https://cdn0.tudoreceitas.com/pt/posts/7/7/3/pate_de_frango_com_creme_de_leite_e_cenoura_5377_600.jpg"
+    },
+
+    {
+        "nome": "Panqueca Dukan salgada (Cruzeiro)",
+        "ingredientes": ["ovo", "farelo de aveia", "iogurte desnatado", "sal", "páprica"],
+        "dieta": "dukan",
+        "modo_preparo": "Misture bem todos os ingredientes até virar uma massa líquida, despeje em frigideira antiaderente e espalhe, cozinhe dos dois lados. Pode rechar com frango, carne magra ou legumes (fase PL).",
+        "imagem": "https://i.ytimg.com/vi/nS4VxZ-DfX4/maxresdefault.jpg"
+    },
+
+    {
+        "nome": "Pudim Dukan (Ataque)",
+        "ingredientes": ["ovo", "leite em pó desnatado", "leite desnatado", "adoçante", "essência de baunilha"],
+        "dieta": "dukan",
+        "modo_preparo": "Misture tudo muito bem com um fouet ou garfo, coloque em potinhos e leve ao forno em banho-maria por 30 minutos, deixe gelar e desenforme.",
+        "imagem": "https://www.mundoboaforma.com.br/wp-content/uploads/2021/03/Pudim-diet.jpg"
+    },
+
+    {
+        "nome": "Hambúrguer de salmão (Cruzeiro PP/PL)",
+        "ingredientes": ["salmão", "farelo de aveia", "ovo", "sal", "cebolinha", "alho"],
+        "dieta": "dukan",
+        "modo_preparo": "Misture o salmão moído, farelo de aveia, ovo, sal, cebolinha e alho e modele os hambúrgueres, grelhe ou leve à air fryer por 15-20 minutos. Sirva com iogurte temperado ou alface (fase PL).",
+        "imagem": "https://i.panelinha.com.br/i1/bk-2479-img-7555.webp"
+    },
+
+    {
+        "nome": "Sorvete de iogurte com cacau (Cruzeiro)",
+        "ingredientes": ["iogurte natural desnatado", "cacau em pó", "adoçante", "essência de baunilha"],
+        "dieta": "dukan",
+        "modo_preparo": "Misture tudo muito bem, leve ao congelador por 2 horas, mexendo a cada 30 minutos para não cristalizar. Antes de servir bata com colher ou mixer pra ficar cremoso.",
+        "imagem": "https://levementenacozinha.com.br/wp-content/uploads/2022/11/20220916_193201200_iOS-scaled-e1667592376671.jpg"
+    },
+
+    {
+        "nome": "Crepioca de Clara com Farelo (Cruzeiro)",
+        "ingredientes": ["ovo", "farelo de aveia", "sal", "orégano", "cúrcuma"],
+        "dieta": "dukan",
+        "modo_preparo": "Faça uma clara com os ovos e misture bem com o farelo e os temperos em uma tigela, aqueça uma frigideira antiaderente em fogo baixo, despeje a mistura e espalhe como uma panqueca, cozinhe dos dois lados até dourar levemente.",
+        "imagem": "https://img-global.cpcdn.com/recipes/e122ca6796163a43/400x400cq80/photo.jpg"
+    },
+
+    {
+        "nome": "Bolo de Caneca Dukan (Ataque)",
+        "ingredientes": ["ovo", "farelo de aveia", "leite em pó desnatado", "cacau em pó", "adoçante", "fermento"],
+        "dieta": "dukan",
+        "modo_preparo": "Misture todos os ingredientes numa caneca grande, mexa com um garfo até ficar bem homogêneo, leve ao micro-ondas por 2-3 minutos (dependendo da potência), retive, desenforme se quiser e sirva morno.",
+        "imagem": "https://www.guiadasemana.com.br/contentFiles/system/pictures/2015/6/137767/original/bolo-caneca-laranja.jpg"
+    },
+
+    {
         "nome": "",
         "ingredientes": [""],
-        "dieta": "dukan",
+        "dieta": "mediterranea",
         "modo_preparo": "",
         "imagem": ""
     },
@@ -482,7 +562,7 @@
     {
         "nome": "",
         "ingredientes": [""],
-        "dieta": "dukan",
+        "dieta": "mediterranea",
         "modo_preparo": "",
         "imagem": ""
     },
@@ -490,7 +570,7 @@
     {
         "nome": "",
         "ingredientes": [""],
-        "dieta": "dukan",
+        "dieta": "mediterranea",
         "modo_preparo": "",
         "imagem": ""
     },
@@ -498,7 +578,7 @@
     {
         "nome": "",
         "ingredientes": [""],
-        "dieta": "dukan",
+        "dieta": "mediterranea",
         "modo_preparo": "",
         "imagem": ""
     },
@@ -506,7 +586,7 @@
     {
         "nome": "",
         "ingredientes": [""],
-        "dieta": "dukan",
+        "dieta": "mediterranea",
         "modo_preparo": "",
         "imagem": ""
     },
@@ -514,7 +594,7 @@
     {
         "nome": "",
         "ingredientes": [""],
-        "dieta": "dukan",
+        "dieta": "mediterranea",
         "modo_preparo": "",
         "imagem": ""
     },
@@ -522,7 +602,7 @@
     {
         "nome": "",
         "ingredientes": [""],
-        "dieta": "dukan",
+        "dieta": "mediterranea",
         "modo_preparo": "",
         "imagem": ""
     },
@@ -530,7 +610,7 @@
     {
         "nome": "",
         "ingredientes": [""],
-        "dieta": "dukan",
+        "dieta": "mediterranea",
         "modo_preparo": "",
         "imagem": ""
     },
@@ -538,7 +618,7 @@
     {
         "nome": "",
         "ingredientes": [""],
-        "dieta": "dukan",
+        "dieta": "mediterranea",
         "modo_preparo": "",
         "imagem": ""
     },
@@ -546,14 +626,13 @@
     {
         "nome": "",
         "ingredientes": [""],
-        "dieta": "dukan",
+        "dieta": "mediterranea",
         "modo_preparo": "",
         "imagem": ""
-    },
+    }, 
     
 ]
 
-dieta mediterranea
 dieta dash
 dieta cetogênica
 
