@@ -9,7 +9,7 @@
 
     {
         "nome": "Lasanha de Berinjela",
-        "ingredientes": ["berinjelas", "molho de tomate", "coentro", "azeitona", "queijo mussarela", "azeite", "catupiry"],
+        "ingredientes": ["berinjela", "molho de tomate", "coentro", "azeitona", "queijo mussarela", "azeite", "catupiry"],
         "dieta": "vegetariana",
         "modo_preparo": "Corte as berinjelas em fatias finas, em uma assadeira retangular refratária, coloque no fundo, as duas colheres de azeite e um pouco de molho de tomate, coloque então uma camada de berinjela, cubra com molho de tomate e por cima coloque uma camada de queijo mussarela, repita os passos até cobrir a assadeira, salpique com azeitonas e coentro, coloque por cima da última camada queijo catupiry a gosto e cubra a assadeira com papel alumínio, leve ao forno em temperatura de 180º C graus por cerca de 30 minutos para cozinhar, após isso, retire o papel-alumínio e deixe por mais 5 a 10 minutos para gratinar. Sirva quente.",
         "imagem": "https://p2.trrsf.com/image/fget/cf/940/0/images.terra.com/2023/07/17/886559530-lasanha-berinjela-frango.jpg"
@@ -145,7 +145,7 @@
 
     {
         "nome": "Cuscuz Paulista Vegano",
-        "ingredientes": ["farinha de milho flocada", "tomate", "cenoura", "pimentão", "cebola", "azeitonas", "milho", "ervilha", "caldo de legumes", "sal", "azeite"],
+        "ingredientes": ["farinha de milho flocada", "tomate", "cenoura", "pimentão", "cebola", "azeitona", "milho", "ervilha", "caldo de legumes", "sal", "azeite"],
         "dieta": "vegana",
         "modo_preparo": "Refogue os vegetais no azeite com sal e caldo, adicione a farinha de milho aos poucos, mexendo. Quando desgrudar da panela coloque em uma froma untada, deixe firmar e desenforme.",
         "imagem": "https://img77.uenicdn.com/image/upload/v1611520832/business/3f865f7d5eb44ae9b553cae3d3a1499c.jpg"
@@ -433,7 +433,7 @@
 
     {
         "nome": "Salada morna com ovos e abacate",
-        "ingredientes": ["ovo", "abacate", "alface", "manjericão", "rúcula", "agrião", "espinafre", "almeirão", "acelga", "tomae-cereja", "azeite", "sal", "pimenta", "limão"],
+        "ingredientes": ["ovo", "abacate", "alface", "manjericão", "rúcula", "agrião", "espinafre", "almeirão", "acelga", "tomate-cereja", "azeite", "sal", "pimenta", "limão"],
         "dieta": "paleolítica",
         "modo_preparo": "Monte sua salada com as folhas, abacate e tomates, fatie os ovos cozidos e arrume por cima, tempere com azeite, limão, sal e pimenta.",
         "imagem": "https://s2.glbimg.com/ZDZpQTMMNptfMfe5RV9WNgKXEvQ=/620x455/e.glbimg.com/og/ed/f/original/2021/10/18/receita-salada-abacate-ovo-tomate-alface-lamare.jpg"
@@ -552,9 +552,89 @@
     },
 
     {
+        "nome": "Tabule Mediterrâneo",
+        "ingredientes": ["trigo para quibe", "salsinha", "tomate", "pepino", "suco de 1 limão", "azeite", "hortelã", "sal", "pimenta"],
+        "dieta": "mediterranea",
+        "modo_preparo": "Pique a salsinha, tomate e o pepino e reserve. Hidrate o trigo para quibe com água quente por 20 minutos, escorra e esprema, misture com os demais ingredientes em uma tigela, leve à geladeira por 30 minutos antes de servir.",
+        "imagem": "https://flamisbuffet.wordpress.com/wp-content/uploads/2013/05/tabule-lavioletera.jpg"
+    },
+
+    {
+        "nome": "Salmão ao forno com limão e ervas",
+        "ingredientes": ["filé de salmão", "suco de 1 limão", "alecrim", "tomilho", "alho", "sal", "pimenta-do-reino", "azeite"],
+        "dieta": "mediterranea",
+        "modo_preparo": "Tempere o filé com sal, limão, ervas e alho fatiado, coloque numa assadeira untada com azeite, leve ao forno pré-aquecido a 200°C por 20 minutos.",
+        "imagem": "https://www.mareriopescados.com.br/uploads/receitas/2fdae1680c1531884acb1eb96172a0c3.jpg"
+    },
+
+    {
+        "nome": "Berinjela grelhada com azeite e alho",
+        "ingredientes": ["berinjela", "alho", "azeite", "sal", "orégano"],
+        "dieta": "mediterranea",
+        "modo_preparo": "Corte as berinjelas em rodelas, pincele azeite, grelhe numa frigideira ou grill até dourar, finalize com alho picado e orégano.",
+        "imagem": "https://anamariabrogui.com.br/assets/uploads/receitas/fotos/usuario-2256-9e155d0ff11d7de08b47e16800cf68b6.jpg"
+    },
+
+    {
+        "nome": "Sopa de lentilha com tomate e cenoura",
+        "ingredientes": ["lentilha", "cenoura", "tomate", "cebola", "alho", "azeite", "sal", "pimenta"],
+        "dieta": "mediterranea",
+        "modo_preparo": "Refogue a cebola, alho e tomate picado no azeite, adicione a cenoura em cubos e as lentilhas lavadas, cubra com água e cozinhe até tudo amolecer, tempere.",
+        "imagem": "https://www.grupopq.com.br/wp-content/uploads/2020/08/PQ-Sopa-de-lentilha.jpg"
+    },
+
+    {
+        "nome": "Salada Grega Tradicional",
+        "ingredientes": ["hortelã", "pepino", "tomate-cereja", "cebola roxa", "azeitona preta", "queijo feta", "azeite", "orégano", "limão"],
+        "dieta": "mediterranea",
+        "modo_preparo": "Corte o tomate em cubos, o pepino em rodelas, as azeitonas ao meio e a cebola roxa em tiras, misture tudo em uma saladeira, regue com azeite e suco de limão e finalize com orégano.",
+        "imagem": "https://www.estadao.com.br/resizer/xgbdreke8bix84U4ILBWMO_KuX0=/arc-anglerfish-arc2-prod-estadao/public/3K45SRWMQBAMHEOCORS3HY2W5I.jpg"
+    },
+
+    {
+        "nome": "Pão de grão-de-bico (tipo 'socca')",
+        "ingredientes": ["farinha de grão-de-bico", "água", "azeite", "sal", "alecrim", "pimenta"],
+        "dieta": "mediterranea",
+        "modo_preparo": "Misture os ingredientes e deixe descansar por 20 minutos, despeje numa frigideira antiaderente quente e asse até dourar os dois lados. Sirva como base de sanduíches ou com saladas.",
+        "imagem": "https://www.daringgourmet.com/wp-content/uploads/2020/09/Socca-24-square-edited.jpg"
+    },
+
+    {
+        "nome": "Polvo grelhado com batata e páprica",
+        "ingredientes": ["polvo", "batata", "páprica", "alho", "azeite", "salsinha"],
+        "dieta": "mediterranea",
+        "modo_preparo": "Grelhe o polvo já cozido em azeite com alho, grelhe as batatas também, polvilhe páprica, salsinha e sirva quente.",
+        "imagem": "https://frescatto.vtexassets.com/assets/vtex.file-manager-graphql/images/f533ac6b-7676-4f34-8978-038ae305b047___3eb5dc0e033fa61cf52fdcb74f94cbdb.png"
+    },
+
+    {
+        "nome": "Falafel assado com molho de iogurte",
+        "ingredientes": ["grão-de-bico", "cebola", "alho", "salsinha", "cominho", "coentro", "sal", "azeite", "iogurte", "limão", "hortelã"],
+        "dieta": "mediterranea",
+        "modo_preparo": "Cozinhe o grão-de-bico e bata com todos os outros ingredientes no processador até formar uma massa, modele bolinhas e asse a 200°C por 30 minutos. Sirva com iogurte temperado com limão e hortelã.",
+        "imagem": "https://static.tvgazeta.com.br/uploads/2018/10/5-498x500.png"
+    },
+
+    {
+        "nome": "Espaguete integral com legumes e azeite",
+        "ingredientes": ["macarrão integral", "abobrinha", "cenoura", "brócolis", "pimentão", "alho", "azeite", "sal", "manjericão", "tomilho", "alecrim", "salsinha", "coentro"],
+        "dieta": "mediterranea",
+        "modo_preparo": "Cozinhe o macarrão al dente, refogue os legumes picados e o pimentão em tiras com alho e azeite, misture com o macarrão e finalize com as ervas.",
+        "imagem": "https://www.oitedi.com.br/_next/image?url=https%3A%2F%2Ftedi-production.s3.amazonaws.com%2Fcooking_recipes%2Ffood_description%2Fbac88301fde91362d8f4884efcf6e3a4c17d90c2.png&w=1080&q=70"
+    },
+
+    {
+        "nome": "Ovos mexidos com espinafre e tomate",
+        "ingredientes": ["ovo", "espinafre", "tomate-cereja", "sal", "pimenta", "azeite"],
+        "dieta": "mediterranea",
+        "modo_preparo": "Pique e refogue o espinafre e o tomate cordado ao meio no azeite por 2 minutos, adicione os ovos batidos com sal e pimenta, cozinhe mexendo até os ovos ficarem firmes.",
+        "imagem": "https://img.freepik.com/fotos-premium/ovos-mexidos-com-espinafre-e-tomate-em-um-prato-branco-em-uma-mesa-de-madeira_80295-3885.jpg"
+    },
+
+    {
         "nome": "",
         "ingredientes": [""],
-        "dieta": "mediterranea",
+        "dieta": "dash",
         "modo_preparo": "",
         "imagem": ""
     },
@@ -562,7 +642,7 @@
     {
         "nome": "",
         "ingredientes": [""],
-        "dieta": "mediterranea",
+        "dieta": "dash",
         "modo_preparo": "",
         "imagem": ""
     },
@@ -570,7 +650,7 @@
     {
         "nome": "",
         "ingredientes": [""],
-        "dieta": "mediterranea",
+        "dieta": "dash",
         "modo_preparo": "",
         "imagem": ""
     },
@@ -578,7 +658,7 @@
     {
         "nome": "",
         "ingredientes": [""],
-        "dieta": "mediterranea",
+        "dieta": "dash",
         "modo_preparo": "",
         "imagem": ""
     },
@@ -586,7 +666,7 @@
     {
         "nome": "",
         "ingredientes": [""],
-        "dieta": "mediterranea",
+        "dieta": "dash",
         "modo_preparo": "",
         "imagem": ""
     },
@@ -594,7 +674,7 @@
     {
         "nome": "",
         "ingredientes": [""],
-        "dieta": "mediterranea",
+        "dieta": "dash",
         "modo_preparo": "",
         "imagem": ""
     },
@@ -602,7 +682,7 @@
     {
         "nome": "",
         "ingredientes": [""],
-        "dieta": "mediterranea",
+        "dieta": "dash",
         "modo_preparo": "",
         "imagem": ""
     },
@@ -610,7 +690,7 @@
     {
         "nome": "",
         "ingredientes": [""],
-        "dieta": "mediterranea",
+        "dieta": "dash",
         "modo_preparo": "",
         "imagem": ""
     },
@@ -618,7 +698,7 @@
     {
         "nome": "",
         "ingredientes": [""],
-        "dieta": "mediterranea",
+        "dieta": "dash",
         "modo_preparo": "",
         "imagem": ""
     },
@@ -626,14 +706,13 @@
     {
         "nome": "",
         "ingredientes": [""],
-        "dieta": "mediterranea",
+        "dieta": "dash",
         "modo_preparo": "",
         "imagem": ""
-    }, 
+    },
     
 ]
 
-dieta dash
 dieta cetogênica
 
 10 receitas de cada
