@@ -1,13 +1,13 @@
 
 import {Image, Text, View, TouchableOpacity, StyleSheet} from "react-native";
-import { router } from 'expo-router'; // ← ADICIONE ESTE IMPORT
+import { router } from 'expo-router'; 
 
-export default function HomeScreen() {
-  const handleGetStarted = () => {
-    router.push('/login'); // ← NAVEGA PARA login.tsx
+export default function telaInicial() {
+  const telaCadastro = () => {
+    router.push('/cadastro'); // ← NAVEGA PARA login.tsx
   };
 
-  const handleLogin = () => {
+  const telaLogin = () => {
     router.push('/login'); // ← NAVEGA PARA login.tsx
   };
 
@@ -19,17 +19,16 @@ export default function HomeScreen() {
             style={styles.imagem}
             resizeMode="contain"
         />
-        <Text>App funcionando!</Text>
       </View>
       
       <View style={styles.rodape}>
-        <TouchableOpacity style={styles.botao} onPress={handleGetStarted}>
+        <TouchableOpacity style={styles.botao} onPress={telaCadastro}>
           <Text style={styles.textoBotao}>Get Started</Text>
         </TouchableOpacity>
         
         <Text style={styles.textoLogin}>
           Already a member?{" "}
-          <Text style={styles.linkLogin} onPress={handleLogin}>
+          <Text style={styles.linkLogin} onPress={telaLogin}>
             Login
           </Text>
         </Text>
@@ -38,7 +37,6 @@ export default function HomeScreen() {
   );
 }
 
-// ... seus styles atuais
 const styles = StyleSheet.create({
     container: {
       flex: 1,
@@ -51,7 +49,7 @@ const styles = StyleSheet.create({
     },
     rodape: {
       padding: 20,
-      paddingBottom: 40, // Espaço da borda inferior
+      paddingBottom: 40, 
     },
     imagem: {
       width: 180,
