@@ -1,307 +1,318 @@
 import { useState } from 'react';
 import { View, Text, StyleSheet, Image, TextInput, Alert, TouchableOpacity } from 'react-native';
 import { router } from 'expo-router';
-import AsyncStorage from '@react-native-async-storage/async-storage';
 
-export default function telaCadastro(){
-    const [nome, setNome] = useState('');
-    const [email, setEmail] = useState('');
-    const [senha, setSenha] = useState('');
-    const [aceitouTermos, setAceitouTermos] = useState(false);
+export default function telaCadastro() {
+  const [nome, setNome] = useState('');
+  const [email, setEmail] = useState('');
+  const [senha, setSenha] = useState('');
+  const [aceitouTermos, setAceitouTermos] = useState(false);
 
-    const Cadastrar = async () => {
-        if (!nome || !email || !senha) {
-            Alert.alert('Preencha todos os campos!');
-            return;
-        }
+  const Cadastrar = async () => {
+    if (!nome || !email || !senha) {
+      Alert.alert('Preencha todos os campos!');
+      return;
+    }
 
-        if (!aceitouTermos) {
-            Alert.alert('Aceite os termos e condições para continuar!');
-            return;
-        }
+    if (!aceitouTermos) {
+      Alert.alert('Aceite os termos e condições para continuar!');
+      return;
+    }
 
-        const usuario = {nome, email, senha};
+    const usuario = { nome, email, senha };
 
-        try{
-            await AsyncStorage.setItem('@usuario', JSON.stringify(usuario));
-            
-            Alert.alert("Usuário cadastrado com sucesso!");
+    try {
+      console.log('Enviando dados para backend:', usuario);
+      const resposta = await fetch('http://192.168.0.105:3000/usuarios', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(usuario),
+      });
 
-            setNome('');
-            setEmail('');
-            setSenha('');
+      const data = await resposta.json();
+      console.log('Resposta do backend:', data);
 
-            router.push('/login');
-
-        }catch (error){
-            const errorMessage = error instanceof Error ? error.message : 'Erro desconhecido';
-            Alert.alert("Erro ao salvar usuário", errorMessage);
-        }
-    };
-
-    const cadastrarComGoogle = () => {
-        Alert.alert("Google Sign Up", "Funcionalidade em desenvolvimento");
-    };
-
-    const cadastrarComFacebook = () => {
-        Alert.alert("Facebook Sign Up", "Funcionalidade em desenvolvimento");
-    };
-
-    const irParaLogin = () => {
+      if (resposta.ok) {
+        Alert.alert("Sucesso", "Usuário cadastrado com sucesso!");
+        setNome('');
+        setEmail('');
+        setSenha('');
+        setAceitouTermos(false);
         router.push('/login');
-    };
+      } else {
+        Alert.alert("Erro", data.erro || "Erro ao cadastrar usuário.");
+      }
+    } catch (error) {
+      console.error('Erro ao conectar no backend:', error);
+      Alert.alert("Erro", "Não foi possível conectar ao servidor.");
+    }
+  };
 
-    const voltarInicial = () => {
-        router.push('/'); // NAVEGA PARA login.tsx
-    };
-    
-    return (
-        <View style={styles.container}>
-            <View>
-                <TouchableOpacity onPress={voltarInicial}>
-                    <Image
-                        source={require('../assets/images/Arrow.png')} 
-                        style={styles.imagem} 
-                        resizeMode="contain" 
-                    />
-                </TouchableOpacity>
-            </View>
+  const cadastrarComGoogle = () => {
+    Alert.alert("Google Sign Up", "Funcionalidade em desenvolvimento");
+  };
 
-            <View> 
-                <Text style={styles.textoCadastro}>Cadastro</Text>
-            </View>
+  const cadastrarComFacebook = () => {
+    Alert.alert("Facebook Sign Up", "Funcionalidade em desenvolvimento");
+  };
 
-            <View> 
-                <Text style={styles.campoNome}>Nome Completo: </Text>
-                <TextInput style={styles.inputs} value={nome} onChangeText={setNome}/>
+  const irParaLogin = () => {
+    router.push('/login');
+  };
 
-                <Text style={styles.campoNome}>Email: </Text>
-                <TextInput style={styles.inputs} value={email} onChangeText={setEmail} keyboardType="email-address"/>
+  const voltarInicial = () => {
+    router.push('/'); // Navega para login.tsx
+  };
 
-                <Text style={styles.campoNome}>Senha: </Text>
-                <TextInput style={styles.inputs} value={senha} onChangeText={setSenha} secureTextEntry={true}/>
+  return (
+    <View style={styles.container}>
+      <View>
+        <TouchableOpacity onPress={voltarInicial}>
+          <Image
+            source={require('../assets/images/Arrow.png')}
+            style={styles.imagem}
+            resizeMode="contain"
+          />
+        </TouchableOpacity>
+      </View>
 
-                {/* Checkbox para termos */}
-                <TouchableOpacity 
-                    style={styles.containerTermos}
-                    onPress={() => setAceitouTermos(!aceitouTermos)}
-                >
-                    <View style={[styles.checkbox, aceitouTermos && styles.checkboxMarcado]}>
-                        {aceitouTermos && <Text style={styles.checkMark}>✓</Text>}
-                    </View>
-                    <Text style={styles.textoTermos}>
-                        Eu aceito os <Text style={styles.linkTermos}>Termos e Condições</Text>
-                    </Text>
-                </TouchableOpacity>
+      <View>
+        <Text style={styles.textoCadastro}>Cadastro</Text>
+      </View>
 
-                <TouchableOpacity style={styles.botao} onPress={Cadastrar}>
-                    <Text style={styles.textoBotao}>Criar Conta</Text>
-                </TouchableOpacity>
+      <View>
+        <Text style={styles.campoNome}>Nome Completo: </Text>
+        <TextInput style={styles.inputs} value={nome} onChangeText={setNome} />
 
-                <Text style={styles.textoOu}>Ou</Text>
+        <Text style={styles.campoNome}>Email: </Text>
+        <TextInput style={styles.inputs} value={email} onChangeText={setEmail} keyboardType="email-address" />
 
-                {/* Botão Google */}
-                <TouchableOpacity style={styles.botaoGoogle} onPress={cadastrarComGoogle}>
-                    <Image 
-                        source={require('../assets/images/logos_google-icon.png')} 
-                        style={styles.iconGoogleImg}
-                        resizeMode="contain"
-                    />
-                    <Text style={styles.textoBotaoGoogle}>Cadastrar com Google</Text>
-                </TouchableOpacity>
+        <Text style={styles.campoNome}>Senha: </Text>
+        <TextInput style={styles.inputs} value={senha} onChangeText={setSenha} secureTextEntry={true} />
 
-                {/* Botão Facebook */}
-                <TouchableOpacity style={styles.botaoFacebook} onPress={cadastrarComFacebook}>
-                    <Image 
-                        source={require('../assets/images/logos_facebook.png')} 
-                        style={styles.iconFacebookImg}
-                        resizeMode="contain"
-                    />
-                    <Text style={styles.textoBotaoFacebook}>Cadastrar com Facebook</Text>
-                </TouchableOpacity>
+        {/* Checkbox para termos */}
+        <TouchableOpacity
+          style={styles.containerTermos}
+          onPress={() => setAceitouTermos(!aceitouTermos)}
+        >
+          <View style={[styles.checkbox, aceitouTermos && styles.checkboxMarcado]}>
+            {aceitouTermos && <Text style={styles.checkMark}>✓</Text>}
+          </View>
+          <Text style={styles.textoTermos}>
+            Eu aceito os <Text style={styles.linkTermos}>Termos e Condições</Text>
+          </Text>
+        </TouchableOpacity>
 
-                {/* Link para login */}
-                <View style={styles.containerLogin}>
-                    <Text style={styles.textoJaTem}>Já é um membro? </Text>
-                    <TouchableOpacity onPress={irParaLogin}>
-                        <Text style={styles.linkLogin}>Entrar</Text>
-                    </TouchableOpacity>
-                </View>
-            </View>
+        <TouchableOpacity style={styles.botao} onPress={Cadastrar}>
+          <Text style={styles.textoBotao}>Criar Conta</Text>
+        </TouchableOpacity>
+
+        <Text style={styles.textoOu}>Ou</Text>
+
+        {/* Botão Google */}
+        <TouchableOpacity style={styles.botaoGoogle} onPress={cadastrarComGoogle}>
+          <Image
+            source={require('../assets/images/logos_google-icon.png')}
+            style={styles.iconGoogleImg}
+            resizeMode="contain"
+          />
+          <Text style={styles.textoBotaoGoogle}>Cadastrar com Google</Text>
+        </TouchableOpacity>
+
+        {/* Botão Facebook */}
+        <TouchableOpacity style={styles.botaoFacebook} onPress={cadastrarComFacebook}>
+          <Image
+            source={require('../assets/images/logos_facebook.png')}
+            style={styles.iconFacebookImg}
+            resizeMode="contain"
+          />
+          <Text style={styles.textoBotaoFacebook}>Cadastrar com Facebook</Text>
+        </TouchableOpacity>
+
+        {/* Link para login */}
+        <View style={styles.containerLogin}>
+          <Text style={styles.textoJaTem}>Já é um membro? </Text>
+          <TouchableOpacity onPress={irParaLogin}>
+            <Text style={styles.linkLogin}>Entrar</Text>
+          </TouchableOpacity>
         </View>
-    );
+      </View>
+    </View>
+  );
 }
 
 const styles = StyleSheet.create({
-    container: {
-        flex: 1,
-        backgroundColor: "#FFCD8F"
-    },
+  container: {
+    flex: 1,
+    backgroundColor: "#FFCD8F",
+  },
 
-    imagem: {
-        marginTop: 25,
-        marginLeft: 10
-    },
-    
-    textoCadastro: {
-        marginTop: 25,
-        marginLeft: 10,
-        fontWeight: "bold",
-        fontSize: 22
-    },
+  imagem: {
+    marginTop: 25,
+    marginLeft: 10,
+  },
 
-    inputs: {
-        backgroundColor: "#E6E6E6",
-        height: 40,
-        borderRadius: 12,
-        paddingHorizontal: 13,
-        marginLeft: 10,
-        marginRight: 10,
-        marginBottom: 10,
-    },
+  textoCadastro: {
+    marginTop: 25,
+    marginLeft: 10,
+    fontWeight: "bold",
+    fontSize: 22,
+  },
 
-    campoNome: {
-        marginTop: 20,
-        marginLeft: 10,
-        marginBottom: 5,
-        fontSize: 16,
-        fontFamily: ''
-    },
+  inputs: {
+    backgroundColor: "#E6E6E6",
+    height: 40,
+    borderRadius: 12,
+    paddingHorizontal: 13,
+    marginLeft: 10,
+    marginRight: 10,
+    marginBottom: 10,
+  },
 
-    containerTermos: {
-        flexDirection: 'row',
-        alignItems: 'center',
-        marginTop: 15,
-        marginLeft: 10,
-        marginRight: 10,
-        marginBottom: 10,
-    },
+  campoNome: {
+    marginTop: 20,
+    marginLeft: 10,
+    marginBottom: 5,
+    fontSize: 16,
+    fontFamily: "",
+  },
 
-    checkbox: {
-        width: 20,
-        height: 20,
-        borderWidth: 2,
-        borderColor: '#666',
-        borderRadius: 4,
-        marginRight: 10,
-        justifyContent: 'center',
-        alignItems: 'center',
-    },
+  containerTermos: {
+    flexDirection: "row",
+    alignItems: "center",
+    marginTop: 15,
+    marginLeft: 10,
+    marginRight: 10,
+    marginBottom: 10,
+  },
 
-    checkboxMarcado: {
-        backgroundColor: '#4CAF50',
-        borderColor: '#4CAF50',
-    },
+  checkbox: {
+    width: 20,
+    height: 20,
+    borderWidth: 2,
+    borderColor: "#666",
+    borderRadius: 4,
+    marginRight: 10,
+    justifyContent: "center",
+    alignItems: "center",
+  },
 
-    checkMark: {
-        color: 'white',
-        fontWeight: 'bold',
-        fontSize: 12,
-    },
+  checkboxMarcado: {
+    backgroundColor: "#4CAF50",
+    borderColor: "#4CAF50",
+  },
 
-    textoTermos: {
-        flex: 1,
-        fontSize: 14,
-        color: '#333',
-    },
+  checkMark: {
+    color: "white",
+    fontWeight: "bold",
+    fontSize: 12,
+  },
 
-    linkTermos: {
-        textDecorationLine: 'underline',
-        color: '#FF6B35',
-        fontWeight: '600',
-    },
+  textoTermos: {
+    flex: 1,
+    fontSize: 14,
+    color: "#333",
+  },
 
-    botao: {
-        backgroundColor: "#FF6B35",
-        height: 45,
-        borderRadius: 12,
-        marginTop: 20,
-        marginLeft: 10,
-        marginRight: 10,
-        justifyContent: 'center',
-        alignItems: 'center'
-    },
+  linkTermos: {
+    textDecorationLine: "underline",
+    color: "#FF6B35",
+    fontWeight: "600",
+  },
 
-    textoBotao: {
-        color: 'white',
-        fontSize: 18,
-        fontWeight: 'bold'
-    },
+  botao: {
+    backgroundColor: "#FF6B35",
+    height: 45,
+    borderRadius: 12,
+    marginTop: 20,
+    marginLeft: 10,
+    marginRight: 10,
+    justifyContent: "center",
+    alignItems: "center",
+  },
 
-    textoOu: {
-        textAlign: 'center',
-        fontSize: 16,
-        color: '#666',
-        marginTop: 20,
-        marginBottom: 15,
-    },
+  textoBotao: {
+    color: "white",
+    fontSize: 18,
+    fontWeight: "bold",
+  },
 
-    botaoGoogle: {
-        backgroundColor: 'white',
-        height: 45,
-        borderRadius: 12,
-        flexDirection: 'row',
-        alignItems: 'center',
-        justifyContent: 'center',
-        marginLeft: 10,
-        marginRight: 10,
-        marginBottom: 10,
-        borderWidth: 1,
-        borderColor: '#ddd',
-    },
+  textoOu: {
+    textAlign: "center",
+    fontSize: 16,
+    color: "#666",
+    marginTop: 20,
+    marginBottom: 15,
+  },
 
-    iconGoogleImg: {
-        width: 20,
-        height: 20,
-        marginRight: 12,
-    },
+  botaoGoogle: {
+    backgroundColor: "white",
+    height: 45,
+    borderRadius: 12,
+    flexDirection: "row",
+    alignItems: "center",
+    justifyContent: "center",
+    marginLeft: 10,
+    marginRight: 10,
+    marginBottom: 10,
+    borderWidth: 1,
+    borderColor: "#ddd",
+  },
 
-    textoBotaoGoogle: {
-        color: '#333',
-        fontSize: 16,
-        fontWeight: '500',
-    },
+  iconGoogleImg: {
+    width: 20,
+    height: 20,
+    marginRight: 12,
+  },
 
-    botaoFacebook: {
-        backgroundColor: '#1877F2',
-        height: 45,
-        borderRadius: 12,
-        flexDirection: 'row',
-        alignItems: 'center',
-        justifyContent: 'center',
-        marginLeft: 10,
-        marginRight: 10,
-        marginBottom: 20,
-    },
+  textoBotaoGoogle: {
+    color: "#333",
+    fontSize: 16,
+    fontWeight: "500",
+  },
 
-    iconFacebookImg: {
-        width: 20,
-        height: 20,
-        marginRight: 10,
-    },
+  botaoFacebook: {
+    backgroundColor: "#1877F2",
+    height: 45,
+    borderRadius: 12,
+    flexDirection: "row",
+    alignItems: "center",
+    justifyContent: "center",
+    marginLeft: 10,
+    marginRight: 10,
+    marginBottom: 20,
+  },
 
-    textoBotaoFacebook: {
-        color: 'white',
-        fontSize: 16,
-        fontWeight: '500',
-    },
+  iconFacebookImg: {
+    width: 20,
+    height: 20,
+    marginRight: 10,
+  },
 
-    containerLogin: {
-        flexDirection: 'row',
-        justifyContent: 'center',
-        alignItems: 'center',
-        marginTop: 10,
-    },
+  textoBotaoFacebook: {
+    color: "white",
+    fontSize: 16,
+    fontWeight: "500",
+  },
 
-    textoJaTem: {
-        fontSize: 16,
-        color: '#666',
-    },
+  containerLogin: {
+    flexDirection: "row",
+    justifyContent: "center",
+    alignItems: "center",
+    marginTop: 10,
+  },
 
-    linkLogin: {
-        fontSize: 16,
-        color: '#FF6B35',
-        fontWeight: '600',
-        textDecorationLine: 'underline',
-    },
+  textoJaTem: {
+    fontSize: 16,
+    color: "#666",
+  },
+
+  linkLogin: {
+    fontSize: 16,
+    color: "#FF6B35",
+    fontWeight: "600",
+    textDecorationLine: "underline",
+  },
 });

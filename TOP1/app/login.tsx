@@ -32,7 +32,7 @@ export default function LoginScreen() {
             text: 'OK',
             onPress: () => {
               // Navega para a próxima tela (ex: home, dashboard, etc.)
-              router.push('/cadastro'); // Substitua '/home' pela sua tela principal
+              router.push('/home'); // Substitua '/home' pela sua tela principal
             }
           }
         ]);
