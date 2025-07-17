@@ -73,7 +73,7 @@
 
     {
         "nome": "Macarrão ao Pesto de Espinafre",
-        "ingredientes": ["macarrão", "espinafre", "azeite", "alho", "nozes ou castanhas", "suco de limão", "sal", "pimenta"],
+        "ingredientes": ["macarrão", "espinafre", "azeite", "alho", "nozes", "suco de limão", "sal", "pimenta", "castanhas"],
         "dieta": "vegetariana",
         "modo_preparo": "Cozinhe o macarrão e reserve, bata no liquidificador o espinafre, alho, castanhas, limão e azeite até formar um molho, tempere com sal e pimenta, misture com o macarrão cozido e sirva.",
         "imagem": "https://www.agendasaudavel.com.br/wp-content/uploads/2019/04/Farfalle-com-pesto-de-espinafre.jpg"
@@ -632,95 +632,162 @@
     },
 
     {
-        "nome": "",
-        "ingredientes": [""],
+        "nome": "Salada de Grão-de-Bico com Legumes e Limão",
+        "ingredientes": ["grão-de-bico", "pepino", "pimentão vermelho", "tomate-cereja", "azeite", "suco de limão", "salsa", "sal", "pimenta"],
         "dieta": "dash",
-        "modo_preparo": "",
-        "imagem": ""
+        "modo_preparo": "Corte o pepino em cubos, o tomate ao meio, pique o pimentão e cozinhe o grão-de-bico, misture todos os ingredientes em uma tigela, mexa bem e leve à geladeira por 20 minutos antes de servir.",
+        "imagem": "https://guiadacozinha.com.br/wp-content/uploads/2021/08/saladadegraodebicocomlegumes.webp"
     },
 
     {
-        "nome": "",
-        "ingredientes": [""],
+        "nome": "Sopa de Lentilha com Cenoura e Alho-Poró",
+        "ingredientes": ["lentilha", "cenoura", "alho-poró", "alho", "azeite", "água", "sal", "tomilho", "louro"],
         "dieta": "dash",
-        "modo_preparo": "",
-        "imagem": ""
+        "modo_preparo": "Refogue o alho picado no azeite, adicione a cenoura em rodelas e o alho-poró fatiado, junte a lentilha, água e temperos, cozinhe por 30 minutos ou até ficar macio.",
+        "imagem": "https://batepapoveg.com/wp-content/uploads/2024/08/sopa-de-lentilha-com-cenoura-saudavel-e-fitness1-800x530.png"
     },
 
     {
-        "nome": "",
-        "ingredientes": [""],
+        "nome": "Arroz Integral com Brócolis e Castanha-do-Pará",
+        "ingredientes": ["arroz integral", "brócolis", "castanha-do-pará", "azeite", "sal", "alho"],
         "dieta": "dash",
-        "modo_preparo": "",
-        "imagem": ""
+        "modo_preparo": "Cozinhe o brócolis por 3-5 minutos até ficar 'al dente' e escorra, em uma frigideira aqueça o azeite e refogue o alho até dourar, acrescente o arroz integral já cozido e refogado, mexa bem e adicione o brócolis escorrido ao arroz e misture suavemente, desligue o fogo e salpique as castanhas picadas por cima.",
+        "imagem": "https://s2.glbimg.com/K43C1lygWVeNBHpL8rh3AAZ_3n8=/620x455/e.glbimg.com/og/ed/f/original/2021/09/22/receita-arroz-integral-brocolis-maca-castanha-pantera-alimentos.jpg"
     },
 
     {
-        "nome": "",
-        "ingredientes": [""],
+        "nome": "Salmão Grelhado com Ervas e Limão",
+        "ingredientes": ["filé de salmão", "azeite", "suco de limão", "sal", "pimenta-do-reino", "tomilho", "orégano", "alho"],
         "dieta": "dash",
-        "modo_preparo": "",
-        "imagem": ""
+        "modo_preparo": "Tempere o salmão com o suco de limão, azeite, ervas, pimenta e alho amassado, aqueça uma frigideira antiaderente e grelhe o salmão com a pele virada para baixo por 4-5 minutos, depois vire e deixe mais 2-3 minutos.",
+        "imagem": "https://www.oitedi.com.br/_next/image?url=https%3A%2F%2Ftedi-production.s3.amazonaws.com%2Fcooking_recipes%2Ffood_description%2F76bc7aed7faf22a345a88230b2d78dc4edcf40ba.png&w=1080&q=70"
     },
 
     {
-        "nome": "",
-        "ingredientes": [""],
+        "nome": "Omelete de Espinafre com Tomate",
+        "ingredientes": ["ovo", "espinafre", "tomate-cereja", "sal", "pimenta", "azeite"],
         "dieta": "dash",
-        "modo_preparo": "",
-        "imagem": ""
+        "modo_preparo": "Pique o tomate e o espinafre. Bata os ovos em uma tigela com uma pitada de sal e pimenta, aqueça o azeite em uma frigideira e refogue o espinafre por 1 minuto até murchar, adicione o tomate e mexa por mais 1 minuto, despeje os ovos batidos e abaixe o fogo, tampe e deixe coinhar até firmar.",
+        "imagem": "https://nutriumstorageaccount.blob.core.windows.net/rails-active-storage/02m11otk7v5awe0b7f53czlwaauw?sp=r&sv=2018-11-09&se=2025-08-17T18%3A51%3A51Z&rscd=inline%3B+filename%3D%22omelete.avif%22%3B+filename*%3DUTF-8%27%27omelete.avif&rsct=image%2Fjpeg&sr=b&sig=hIv%2BOokUFcU%2FSRg17imlie2bD21sEdmo9OT5DMelmVg%3D"
     },
 
     {
-        "nome": "",
-        "ingredientes": [""],
+        "nome": "Quinoa com Abobrinha e Cúrcuma",
+        "ingredientes": ["quinoa", "água", "abobrinha", "cebola", "azeite", "cúrcuma", "sal", "pimenta"],
         "dieta": "dash",
-        "modo_preparo": "",
-        "imagem": ""
+        "modo_preparo": "Leve a quinoa ao fogo com 1 xícara de água e uma pitada de sal e cozinhe por 15 minutos ou até secar, aqueça o azeite em uma panela, refogue a cebola, adicione a abobrinha ralada e a cúrcuma, acrescente a quinoa cozida à panela do refogado e mexa bem.",
+        "imagem": "https://cozinhadalbo.com.br/wp-content/uploads/2024/01/Salada-de-Quinoa-com-Abobora-Assada-7-480x270.jpg"
     },
 
     {
-        "nome": "",
-        "ingredientes": [""],
+        "nome": "Batata-Doce Assada com Alecrim",
+        "ingredientes": ["batata-doce", "azeite", "alecrim", "sal", "pimenta-do-reino"],
         "dieta": "dash",
-        "modo_preparo": "",
-        "imagem": ""
+        "modo_preparo": "Descasque e corte a batata-doce em palitos ou rodelas finas, misture os pedaços com o azeite, alecrim, sal e pimenta, coloque em assadeira antiaderente e leve ao forno pré-aquecido (200°C) por 30 minutos, virando na metade.",
+        "imagem": "https://cumbucaboa.com.br/cdn/shop/files/37c195a0f9e4aee75605a1cce247246a.png?v=1735226103"
     },
 
     {
-        "nome": "",
-        "ingredientes": [""],
+        "nome": "Iogurte Natural com Frutas e Sementes",
+        "ingredientes": ["iogurte natural desnatado", "banana", "mamão", "morango", "semente de chia", "canela"],
         "dieta": "dash",
-        "modo_preparo": "",
-        "imagem": ""
+        "modo_preparo": "Adicione o iogurte em uma tigela, acrescente as frutas picadas por cima, polvilhe a chia e, se quiser, um pouco de canela.",
+        "imagem": "https://www.oitedi.com.br/_next/image?url=https%3A%2F%2Ftedi-production.s3.amazonaws.com%2Fcooking_recipes%2Ffood_description%2F8dd5149a6834c2346c547c6588599a0bfd5c7e82.png&w=1080&q=70"
     },
 
     {
-        "nome": "",
-        "ingredientes": [""],
+        "nome": "Refogado de Couve com Alho",
+        "ingredientes": ["couve", "alho", "azeite", "sal"],
         "dieta": "dash",
-        "modo_preparo": "",
-        "imagem": ""
+        "modo_preparo": "Lave e corte a couve em tiras bem fininhas, aqueça o azeite, doure o alho rapidamente e adicione a couve, refogue por 2 minutos no máximo e sirva imediatamente.",
+        "imagem": "https://p2.trrsf.com/image/fget/cf/1200/900/middle/images.terra.com/2023/05/08/757891804-couve-alho-refogada.jpg"
     },
 
     {
-        "nome": "",
-        "ingredientes": [""],
+        "nome": "Torrada Integral com Abacate Amassado",
+        "ingredientes": ["pão integral", "abacate", "sal", "pimenta-do-reino", "limão", "sementes"],
         "dieta": "dash",
-        "modo_preparo": "",
-        "imagem": ""
+        "modo_preparo": "Toste o pão em uma frigideira ou torradeira até ficar crocante, amasse o abacate com algumas gotas de limão, uma pitada de sal e pimenta, espalhe o abacate na torrada e finalize com sementes ou ervas frescas.",
+        "imagem": "https://laferretti.com.br/wp-content/uploads/2018/08/Torrada-985x515.webp"
     },
-    
+
+    {
+        "nome": "Bolinho de Atum",
+        "ingredientes": ["atum", "ovo", "queijo ralado", "cheiro-verde", "sal", "pimenta"],
+        "dieta": ["cetogênica", "low carb"],
+        "modo_preparo": "Misture tudo em uma tigela até formar uma massa firme, modele bolinhos e leve ao forno a 200°C por 20 minutos, virando na metade.",
+        "imagem": "https://blog.gsuplementos.com.br/wp-content/uploads/2022/02/iStock-645777598.jpg"
+    },
+
+    {
+        "nome": "Frango com Creme de Espinafre",
+        "ingredientes": ["filé de peito de frango", "espinafre", "creme de leite", "alho", "sal", "noz-moscada"],
+        "dieta": "cetogênica",
+        "modo_preparo": "Grelhe o frango com sal e pimenta, em outra panela refogue o espinafre já cozido com o alho e adicione o creme de leite, cozinhe por 3 minutos e sirva sobre o frango.",
+        "imagem": "https://blog.ingredientesonline.com.br/wp-content/uploads/2020/12/espinafre.jpg"
+    },
+
+    {
+        "nome": "Pizza de Berinjela",
+        "ingredientes": ["berinjela", "molho de tomate", "queijo mussarela", "orégano", "azeite"],
+        "dieta": "cetogênica",
+        "modo_preparo": "Corte fatias grossas de berinjela, asse as fatias por 10 minutos, retire e cubra com o molho e queijo, salpique orégano e leve ao forno novamente até gratinar.",
+        "imagem": "https://sabores-new.s3.amazonaws.com/public/2024/11/mini-pizza-de-berinjela.jpg"
+    },
+
+    {
+        "nome": "Sopa Cremosa de Abobrinha com Queijo",
+        "ingredientes": ["abobrinha", "creme de leite", "queijo meia cura", "alho", "sal", "pimenta"],
+        "dieta": "cetogênica",
+        "modo_preparo": "Cozinhe a abobrinha picada com o alho e o sal, bata com o mixer, volte à panela e adicione o creme de leite e o queijo meia cura ralado, mexa atpe derreter.",
+        "imagem": "https://sabores-new.s3.amazonaws.com/public/2024/11/creme-de-abobrinha.jpg"
+    },
+
+    {
+        "nome": "Panqueca de Ovo e Queijo",
+        "ingredientes": ["ovo", "queijo parmesão ralado", "pimenta-do-reino", "orégano"],
+        "dieta": "cetogênica",
+        "modo_preparo": "Bata os ovos com o queijo e os temperos, despeje em frigideira antiaderente e doure dos dois lados como panqueca.",
+        "imagem": "https://i.ytimg.com/vi/s7p-Q0qtgnA/hq720.jpg"
+    },
+
+    {
+        "nome": "Abacate com Limão e Sementes",
+        "ingredientes": ["abacate", "suco de limão", "semente de chia", "semente de linhaça"],
+        "dieta": "cetogênica",
+        "modo_preparo": "Amasse o abacate, misture com o suco do limão e salpique as sementes por cima.",
+        "imagem": "https://s2.glbimg.com/AlWdVUL7Y_hnZWFs6En9b07MaFo=/smart/e.glbimg.com/og/ed/f/original/2019/04/10/s-marco-pt2-5_DHiXW5Q.jpg"
+    },
+
+    {
+        "nome": "Tortinha de Frango com Massa de Queijo",
+        "ingredientes": ["ovo", "creme de leite", "queijo ralado", "peito de frango", "alho", "cúrcuma"],
+        "dieta": "cetogênica",
+        "modo_preparo": "Cozinhe e desfie o frango (refogado com alho e cúrcuma). Misture o ovo, o creme de leite e o queijo para formar uma massa cremosa, coloque em forminhas, adicione o frango por cima e leve ao forno médio por 15-20 minutos até dourar.",
+        "imagem": "https://guiadacozinha.com.br/wp-content/uploads/2019/10/torta-de-frango-com-queijo-11482.jpg"
+    },
+
+    {
+        "nome": "Escondidinho de Couve-Flor com Carne",
+        "ingredientes": ["carne moída", "couve-flor", "requeijão", "queijo ralado"],
+        "dieta": "cetogênica",
+        "modo_preparo": "Refogue a carne moída, cozinhe e amasse o couve-flor. Monte uma camada de carne, cubra com purê de couve-flor misturado ao requeijão, polvilhe queijo e gratine no forno.",
+        "imagem": "https://paineirasfit.com.br/wp-content/uploads/2021/05/162-scaled-e1588953929728.jpg"
+    },
+
+    {
+        "nome": "Omelete Caprese (com tomate e manjericão)",
+        "ingredientes": ["ovo", "tomate-cereja", "queijo mussarela de búfala", "manjericão", "sal", "pimenta", "creme de leite"],
+        "dieta": "cetogênica",
+        "modo_preparo": "Bata os ovos com o creme de leite, tempere e coloque numa frigideira antiaderente, quando começar a firmar adicione o tomate cortado ao meio, o queijo e o manjericão, dobre e sirva ainda cremoso por dentro.",
+        "imagem": "https://www.lecreuset.com.br/dw/image/v2/BDRT_PRD/on/demandware.static/-/Sites-le-creuset-br-master/default/dw4870418a/images/SKI_014.jpg"
+    },
+
+    {
+        "nome": "Brownie de Cacau e Castanhas",
+        "ingredientes": ["ovo", "manteiga/margarina", "cacau em pó", "adoçante", "farinha de amêndoas", "castanhas"],
+        "dieta": "cetogênica",
+        "modo_preparo": "Misture tudo até virar uma massa homogênea, leve a uma forma untada e asse a 180°C por 15 minutos. Fica úmido por dentro e crocante por fora.",
+        "imagem": "https://i.ytimg.com/vi/qBsBaZ4RnAk/hq720.jpg"
+    } 
 ]
-
-dieta cetogênica
-
-10 receitas de cada
-
-{
-    "nome": "",
-    "ingredientes": [""],
-    "dieta": "",
-    "modo_preparo": "",
-    "imagem": ""
-},
