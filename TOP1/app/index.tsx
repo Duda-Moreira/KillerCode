@@ -3,7 +3,7 @@ import {Image, Text, View, TouchableOpacity, StyleSheet} from "react-native";
 import { router } from 'expo-router'; 
 
 export default function telaInicial() {
-  const irLogin = () => {
+  const irCadastro = () => {
     router.push('/cadastro'); // ← NAVEGA PARA login.tsx
   };
 
@@ -22,7 +22,7 @@ export default function telaInicial() {
       </View>
       
       <View style={styles.rodape}>
-        <TouchableOpacity style={styles.botao} onPress={irLogin}>
+        <TouchableOpacity style={styles.botao} onPress={irCadastro}>
           <Text style={styles.textoBotao}>Vamos Começar</Text>
         </TouchableOpacity>
         
@@ -55,6 +55,7 @@ const styles = StyleSheet.create({
       width: 180,
       height: 150,
       marginBottom: 20,
+      marginTop: 50
     },
     botao: {
       backgroundColor: "#FF8C00",
@@ -62,6 +63,7 @@ const styles = StyleSheet.create({
       paddingHorizontal: 80,
       borderRadius: 25,
       width: "100%",
+      marginBottom: 30
     },
     textoBotao: {
       color: "white",
@@ -73,6 +75,7 @@ const styles = StyleSheet.create({
       color: "#666",
       fontSize: 14,
       textAlign: "center",
+      marginBottom: 20
     },
 
     linkLogin:{
