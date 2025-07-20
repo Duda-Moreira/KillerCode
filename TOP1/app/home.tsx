@@ -33,7 +33,6 @@ export default function OnboardingScreens() {
     if (currentScreen < screens.length - 1) {
       setCurrentScreen(currentScreen + 1);
     } else {
-      // Última tela - ir para escolhaDieta
       router.push('/escolhaDieta');
     }
   };
