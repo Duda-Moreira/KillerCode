@@ -71,7 +71,6 @@ export default function EscolhaDieta() {
         ))}
       </ScrollView>
 
-      {/* Botão Continue */}
       <View style={styles.buttonContainer}>
         <TouchableOpacity 
           style={[
@@ -96,7 +95,7 @@ export default function EscolhaDieta() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#FFFFFF',
+    backgroundColor: '#FFE5B4',
     paddingHorizontal: 20,
   },
   header: {
@@ -121,7 +120,7 @@ const styles = StyleSheet.create({
   },
   progressFill: {
     height: '100%',
-    width: '20%', // Ajuste conforme a etapa atual
+    width: '90%', // Ajuste conforme a etapa atual
     backgroundColor: '#4CAF50',
     borderRadius: 4,
   },
@@ -136,16 +135,16 @@ const styles = StyleSheet.create({
     marginBottom: 20,
   },
   dietOption: {
-    backgroundColor: '#F8F8F8',
+    backgroundColor: '#FFFFFF',
     paddingVertical: 18,
     paddingHorizontal: 20,
     borderRadius: 12,
     marginBottom: 12,
-    borderWidth: 2,
-    borderColor: 'transparent',
+    borderWidth: 1,
+    borderColor: 'black',
   },
   selectedOption: {
-    backgroundColor: '#FFE4B5',
+    backgroundColor: '#dad3d3ff',
     borderColor: '#FF8C42',
   },
   dietText: {

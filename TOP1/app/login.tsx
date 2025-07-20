@@ -90,7 +90,6 @@ export default function TelaLogin() {
         keyboardType="email-address"
         autoCapitalize="none"
         autoCorrect={false}
-        placeholder="Digite seu email"
       />
 
       {/* Campo Senha */}
@@ -100,7 +99,6 @@ export default function TelaLogin() {
         value={senha} 
         onChangeText={setSenha}
         secureTextEntry={true}
-        placeholder="Digite sua senha"
       />
 
       {/* Link Esqueceu Senha */}
@@ -141,7 +139,7 @@ export default function TelaLogin() {
 const styles = StyleSheet.create({
   container: { 
     flex: 1, 
-    backgroundColor: "#FFCD8F" 
+    backgroundColor: "#FFE5B4" 
   },
   imagem: { 
     marginTop: 60, 
@@ -154,12 +152,13 @@ const styles = StyleSheet.create({
     fontSize: 22 
   },
   inputs: {
-    backgroundColor: "#E6E6E6", 
+    backgroundColor: "#eceae6ff", 
     height: 40, 
     borderRadius: 12,
     paddingHorizontal: 13, 
     marginHorizontal: 10, 
-    marginBottom: 10
+    marginBottom: 10,
+    borderWidth: 1
   },
   campoLabel: { 
     marginTop: 20, 
@@ -244,11 +243,11 @@ const styles = StyleSheet.create({
     flexDirection: "row", 
     justifyContent: "center", 
     alignItems: "center", 
-    marginTop: 10 
+    marginTop: 115 
   },
   textoNaoTem: { 
     fontSize: 16, 
-    color: "#666" 
+    color: "#666"
   },
   linkCadastro: { 
     fontSize: 16, 

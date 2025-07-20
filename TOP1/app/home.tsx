@@ -11,21 +11,21 @@ export default function OnboardingScreens() {
       title: "Planejamento de refeições personalizado",
       description: "Escolha suas refeições da semana em minutos, coma exatamente do jeito que você quer.",
       image: require('../assets/images/eating a variety of foods-bro 1.png'),
-      backgroundColor: "#FFE4B5"
+      backgroundColor: "#FFE5B4"
     },
     {
       id: 1,
       title: "Receitas simples, sem estresse",
       description: "As mais variadas receitas em apenas um lugar só",
       image:  require('../assets/images/Eco shopping-bro 1.png'),
-      backgroundColor: "#FFE4B5"
+      backgroundColor: "#FFE5B4"
     },
     {
       id: 2,
       title: "Refeições deliciosas e saudáveis feitas de forma fácil.",
       description: "Cozinhe facilmente refeições saudáveis e deliciosas em cerca de 30 minutos, do início ao fim.",
       image: require('../assets/images/Eating healthy food-bro 1.png'),
-      backgroundColor: "#FFE4B5"
+      backgroundColor: "#FFE5B4"
     }
   ];
 

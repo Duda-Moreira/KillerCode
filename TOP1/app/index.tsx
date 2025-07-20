@@ -40,7 +40,7 @@ export default function telaInicial() {
 const styles = StyleSheet.create({
     container: {
       flex: 1,
-      backgroundColor: "#FFCD8F"
+      backgroundColor: "#FFE5B4"
     },
     conteudoCentral: {
       flex: 1,
