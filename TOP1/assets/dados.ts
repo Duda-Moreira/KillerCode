@@ -1,26 +1,26 @@
-[
+const receitas = [
     {
-        "nome": "Estrogonofe de Palmito",
-        "ingredientes": ["palmito", "margarina", "cebola", "catchup", "mostarda", "molho inglês", "creme de leite", "champignon"],
-        "dieta": "vegetariana",
-        "modo_preparo": "Refogue a cebola com a margarina, coloque o palmito picado e os cogumelos picados, deixe ferver um pouquinho, acrescente o catchup, mostarda e molho inglês, quando der uma encorpada acrescente o creme de leite, mexa e antes de ferver, desligue",
-        "imagem": "https://static.itdg.com.br/images/640-440/59000d51ce63916cb70bb1bf5f6de131/306271-original.jpg"
+        nome: "Estrogonofe de Palmito",
+        ingredientes: ["palmito", "margarina", "cebola", "catchup", "mostarda", "molho inglês", "creme de leite", "champignon"],
+        dieta: "vegetariana",       
+        modo_preparo: "Refogue a cebola com a margarina, coloque o palmito picado e os cogumelos picados, deixe ferver um pouquinho, acrescente o catchup, mostarda e molho inglês, quando der uma encorpada acrescente o creme de leite, mexa e antes de ferver, desligue",
+        imagem: "https://static.itdg.com.br/images/640-440/59000d51ce63916cb70bb1bf5f6de131/306271-original.jpg"
     },
 
     {
-        "nome": "Lasanha de Berinjela",
-        "ingredientes": ["berinjela", "molho de tomate", "coentro", "azeitona", "queijo mussarela", "azeite", "catupiry"],
-        "dieta": "vegetariana",
-        "modo_preparo": "Corte as berinjelas em fatias finas, em uma assadeira retangular refratária, coloque no fundo, as duas colheres de azeite e um pouco de molho de tomate, coloque então uma camada de berinjela, cubra com molho de tomate e por cima coloque uma camada de queijo mussarela, repita os passos até cobrir a assadeira, salpique com azeitonas e coentro, coloque por cima da última camada queijo catupiry a gosto e cubra a assadeira com papel alumínio, leve ao forno em temperatura de 180º C graus por cerca de 30 minutos para cozinhar, após isso, retire o papel-alumínio e deixe por mais 5 a 10 minutos para gratinar. Sirva quente.",
-        "imagem": "https://p2.trrsf.com/image/fget/cf/940/0/images.terra.com/2023/07/17/886559530-lasanha-berinjela-frango.jpg"
+        nome: "Lasanha de Berinjela",
+        ingredientes: ["berinjela", "molho de tomate", "coentro", "azeitona", "queijo mussarela", "azeite", "catupiry"],
+        dieta: "vegetariana",
+        modo_preparo: "Corte as berinjelas em fatias finas, em uma assadeira retangular refratária, coloque no fundo, as duas colheres de azeite e um pouco de molho de tomate, coloque então uma camada de berinjela, cubra com molho de tomate e por cima coloque uma camada de queijo mussarela, repita os passos até cobrir a assadeira, salpique com azeitonas e coentro, coloque por cima da última camada queijo catupiry a gosto e cubra a assadeira com papel alumínio, leve ao forno em temperatura de 180º C graus por cerca de 30 minutos para cozinhar, após isso, retire o papel-alumínio e deixe por mais 5 a 10 minutos para gratinar. Sirva quente.",
+        imagem: "https://p2.trrsf.com/image/fget/cf/940/0/images.terra.com/2023/07/17/886559530-lasanha-berinjela-frango.jpg"
     },
 
     {
-        "nome": "Moqueca de Banana da Terra",
-        "ingredientes": ["tomate", "cebola", "alho", "colorau", "azeite", "sal", "banana da terra", "coentro", "água"],
-        "dieta": "vegetariana",
-        "modo_preparo": "Pique o tomate sem pele e sem semente e corte a banana da terra em 3 partes, refogue no azeite a metade da cebola, alho e colorau, acrescente metade do tomate, refogue bem e espalhe pelo fundo da panela, coloque as bananas e cubra com o restante do tomate, da cebola e do coentro, arrumando bem, tampe a panela e deixe que ferva até que as bananas estejam macias, sempre verificando a água e acertando o sal se necessário.",
-        "imagem": "https://bakeandcakegourmet.com.br/uploads/site/receitas/moqueca-de-banana-da-terra-cx7tuusj.jpg"
+        nome: "Moqueca de Banana da Terra",
+        ingredientes: ["tomate", "cebola", "alho", "colorau", "azeite", "sal", "banana da terra", "coentro", "água"],
+        dieta: "vegetariana",
+        modo_preparo: "Pique o tomate sem pele e sem semente e corte a banana da terra em 3 partes, refogue no azeite a metade da cebola, alho e colorau, acrescente metade do tomate, refogue bem e espalhe pelo fundo da panela, coloque as bananas e cubra com o restante do tomate, da cebola e do coentro, arrumando bem, tampe a panela e deixe que ferva até que as bananas estejam macias, sempre verificando a água e acertando o sal se necessário.",
+        imagem: "https://bakeandcakegourmet.com.br/uploads/site/receitas/moqueca-de-banana-da-terra-cx7tuusj.jpg"
     },
 
     {
@@ -162,7 +162,7 @@
     {
         "nome": "Purê de Batata com Leite de Coco",
         "ingredientes": ["batata", "leite de coco", "margarina", "alho", "cebola", "sal"],
-        "dieta": "zero lactose",
+        "dieta": "zero-lactose",
         "modo_preparo": "Cozinhe as batatas até ficarem macias, amasse bem e misture com leite de coco, margarina e os temperos, mexa até ficar cremoso e ajuste o sal.",
         "imagem": "https://www.receiteria.com.br/wp-content/uploads/pure-de-batata-com-leite-de-coco-07-730x548.jpg"
     },
@@ -170,7 +170,7 @@
     {
         "nome": "Panqueca de Banana com Aveia",
         "ingredientes": ["banana", "aveia", "ovo", "canela"],
-        "dieta": "zero lactose",
+        "dieta": "zero-lactose",
         "modo_preparo": "Amasse a banana, misture os outros ingredientes até formar uma massinha, aqueça uma frigideira e coloque porções da massa, doure dos dois lados e sirva com frutas ou melado.",
         "imagem": "https://static.itdg.com.br/images/1200-630/53e47bf452300d58b8e741ae370eae4f/365870-original.jpg"
     },
@@ -178,7 +178,7 @@
     {
         "nome": "Arroz Doce com Leite de Amêndoas",
         "ingredientes": ["arroz", "leite de amêndoas", "açúcar demerara", "canela em pau", "casca de limão"],
-        "dieta": "zero lactose",
+        "dieta": "zero-lactose",
         "modo_preparo": "Cozinhe o arroz com água até amaciar, escorra e adicione o leite vegetal, açúcar, canela e a casca do limão. Cozinhe mexendo até engrossar.",
         "imagem": "https://receitadaboa.com.br/wp-content/uploads/2024/07/iStock-840279550.jpg"
     },
@@ -186,7 +186,7 @@
     {
         "nome": "Pão de Queijo (zero lactose)",
         "ingredientes": ["polvilho doce", "polvilho azedo", "batata-doce", "óleo", "sal"],
-        "dieta": "zero lactose",
+        "dieta": "zero-lactose",
         "modo_preparo": "Cozinhe e amasse as batatas, misture com o resto dos ingredientes até formar uma massa, modele bolinhas e asse por 180°C por 30 minutos.",
         "imagem": "https://s2.glbimg.com/RcMQlr5WiBmb140kzK0YfH__c_4=/620x413/smart/e.glbimg.com/og/ed/f/original/2022/07/18/receita-de-pao-de-queijo-sem-lactose.jpg"
     },
@@ -194,7 +194,7 @@
     {
         "nome": "Bolo de Cenoura Sem Lactose",
         "ingredientes": ["cenoura", "ovo", "óleo", "açúcar", "farinha de trigo", "fermento"],
-        "dieta": "zero lactose",
+        "dieta": "zero-lactose",
         "modo_preparo": "Bata no liquidificador: cenoura, ovos, óleo e açúcar, misture à farinha e ao fermento e asse por 40 minutos a 180°C.",
         "imagem": "https://semglutensemlactose.com/wp-content/uploads/2009/04/dreamstime_m_24113586.jpg"
     },
@@ -202,7 +202,7 @@
     {
         "nome": "Escondidinho de Batata com Proteína de Soja",
         "ingredientes": ["batata", "margarina", "leite de coco", "alho", "cebola", "sal", "molho de tomate", "proteína de soja texturizada(PVT)"],
-        "dieta": "zero lactose",
+        "dieta": "zero-lactose",
         "modo_preparo": "Cozinhe as batatas até ficarem macias, amasse bem e misture com leite de coco, margarina e os temperos, mexa até ficar cremoso e ajuste o sal. Hidrate a PVT em água quente por 15 minutos e escorra. Refogue com alho, cebola, molho e temperos e monte o escondidinho com purê por cima e leve ao forno. ",
         "imagem": "https://www.agendasaudavel.com.br/wp-content/uploads/2019/07/612_escondidinho-de-pts_39c1d89ddd.jpg"
     },
@@ -210,7 +210,7 @@
     {
         "nome": "Tapioca com Recheio Doce ou Salgado",
         "ingredientes": ["goma de tapioca", "banana", "canela", "pasta de amendoim", "tofu", "tomate", "orégano"],
-        "dieta": "zero lactose",
+        "dieta": "zero-lactose",
         "modo_preparo": "Aqueça uma frigideira sem óleo, espalhe a goma de tapioca hidratada com uma colher até cobrir o fundo. Cozinhe por cerca de 1 minuto até unir os grãos, vire e adicione os recheios doce ou salgado e dobre ao meio.",
         "imagem": "https://saude.abril.com.br/wp-content/uploads/2016/09/o-que-e-que-a-tapioca-tem.jpg"
     },
@@ -218,7 +218,7 @@
     {
         "nome": "Mingau de Aveia com Leite de Coco",
         "ingredientes": ["aveia em flocos finos", "leite de coco", "açúcar", "canela"],
-        "dieta": "zero lactose",
+        "dieta": "zero-lactose",
         "modo_preparo": "Coloque tudo em uma panela pequena, leve ao fogo baixo mexendo sempre até engrossar e sirva quente com frutas picadas, castanhas ou coco ralado.",
         "imagem": "https://receitadaboa.com.br/wp-content/uploads/2024/08/Imagem-ilustrativa-de-mingau-de-aveia-1.webp"
     },
@@ -226,7 +226,7 @@
     {
         "nome": "Moqueca de Legumes Zero Lactose",
         "ingredientes": ["cenoura", "batata", "abobrinha", "pimentão vermelho", "tomate", "cebola", "leite de coco", "azeite de dendê", "coentro", "sal", "pimenta"],
-        "dieta": "zero lactose",
+        "dieta": "zero-lactose",
         "modo_preparo": "Em uma panela refogue a cebola e o pimentão, acrescente os legumes picados, cubra com água e cozinhe até amaciarem, adicione o leite de coco, azeite de dendê e os temperos. Cozinhe por mais 5 minutos e finalize com coentro fresco.",
         "imagem": "https://www.mundoboaforma.com.br/wp-content/uploads/2020/03/Moqueca-vegetariana-de-legumes-com-ovo.jpg"
     },
@@ -234,7 +234,7 @@
     {
         "nome": "Sorvete de Banana com Cacau",
         "ingredientes": ["banana", "cacau em pó", "pasta de amendoim"],
-        "dieta": "zero lactose",
+        "dieta": "zero-lactose",
         "modo_preparo": "Corte as bananas em rodelas e congele-as. Retire as bananas do congelador e bata no processador até formar um creme, adicione o cacau e a pasta de amendoim e bata até incorporar bem.",
         "imagem": "https://vitat.com.br/receitas/images/recipeshandler.jpg"
     },
@@ -242,7 +242,7 @@
     {
         "nome": "Omelete Recheado",
         "ingredientes": ["ovo", "cebola", "tomate", "queijo", "sal", "orégano", "azeite"],
-        "dieta": "low carb",
+        "dieta": "low-carb",
         "modo_preparo": "Bata os ovos com o sal e o orégano, aqueça uma frigideira com azeite e despeje a mistura, quando firmar a base, adicione os recheios e dobre ao meio, cozinhe até o queijo derreter e sirva com salada.",
         "imagem": "https://www.kitano.com.br/wp-content/uploads/2019/07/SSP_1993-Omelete-de-pizza-mussarela-ore%CC%81gano-e-tomate.jpg"
     },
@@ -250,7 +250,7 @@
     {
         "nome": "Arroz de Repolho Low Carb",
         "ingredientes": ["repolho", "azeite", "alho", "cebola", "sal", "pimenta-do-reino", "cheiro-verde"],
-        "dieta": "low carb",
+        "dieta": "low-carb",
         "modo_preparo": "Pique o repolho, a cebola, o alho e o cheiro-verde. Em uma frigideira aqueça p azeite e refogue a cebola até ficar transparente, adicione o alho e deixe dourar, junte o repolho e refogue em fogo médio mexendo bem, coloque sal, pimenta-do-reino e, se quiser, um toque de cúrcuma e/ou páprica, cozinhe por 5 a 8 minutos ou até o repolho murchar e ficar levemente douradinho, finalize com cheiro-verde e sirva.",
         "imagem": "https://lowcarbafrica-com.translate.goog/wp-content/uploads/2019/09/Riced-Cabbage-blog-3.jpg"
     },
@@ -258,7 +258,7 @@
     {
         "nome": "Abobrinha Recheada",
         "ingredientes": ["abobrinha", "carne moída", "cebola", "alho", "tomate", "azeite", "orégano", "sal"],
-        "dieta": "low carb",
+        "dieta": "low-carb",
         "modo_preparo": "Corte as abobrinhas ao meio e retire a parte do miolo, refogue a carne moída com o azeite, cebola, alho, tomate e o sal, recheie as abobrinhas e leve ao forno por 20 minutos a 200°C.",
         "imagem": "https://receitanatureba.com/wp-content/uploads/2017/01/Abobrinha-Recheada-de-Forno.jpg"
     },
@@ -266,7 +266,7 @@
     {
         "nome": "Pãozinho de Frigideira Low Carb",
         "ingredientes": ["ovo", "farinha de amêndoas", "fermento", "sal"],
-        "dieta": "low carb",
+        "dieta": "low-carb",
         "modo_preparo": "Misture todos os ingredientes e coloque em uma frigideira antiaderente untada e deixe cozinhar dos dois lados até dourar. Pode servir com recheios low carb.",
         "imagem": "https://www.adrianalauffer.com.br/wp-content/uploads/2017/12/pao-multigraos-de-frigideira-na-mesa-1024x768.jpg"
     },
@@ -274,7 +274,7 @@
     {
         "nome": "Espaguete de Abobrinha ao Alho e Óleo",
         "ingredientes": ["abobrinha", "alho", "azeite", "sal", "pimenta"],
-        "dieta": "low carb",
+        "dieta": "low-carb",
         "modo_preparo": "Rale a abobrina em tiras e corte em espiral, refogue o alho no azeite, junte a abobrinha e mexa por 3-5 minutos, tempere e sirva.",
         "imagem": "https://catracalivre.com.br/wp-content/uploads/2025/03/macarrao-de-abobrinha-2.png"
     },
@@ -282,7 +282,7 @@
     {
         "nome": "Salada de Ovos com Abacate",
         "ingredientes": ["pepino", "ovo", "abacate", "suco de limão", "azeite", "sal", "pimenta"],
-        "dieta": "low carb",
+        "dieta": "low-carb",
         "modo_preparo": "Corte os ovos, o pepino e o abacate em cubos, misture com o azeite, limão, sal e pimenta. Sirva gelado como acompanhamento ou lanche.",
         "imagem": "https://ogimg.infoglobo.com.br/in/23532019-b6b-fd8/FT1086A/760/81471067_ElSalada-de-abacate-ovo-e-couve-de-bruxelas.-Shutterstock.jpg"
     },
@@ -290,7 +290,7 @@
     {
         "nome": "Hambúrguer Low Carb de Frango",
         "ingredientes": ["frango", "ovo", "farelo de aveia", "alho", "cebola", "sal", "coentro", "cheiro-verde"],
-        "dieta": "low carb",
+        "dieta": "low-carb",
         "modo_preparo": "Desfie o frango e misture com todos os outros ingredientes até formar uma massa moldável, modele os hambúrgueres e grelhe dos dois lados.",
         "imagem": "https://saude.mpu.mp.br/nutricao/receitas/imagens/hamburguerfrango.png"
     },
@@ -298,7 +298,7 @@
     {
         "nome": "Pizza Low Carb com Base de Couve-flor",
         "ingredientes": ["couve-flor", "ovo", "farinha de amêndoas", "sal", "orégano"],
-        "dieta": "low carb",
+        "dieta": "low-carb",
         "modo_preparo": "Rale a couve-flor e cozinhe no vapor, depois esprema bem, misture com o ovo, a farinha e os temperos, modele a base em uma assadeira e asse por 15 minutos, adicione o molho, recheios e leve de volta ao forno até dourar.",
         "imagem": "https://img.cybercook.com.br/receitas/866/pizza-de-couve-flor-low-carb.jpeg"
     },
@@ -306,7 +306,7 @@
     {
         "nome": "Panqueca Low Carb de Coco",
         "ingredientes": ["ovo", "coco ralado", "farinha de coco", "canela", "sal", "óleo de coco"],
-        "dieta": "low carb",
+        "dieta": "low-carb",
         "modo_preparo": "Misture todos os ingredientes até formar uma massa leve, aqueça uma frigideira com óleo de coco e despeje porções, doure dos dois lados e sirva com pasta de amendoim ou frutas low carb.",
         "imagem": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcShorK8Ei0_BSTS8e_RKO4C7NAtEajDNHsX7w&s"
     },
@@ -314,7 +314,7 @@
     {
         "nome": "Pão de Queijo de Tapioca (Sem Glúten)",
         "ingredientes": ["polvilho azedo", "leite", "óleo", "ovo", "queijo ralado", "sal"],
-        "dieta": "zero glúten",
+        "dieta": "zero-gluten",
         "modo_preparo": "Misture todos os ingredientes até formar uma massa cremosa, modele bolinhas com a mão untada e asse a 200°C por cerca de 25 minutos ou até dourar.",
         "imagem": "https://guiadacozinha.com.br/wp-content/uploads/2006/01/pao-de-queijo-de-tapioca.jpg"
     },
@@ -322,7 +322,7 @@
     {
         "nome": "Crepioca Simples",
         "ingredientes": ["ovo", "goma de tapioca hidratada", "sal", "orégano"],
-        "dieta": "zero glúten",
+        "dieta": "zero-gluten",
         "modo_preparo": "Misture bem o ovo com a tapioca e os temperos, despeje em frigideira antiaderente untada e cozinhe dos dois lados. Pode rechear com legumes, frango, tofu, guacamole, etc.",
         "imagem": "https://s2-receitas.glbimg.com/y1OG3_6xsECT8el1j6FiQOTZwa0=/1200x0/filters:format(jpeg)/https://i.s3.glbimg.com/v1/AUTH_1f540e0b94d8437dbbc39d567a1dee68/internal_photos/bs/2024/R/k/xG8LzGQ0eKYP07rLUvCg/crepioca-simples.jpg"
     },
@@ -330,7 +330,7 @@
     {
         "nome": "Bolo de Fubá Sem Glúten",
         "ingredientes": ["fubá", "açúcar", "ovo", "leite vegetal", "óleo", "fermento"],
-        "dieta": "zero glúten",
+        "dieta": "zero-gluten",
         "modo_preparo": "Bata tudo no liquidificador (menos o fermento), misture o fermento por último e despeje em forma untada, asse a 180°C por 30 a 35 minutos.",
         "imagem": "https://receitadaboa.com.br/wp-content/uploads/2024/08/Imagem-ilustrativa-de-bolo-de-fuba-2.webp"
     },
@@ -338,7 +338,7 @@
     {
         "nome": "Panqueca de Banana com Farinha de Arroz",
         "ingredientes": ["banana", "ovo", "farinha de arroz", "canela"],
-        "dieta": "zero glúten",
+        "dieta": "zero-gluten",
         "modo_preparo": "Amasse a banana e misture com todos os outros ingredientes, aqueça uma frigideira antiaderente e cozinhe dos dois lados até dourar. Sirva com frutas ou pasta de amendoim.",
         "imagem": "https://www.rampinelli.com.br/uploads/receita/receita-de-panqueca-de-banana-com-farinha-de-arroz-1688400537.png"
     },
@@ -346,7 +346,7 @@
     {
         "nome": "Pizza com Massa de Batata-doce",
         "ingredientes": ["batata-doce", "polvilho doce", "sal", "azeite", "orégano", "molho de tomate"],
-        "dieta": "zero glúten",
+        "dieta": "zero-gluten",
         "modo_preparo": "Cozinhe e amasse a batata-doce, misture com o polvilho, sal, azeite e orégano até formar uma massa firme e moldável, abra com as mãos sobre o papel manteiga e asse por 15 minutos, depois adicione o molho de tomate e os recheios e asse por mais 10 minutos",
         "imagem": "https://www.sabornamesa.com.br/media/k2/items/cache/9fadb6d3e28e2be47da4c87e012c5962_XL.jpg"
     },
@@ -354,7 +354,7 @@
     {
         "nome": "Cookies Sem Glúten com Amendoim",
         "ingredientes": ["pasta de amendoim", "açúcar mascavo", "ovo", "fermento"],
-        "dieta": "zero glúten",
+        "dieta": "zero-gluten",
         "modo_preparo": "Misture tudo até virar uma massa grossa, modele bolinhas e achate em assadeira com papel manteiga, asse a 180°C por 12 a 15 minutos.",
         "imagem": "https://irmaosnacozinha.com/wp-content/uploads/2024/10/Cookie-de-Amendoim-1-scaled.jpg"
     },
@@ -362,7 +362,7 @@
     {
         "nome": "Mingau de Polvilho",
         "ingredientes": ["polvilho doce", "leite vegetal", "açúcar", "canela"],
-        "dieta": "zero glúten",
+        "dieta": "zero-gluten",
         "modo_preparo": "Dissolva o polvilho no leite frio, leve ao fogo mexendo sempre até engrossar, adicione o açúcar e canela a gosto, sirva quente.",
         "imagem": "https://www.sabornamesa.com.br/media/k2/items/cache/e791ab626e6785062374d45b25cc6e7f_L.jpg"
     },
@@ -370,7 +370,7 @@
     {
         "nome": "Quibe de Abóbora com Quinoa",
         "ingredientes": ["abóbora", "quinoa", "cebola", "hortelã", "sal", "azeite", "pimenta síria"],
-        "dieta": "zero glúten",
+        "dieta": "zero-gluten",
         "modo_preparo": "Cozinhe e amasse a abóbora, cozinhe a quinoa e misture com o resto dos ingredientes, modele em forma untada e asse a 200°C por 30 minutos. Pode rechear com tofu, legumes ou castanhas.",
         "imagem": "https://i.ytimg.com/vi/3qs3V2jf50k/maxresdefault.jpg"
     },
@@ -378,7 +378,7 @@
     {
         "nome": "Bolo de Chocolate com Farinha de Coco",
         "ingredientes": ["ovo", "cacau em pó", "farinha de coco", "açúcar mascavo", "leite vegetal", "fermento"],
-        "dieta": "zero glúten",
+        "dieta": "zero-gluten",
         "modo_preparo": "Misture todos os ingredientes (menos o fermento) até formar uma massa homogênea, adicione o fermento e asse a 180°C por 30 minutos.",
         "imagem": "https://receitanatureba.com/wp-content/uploads/2018/02/Bolo-de-Chocolate-com-Farinha-de-Coco.jpg"
     },
@@ -386,7 +386,7 @@
     {
         "nome": "Tortinha de Legumes com Massa de Grão-de-bico",
         "ingredientes": ["grão-de-bico", "azeite", "sal", "cenoura", "brócolis", "milho"],
-        "dieta": "zero glúten",
+        "dieta": "zero-gluten",
         "modo_preparo": "Refogue os legumes no azeite, cozinhe o grão-de-bico, bata os ingredientes da massa no processador até virar uma pastinha firme, forre forminhas de empada e pré-asse por 10 minutos, recheie com os legumes e asse por mais 15 minutos a 200°C.",
         "imagem": "https://cdn0.tudoreceitas.com/pt/posts/8/1/0/quiche_de_brocolis_com_massa_de_grao_de_bico_7018_orig.jpg"
     },
@@ -394,7 +394,7 @@
     {
         "nome": "Ovos mexidos com espinafre e tomate",
         "ingredientes": ["ovo", "tomate", "espinafre", "sal", "pimenta", "azeite"],
-        "dieta": "paleolítica",
+        "dieta": "paleolitica",
         "modo_preparo": "Pique o tomate e refogue com o espinafre rapidamente em uma frigideira com azeite, bata os ovos e despeje por cima, mexa em fogo baixo até cozinhar e ficar cremoso, tempere e sirva.",
         "imagem": "https://img.freepik.com/fotos-premium/ovos-mexidos-com-espinafre-e-tomate-em-um-prato-branco-em-uma-mesa-de-madeira_80295-3885.jpg"
     },
@@ -402,7 +402,7 @@
     {
         "nome": "Guacamole com chips de cenoura",
         "ingredientes": ["abacate", "cebola roxa", "tomate", "suco de 1 limão", "sal", "pimenta", "cenoura"],
-        "dieta": "paleolítica",
+        "dieta": "paleolitica",
         "modo_preparo": "Misture o abacate amassado com os temperos, cebola picada e tomate, corte a cenoura em fatias finas e asse no forno com azeite por 20-25 minutos até ficar crocante.",
         "imagem": "https://s2.glbimg.com/yemtcxJ0270JYqokuHAodcZHqWE=/e.glbimg.com/og/ed/f/original/2015/02/27/untitled-1_4.jpg"
     },
@@ -410,7 +410,7 @@
     {
         "nome": "Frango grelhado com crosta de gergelim",
         "ingredientes": ["filé de peito de frango", "gergelim", "alho", "sal", "limão", "azeite"],
-        "dieta": "paleolítica",
+        "dieta": "paleolitica",
         "modo_preparo": "Tempere o frango com alho picado, limão e sal, empane no gergelim pressionando bem, grelhe em frigideira antiaderente até dourar os dois lados.",
         "imagem": "https://kifrango.com.br/wp-content/uploads/elementor/thumbs/Receitas_FilePeitoGergilim-qh65r5i7bys3gfo2ekf16dtv9eejs9n4angxuoy3ya.jpg"
     },
@@ -418,7 +418,7 @@
     {
         "nome": "Panqueca de banana com ovo e coco",
         "ingredientes": ["banana", "ovo", "coco ralado", "canela", "óleo de coco"],
-        "dieta": "paleolítica",
+        "dieta": "paleolitica",
         "modo_preparo": "Amasse a banana e misture com os ovos e o coco ralado, aqueça uma frigideira com óleo de coco e despeje a massa, cozinhe dos dois lados até firmar e dourar.",
         "imagem": "https://vivasaudedigital.com.br/wp-content/uploads/2022/03/banana-com-coco-vira-uma-deliciosa-panqueca-confira-a-receita-4882.jpg"
     },
@@ -426,7 +426,7 @@
     {
         "nome": "Carne de panela com legumes",
         "ingredientes": ["carne", "cenoura", "chuchu", "abobrinha", "tomate", "cebola", "alho", "sal", "páprica", "azeite", "cheiro-verde"],
-        "dieta": "paleolítica",
+        "dieta": "paleolitica",
         "modo_preparo": "Refogue a carne (pode ser acém, músculo, coxão mole) até dourar, adicione os temperos e a água, cozinhe por 30 minutos na pressão, adicione os legumes e cozinhe até ficarem macios, finalize com cheiro-verde.",
         "imagem": "https://www.minhareceita.com.br/app/uploads/2022/01/ensopado-de-costela-com-ragu-de-legumes-portal-minha-receita.jpg"
     },
@@ -434,7 +434,7 @@
     {
         "nome": "Salada morna com ovos e abacate",
         "ingredientes": ["ovo", "abacate", "alface", "manjericão", "rúcula", "agrião", "espinafre", "almeirão", "acelga", "tomate-cereja", "azeite", "sal", "pimenta", "limão"],
-        "dieta": "paleolítica",
+        "dieta": "paleolitica",
         "modo_preparo": "Monte sua salada com as folhas, abacate e tomates, fatie os ovos cozidos e arrume por cima, tempere com azeite, limão, sal e pimenta.",
         "imagem": "https://s2.glbimg.com/ZDZpQTMMNptfMfe5RV9WNgKXEvQ=/620x455/e.glbimg.com/og/ed/f/original/2021/10/18/receita-salada-abacate-ovo-tomate-alface-lamare.jpg"
     },
@@ -442,7 +442,7 @@
     {
         "nome": "Espaguete de abobrinha com molho bolonhesa paleo",
         "ingredientes": ["abobrinha", "carne moída", "tomate", "extrato de tomate", "alho", "cebola", "orégano"],
-        "dieta": "paleolítica",
+        "dieta": "paleolitica",
         "modo_preparo": "Rale o tomate e a abobrinha em tiras, refogue a carne com alho e cebola, adicione o tomate, extrato e temperos, cozinhe a abobrinha por 1-2 minutos no vapor ou água quente, sirva a carne sobre a abobrinha.",
         "imagem": "https://cdn.awsli.com.br/600x450/311/311570/produto/53120112/715cdc53f8.jpg"
     },
@@ -450,7 +450,7 @@
     {
         "nome": "Omelete de cogumelos e espinafre",
         "ingredientes": ["ovo", "cogumelo", "espinafre", "sal", "pimenta", "azeite"],
-        "dieta": "paleolítica",
+        "dieta": "paleolitica",
         "modo_preparo": "Fatie os cogumelos e refogue com o espinafre no azeite, bata os ovos, tempere e despeje na frigideira, cozinhe tampado em fogo baixo até firmar.",
         "imagem": "https://static.wixstatic.com/media/540f1d_0a656b12aaa145b0ab1472e6a3e8e345~mv2.jpg/v1/fill/w_568,h_340,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/540f1d_0a656b12aaa145b0ab1472e6a3e8e345~mv2.jpg"
     },
@@ -458,7 +458,7 @@
     {
         "nome": "Charuto de folha de couve recheado com carne",
         "ingredientes": ["couve-flor", "carne moída", "cebola", "alho", "sal", "páprica", "azeite", "limão"],
-        "dieta": "paleolítica",
+        "dieta": "paleolitica",
         "modo_preparo": "Refogue a carne com cebola, alho e temperos, passe as folhas de couve por água quente por 10 segundos para amolecer, recheie e enrole como charuto. Coloque em uma assadeira, regue com azeite e asse por 15-20 minutos.",
         "imagem": "https://s2-receitas.glbimg.com/tlUQoNOwgc0Fg21k8Z_zweFKbqw=/0x0:1200x800/984x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_1f540e0b94d8437dbbc39d567a1dee68/internal_photos/bs/2022/9/M/85nUQhS3AISsB04pXiHQ/charuto-de-couve-com-linguica-calabresa.jpeg"
     },
@@ -466,7 +466,7 @@
     {
         "nome": "Maçã assada com canela e castanhas",
         "ingredientes": ["maçã", "canela", "castanhas"],
-        "dieta": "paleolítica",
+        "dieta": "paleolitica",
         "modo_preparo": "Corte a maçã ao meio, retire as sementes, coloque as castanhas no centro, polvilhe canela, leve ao forno a 180°C por 20 minutos.",
         "imagem": "https://i.panelinha.com.br/i1/bk-4305-maca-com-granola.webp"
     },
@@ -714,7 +714,7 @@
     {
         "nome": "Bolinho de Atum",
         "ingredientes": ["atum", "ovo", "queijo ralado", "cheiro-verde", "sal", "pimenta"],
-        "dieta": ["cetogênica", "low carb"],
+        "dieta": ["cetogenica", "low carb"],
         "modo_preparo": "Misture tudo em uma tigela até formar uma massa firme, modele bolinhos e leve ao forno a 200°C por 20 minutos, virando na metade.",
         "imagem": "https://blog.gsuplementos.com.br/wp-content/uploads/2022/02/iStock-645777598.jpg"
     },
@@ -722,7 +722,7 @@
     {
         "nome": "Frango com Creme de Espinafre",
         "ingredientes": ["filé de peito de frango", "espinafre", "creme de leite", "alho", "sal", "noz-moscada"],
-        "dieta": "cetogênica",
+        "dieta": "cetogenica",
         "modo_preparo": "Grelhe o frango com sal e pimenta, em outra panela refogue o espinafre já cozido com o alho e adicione o creme de leite, cozinhe por 3 minutos e sirva sobre o frango.",
         "imagem": "https://blog.ingredientesonline.com.br/wp-content/uploads/2020/12/espinafre.jpg"
     },
@@ -730,7 +730,7 @@
     {
         "nome": "Pizza de Berinjela",
         "ingredientes": ["berinjela", "molho de tomate", "queijo mussarela", "orégano", "azeite"],
-        "dieta": "cetogênica",
+        "dieta": "cetogenica",
         "modo_preparo": "Corte fatias grossas de berinjela, asse as fatias por 10 minutos, retire e cubra com o molho e queijo, salpique orégano e leve ao forno novamente até gratinar.",
         "imagem": "https://sabores-new.s3.amazonaws.com/public/2024/11/mini-pizza-de-berinjela.jpg"
     },
@@ -738,7 +738,7 @@
     {
         "nome": "Sopa Cremosa de Abobrinha com Queijo",
         "ingredientes": ["abobrinha", "creme de leite", "queijo meia cura", "alho", "sal", "pimenta"],
-        "dieta": "cetogênica",
+        "dieta": "cetogenica",
         "modo_preparo": "Cozinhe a abobrinha picada com o alho e o sal, bata com o mixer, volte à panela e adicione o creme de leite e o queijo meia cura ralado, mexa atpe derreter.",
         "imagem": "https://sabores-new.s3.amazonaws.com/public/2024/11/creme-de-abobrinha.jpg"
     },
@@ -746,7 +746,7 @@
     {
         "nome": "Panqueca de Ovo e Queijo",
         "ingredientes": ["ovo", "queijo parmesão ralado", "pimenta-do-reino", "orégano"],
-        "dieta": "cetogênica",
+        "dieta": "cetogenica",
         "modo_preparo": "Bata os ovos com o queijo e os temperos, despeje em frigideira antiaderente e doure dos dois lados como panqueca.",
         "imagem": "https://i.ytimg.com/vi/s7p-Q0qtgnA/hq720.jpg"
     },
@@ -754,7 +754,7 @@
     {
         "nome": "Abacate com Limão e Sementes",
         "ingredientes": ["abacate", "suco de limão", "semente de chia", "semente de linhaça"],
-        "dieta": "cetogênica",
+        "dieta": "cetogenica",
         "modo_preparo": "Amasse o abacate, misture com o suco do limão e salpique as sementes por cima.",
         "imagem": "https://s2.glbimg.com/AlWdVUL7Y_hnZWFs6En9b07MaFo=/smart/e.glbimg.com/og/ed/f/original/2019/04/10/s-marco-pt2-5_DHiXW5Q.jpg"
     },
@@ -762,7 +762,7 @@
     {
         "nome": "Tortinha de Frango com Massa de Queijo",
         "ingredientes": ["ovo", "creme de leite", "queijo ralado", "peito de frango", "alho", "cúrcuma"],
-        "dieta": "cetogênica",
+        "dieta": "cetogenica",
         "modo_preparo": "Cozinhe e desfie o frango (refogado com alho e cúrcuma). Misture o ovo, o creme de leite e o queijo para formar uma massa cremosa, coloque em forminhas, adicione o frango por cima e leve ao forno médio por 15-20 minutos até dourar.",
         "imagem": "https://guiadacozinha.com.br/wp-content/uploads/2019/10/torta-de-frango-com-queijo-11482.jpg"
     },
@@ -770,7 +770,7 @@
     {
         "nome": "Escondidinho de Couve-Flor com Carne",
         "ingredientes": ["carne moída", "couve-flor", "requeijão", "queijo ralado"],
-        "dieta": "cetogênica",
+        "dieta": "cetogenica",
         "modo_preparo": "Refogue a carne moída, cozinhe e amasse o couve-flor. Monte uma camada de carne, cubra com purê de couve-flor misturado ao requeijão, polvilhe queijo e gratine no forno.",
         "imagem": "https://paineirasfit.com.br/wp-content/uploads/2021/05/162-scaled-e1588953929728.jpg"
     },
@@ -778,7 +778,7 @@
     {
         "nome": "Omelete Caprese (com tomate e manjericão)",
         "ingredientes": ["ovo", "tomate-cereja", "queijo mussarela de búfala", "manjericão", "sal", "pimenta", "creme de leite"],
-        "dieta": "cetogênica",
+        "dieta": "cetogenica",
         "modo_preparo": "Bata os ovos com o creme de leite, tempere e coloque numa frigideira antiaderente, quando começar a firmar adicione o tomate cortado ao meio, o queijo e o manjericão, dobre e sirva ainda cremoso por dentro.",
         "imagem": "https://www.lecreuset.com.br/dw/image/v2/BDRT_PRD/on/demandware.static/-/Sites-le-creuset-br-master/default/dw4870418a/images/SKI_014.jpg"
     },
@@ -786,8 +786,10 @@
     {
         "nome": "Brownie de Cacau e Castanhas",
         "ingredientes": ["ovo", "manteiga/margarina", "cacau em pó", "adoçante", "farinha de amêndoas", "castanhas"],
-        "dieta": "cetogênica",
+        "dieta": "cetogenica",
         "modo_preparo": "Misture tudo até virar uma massa homogênea, leve a uma forma untada e asse a 180°C por 15 minutos. Fica úmido por dentro e crocante por fora.",
         "imagem": "https://i.ytimg.com/vi/qBsBaZ4RnAk/hq720.jpg"
     } 
-]
+];
+
+export default receitas;

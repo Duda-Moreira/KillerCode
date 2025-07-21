@@ -34,7 +34,6 @@ export default function EscolhaDieta() {
 
   return (
     <SafeAreaView style={styles.container}>
-      {/* Header com seta de volta e indicador de progresso */}
       <View style={styles.header}>
         <TouchableOpacity onPress={() => router.back()}>
             <Image source={require('../assets/images/Arrow.png')} style={styles.imageFlecha} resizeMode="contain" />

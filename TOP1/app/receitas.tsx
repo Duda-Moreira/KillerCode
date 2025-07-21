@@ -1,15 +1,14 @@
 import { useState, useEffect } from 'react';
-import { View, Text, StyleSheet, TouchableOpacity, ScrollView, SafeAreaView, TextInput } from 'react-native';
+import {  View, Text, StyleSheet, TouchableOpacity, ScrollView, SafeAreaView, TextInput, Image } from 'react-native';
 import { router, useLocalSearchParams } from 'expo-router';
+import receitasData from '../assets/dados'; // import direto do JSON
 
-// Interface para tipagem das receitas
 interface Receita {
   nome: string;
   ingredientes: string[];
   dieta: string;
   modo_preparo: string;
   imagem: string;
-  // Propriedades adicionais para o sistema de recomendação
   compatibility?: {
     score: number;
     matchingCount: number;
@@ -27,50 +26,58 @@ export default function Receitas() {
   const [availableIngredients, setAvailableIngredients] = useState<string[]>([]);
   const [loading, setLoading] = useState(true);
 
-  // Carregar dados do JSON
   useEffect(() => {
     loadRecipesData();
   }, []);
 
-  const loadRecipesData = async () => {
+  const loadRecipesData = () => {
     try {
       setLoading(true);
-      
-      // Carrega o arquivo dados.json
-      const response = await fetch('../../dados.json'); // ou o caminho correto do seu arquivo
-      const data: Receita[] = await response.json();
-      
-      // Filtra receitas pela categoria selecionada
-      const filteredRecipes = data.filter(recipe => 
-        recipe.dieta.toLowerCase() === (dietType as string).toLowerCase()
-      );
-      
+
+      const data: Receita[] = receitasData;
+
+      const filteredRecipes = data.filter(recipe => {
+        if (!recipe.dieta || typeof recipe.dieta !== 'string') return false;
+        const recipeDiet = recipe.dieta.toLowerCase();
+        const selectedDiet = (dietType as string).toLowerCase();
+
+        if (selectedDiet === 'vegetariana') {
+          return recipeDiet === 'vegetariana' || recipeDiet === 'vegana';
+        }
+
+        return recipeDiet === selectedDiet;
+      });
+
+
       setRecipes(filteredRecipes);
-      
-      // Extrai todos os ingredientes únicos das receitas filtradas
+
       const allIngredients = new Set<string>();
       filteredRecipes.forEach(recipe => {
-        recipe.ingredientes.forEach(ingredient => {
-          allIngredients.add(ingredient);
-        });
+        if (Array.isArray(recipe.ingredientes)) {
+          recipe.ingredientes.forEach(ingredient => {
+            if (ingredient && typeof ingredient === 'string') {
+              allIngredients.add(ingredient);
+            }
+          });
+        }
       });
-      
-      setAvailableIngredients(Array.from(allIngredients).sort());
-      
+
+      const sortedIngredients = Array.from(allIngredients).sort();
+      setAvailableIngredients(sortedIngredients);
+
     } catch (error) {
-      console.error('Erro ao carregar dados das receitas:', error);
-      // Fallback para ingredientes básicos se houver erro
+      console.error('Erro ao processar dados das receitas:', error);
       setAvailableIngredients([
-        'tomate', 'cebola', 'alho', 'cenoura', 'batata', 'abobrinha', 
-        'pimentão', 'frango', 'carne', 'peixe', 'ovos', 'arroz', 
+        'tomate', 'cebola', 'alho', 'cenoura', 'batata', 'abobrinha',
+        'pimentão', 'frango', 'carne', 'peixe', 'ovos', 'arroz',
         'feijão', 'azeite', 'sal', 'pimenta', 'leite de coco'
       ]);
+      setRecipes([]);
     } finally {
       setLoading(false);
     }
   };
 
-  // Organizar ingredientes por categorias automaticamente
   const organizeIngredientsByCategory = () => {
     const categories: { [key: string]: string[] } = {
       'Proteínas': [],
@@ -80,10 +87,9 @@ export default function Receitas() {
       'Outros': []
     };
 
-    // Palavras-chave para categorização automática
     const categoryKeywords = {
       'Proteínas': ['frango', 'carne', 'peixe', 'ovos', 'tofu', 'queijo', 'iogurte', 'leite'],
-      'Vegetais': ['tomate', 'cebola', 'alho', 'cenoura', 'brócolis', 'espinafre', 'pimentão', 'abobrinha', 'batata'],
+      'Vegetais': ['tomate', 'cebola', 'alho', 'cenoura', 'brócolis', 'espinafre', 'pimentão', 'abobrinha', 'batata', 'alface'],
       'Carboidratos': ['arroz', 'macarrão', 'pão', 'aveia', 'quinoa', 'batata doce', 'farinha'],
       'Temperos': ['sal', 'pimenta', 'orégano', 'manjericão', 'alecrim', 'azeite', 'vinagre', 'limão', 'coentro', 'dendê']
     };
@@ -91,8 +97,7 @@ export default function Receitas() {
     availableIngredients.forEach(ingredient => {
       let categorized = false;
       const lowerIngredient = ingredient.toLowerCase();
-      
-      // Verifica em qual categoria o ingrediente se encaixa
+
       for (const [category, keywords] of Object.entries(categoryKeywords)) {
         if (keywords.some(keyword => lowerIngredient.includes(keyword) || keyword.includes(lowerIngredient))) {
           categories[category].push(ingredient);
@@ -100,14 +105,12 @@ export default function Receitas() {
           break;
         }
       }
-      
-      // Se não foi categorizado, coloca em "Outros"
+
       if (!categorized) {
         categories['Outros'].push(ingredient);
       }
     });
 
-    // Remove categorias vazias
     Object.keys(categories).forEach(key => {
       if (categories[key].length === 0) {
         delete categories[key];
@@ -125,7 +128,6 @@ export default function Receitas() {
     );
   };
 
-  // Função para calcular compatibilidade
   const calculateCompatibility = (userIngredients: string[], recipeIngredients: string[]) => {
     const matchingIngredients = recipeIngredients.filter(ingredient => 
       userIngredients.some(userIng => 
@@ -133,7 +135,7 @@ export default function Receitas() {
         ingredient.toLowerCase().includes(userIng.toLowerCase())
       )
     );
-    
+
     const compatibilityScore = Math.round((matchingIngredients.length / recipeIngredients.length) * 100);
     const missingIngredients = recipeIngredients.filter(ingredient => 
       !userIngredients.some(userIng => 
@@ -141,7 +143,7 @@ export default function Receitas() {
         ingredient.toLowerCase().includes(userIng.toLowerCase())
       )
     );
-    
+
     return {
       score: compatibilityScore,
       matchingCount: matchingIngredients.length,
@@ -152,18 +154,15 @@ export default function Receitas() {
   };
 
   const handleContinue = () => {
-    // Calcular compatibilidade para todas as receitas
     const recipesWithCompatibility = recipes.map(recipe => ({
       ...recipe,
       compatibility: calculateCompatibility(selectedIngredients, recipe.ingredientes)
     }));
 
-    // Ordenar por score de compatibilidade
     const sortedRecipes = recipesWithCompatibility.sort((a, b) => 
       (b.compatibility?.score || 0) - (a.compatibility?.score || 0)
     );
 
-    // Navegar para tela de recomendações
     router.push({
       pathname: '/recomendacoes',
       params: { 
@@ -176,9 +175,9 @@ export default function Receitas() {
 
   const getFilteredIngredients = () => {
     const organizedIngredients = organizeIngredientsByCategory();
-    
+
     if (!searchText) return organizedIngredients;
-    
+
     const filtered: any = {};
     Object.keys(organizedIngredients).forEach(category => {
       const filteredItems = organizedIngredients[category]
@@ -202,18 +201,41 @@ export default function Receitas() {
     );
   }
 
+  if (recipes.length === 0) {
+    return (
+      <SafeAreaView style={styles.container}>
+        <View style={styles.header}>
+          <TouchableOpacity onPress={() => router.back()}>
+            <Image source={require('../assets/images/Arrow.png')} style={styles.imageFlecha} resizeMode="contain" />
+          </TouchableOpacity>
+          <Text style={styles.headerTitle}>Ingredientes</Text>
+        </View>
+        <View style={styles.noRecipesContainer}>
+          <Text style={styles.noRecipesTitle}>Ops!</Text>
+          <Text style={styles.noRecipesText}>
+            Não encontramos receitas para a categoria "{dietType}".
+          </Text>
+          <Text style={styles.noRecipesSubtext}>
+            Verifique se o arquivo dados.json em assets contém receitas para esta categoria.
+          </Text>
+          <TouchableOpacity style={styles.backButton} onPress={() => router.back()}>
+            <Text style={styles.backButtonText}>Voltar</Text>
+          </TouchableOpacity>
+        </View>
+      </SafeAreaView>
+    );
+  }
+
   return (
     <SafeAreaView style={styles.container}>
-      {/* Header */}
       <View style={styles.header}>
         <TouchableOpacity onPress={() => router.back()}>
-          <Text style={styles.backArrow}>←</Text>
+          <Image source={require('../assets/images/Arrow.png')} style={styles.imageFlecha} resizeMode="contain" />
         </TouchableOpacity>
         <Text style={styles.headerTitle}>Ingredientes</Text>
         <View style={{ width: 30 }} />
       </View>
 
-      {/* Título Principal */}
       <View style={styles.titleContainer}>
         <Text style={styles.mainTitle}>Quais ingredientes você tem em casa?</Text>
         <Text style={styles.subtitle}>
@@ -224,7 +246,6 @@ export default function Receitas() {
         </Text>
       </View>
 
-      {/* Barra de Pesquisa */}
       <View style={styles.searchContainer}>
         <TextInput
           style={styles.searchInput}
@@ -236,7 +257,6 @@ export default function Receitas() {
         <Text style={styles.searchIcon}>🔍</Text>
       </View>
 
-      {/* Contador de Selecionados */}
       <View style={styles.counterContainer}>
         <Text style={styles.counterText}>
           {selectedIngredients.length} ingredientes selecionados
@@ -248,7 +268,6 @@ export default function Receitas() {
         )}
       </View>
 
-      {/* Lista de Ingredientes por Categoria */}
       <ScrollView style={styles.scrollContainer} showsVerticalScrollIndicator={false}>
         {Object.entries(getFilteredIngredients()).map(([category, ingredients]) => (
           <View key={category} style={styles.categoryContainer}>
@@ -277,7 +296,7 @@ export default function Receitas() {
             </View>
           </View>
         ))}
-        
+
         {Object.keys(getFilteredIngredients()).length === 0 && (
           <View style={styles.noResultsContainer}>
             <Text style={styles.noResultsText}>
@@ -287,7 +306,6 @@ export default function Receitas() {
         )}
       </ScrollView>
 
-      {/* Botão Continue */}
       <View style={styles.buttonContainer}>
         <TouchableOpacity 
           style={[
@@ -306,21 +324,22 @@ export default function Receitas() {
         </TouchableOpacity>
       </View>
 
-      {/* Bottom Navigation */}
       <View style={styles.bottomNav}>
         <TouchableOpacity style={styles.navItem}>
-          <Text style={styles.navIcon}>🍽️</Text>
-          <Text style={[styles.navText, styles.activeNavText]}>Meal Plan</Text>
+          <TouchableOpacity onPress={() => router.push('/escolhaDieta')}>
+            <Image source={require('../assets/images/Fork & Knife-filled (1).png')} style={styles.imageIcone} resizeMode="contain" />
+          </TouchableOpacity>
+          <Text style={[styles.navText, styles.activeNavText]}>Plano de refeições</Text>
         </TouchableOpacity>
-        
-        <TouchableOpacity style={styles.navItem}>
-          <Text style={styles.navIcon}>❤️</Text>
-          <Text style={styles.navText}>Favorites</Text>
+
+        <TouchableOpacity style={styles.navItem} onPress={() => router.push('/favoritos')}>
+          <Image source={require('../assets/images/Heart.png')} style={styles.imageIcone} resizeMode="contain" />
+          <Text style={styles.navText}>Favoritos</Text>
         </TouchableOpacity>
-        
-        <TouchableOpacity style={styles.navItem}>
-          <Text style={styles.navIcon}>⚙️</Text>
-          <Text style={styles.navText}>Settings</Text>
+
+        <TouchableOpacity style={styles.navItem} onPress={() => router.push('/configuracoes')}>
+           <Image source={require('../assets/images/Settings.png')} style={styles.imageIcone} resizeMode="contain" />
+          <Text style={styles.navText}>Configurações</Text>
         </TouchableOpacity>
       </View>
     </SafeAreaView>
@@ -330,7 +349,7 @@ export default function Receitas() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#FAFAFA',
+    backgroundColor: '#FFE5B4',
   },
   loadingContainer: {
     flex: 1,
@@ -341,16 +360,57 @@ const styles = StyleSheet.create({
     fontSize: 16,
     color: '#666',
   },
+  noRecipesContainer: {
+    flex: 1,
+    justifyContent: 'center',
+    alignItems: 'center',
+    paddingHorizontal: 40,
+  },
+  noRecipesTitle: {
+    fontSize: 28,
+    fontWeight: 'bold',
+    color: '#333',
+    marginBottom: 16,
+  },
+  noRecipesText: {
+    fontSize: 18,
+    color: '#666',
+    textAlign: 'center',
+    marginBottom: 8,
+    lineHeight: 24,
+  },
+  noRecipesSubtext: {
+    fontSize: 14,
+    color: '#999',
+    textAlign: 'center',
+    marginBottom: 32,
+    lineHeight: 20,
+  },
+  backButton: {
+    backgroundColor: '#FF8C42',
+    paddingVertical: 12,
+    paddingHorizontal: 32,
+    borderRadius: 8,
+  },
+  backButtonText: {
+    color: 'white',
+    fontSize: 16,
+    fontWeight: '600',
+  },
   header: {
     flexDirection: 'row',
     alignItems: 'center',
     justifyContent: 'space-between',
     paddingHorizontal: 20,
-    paddingTop: 10,
+    paddingTop: 50,
     paddingBottom: 20,
-    backgroundColor: '#FFFFFF',
+    backgroundColor: '#FFE5B4',
   },
-  backArrow: {
+  imageIcone:{
+    marginBottom: 10,
+    color: '#FF8C42',
+  },
+  imageFlecha: {
     fontSize: 24,
     color: '#333',
     fontWeight: 'bold',
@@ -363,7 +423,7 @@ const styles = StyleSheet.create({
   titleContainer: {
     paddingHorizontal: 20,
     paddingVertical: 20,
-    backgroundColor: '#FFFFFF',
+    backgroundColor: '#FFE5B4',
     marginBottom: 20,
   },
   mainTitle: {
@@ -514,7 +574,7 @@ const styles = StyleSheet.create({
   },
   navText: {
     fontSize: 12,
-    color: '#999',
+    color: '#FF8C42',
   },
   activeNavText: {
     color: '#FF8C42',
