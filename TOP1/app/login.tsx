@@ -12,7 +12,6 @@ export default function TelaLogin() {
   }, []);
 
   const fazerLogin = async () => {
-
     if (!email || !senha) {
       Alert.alert('Erro', 'Preencha todos os campos!');
       return;
@@ -27,7 +26,7 @@ export default function TelaLogin() {
 
     try {
       // Verificar login no banco de dados
-      const resultado = verificarLogin(email.trim().toLowerCase(), senha);
+      const resultado = await verificarLogin(email.trim().toLowerCase(), senha);
       
       if (resultado.success) {
         Alert.alert(
@@ -90,6 +89,7 @@ export default function TelaLogin() {
         keyboardType="email-address"
         autoCapitalize="none"
         autoCorrect={false}
+        accessibilityLabel="Campo de email"
       />
 
       {/* Campo Senha */}
@@ -99,6 +99,7 @@ export default function TelaLogin() {
         value={senha} 
         onChangeText={setSenha}
         secureTextEntry={true}
+        accessibilityLabel="Campo de senha"
       />
 
       {/* Link Esqueceu Senha */}
