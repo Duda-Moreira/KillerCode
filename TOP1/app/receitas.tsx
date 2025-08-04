@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import {  View, Text, StyleSheet, TouchableOpacity, ScrollView, SafeAreaView, TextInput, Image } from 'react-native';
 import { router, useLocalSearchParams } from 'expo-router';
-import receitasData from '../assets/dados'; // import direto do JSON
+import receitasData from '../assets/dados'; 
 
 interface Receita {
   nome: string;
@@ -254,7 +254,7 @@ export default function Receitas() {
           onChangeText={setSearchText}
           placeholderTextColor="#999"
         />
-        <Text style={styles.searchIcon}>🔍</Text>
+        <Image source={require('../assets/images/Search.png')} style={styles.searchIcon} resizeMode="contain" />
       </View>
 
       <View style={styles.counterContainer}>

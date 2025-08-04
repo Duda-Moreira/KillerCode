@@ -24,7 +24,6 @@ export default function EscolhaDieta() {
 
   const handleContinue = () => {
     if (selectedDiet) {
-      // Navegar para a tela de receitas passando a dieta selecionada
       router.push({
         pathname: '/receitas',
         params: { dietType: selectedDiet }
@@ -46,10 +45,8 @@ export default function EscolhaDieta() {
         </View>
       </View>
 
-      {/* Título */}
       <Text style={styles.title}>Escolha sua Dieta</Text>
 
-      {/* Lista de opções de dieta */}
       <ScrollView style={styles.scrollContainer} showsVerticalScrollIndicator={false}>
         {dietOptions.map((diet) => (
           <TouchableOpacity
@@ -119,7 +116,7 @@ const styles = StyleSheet.create({
   },
   progressFill: {
     height: '100%',
-    width: '90%', // Ajuste conforme a etapa atual
+    width: '90%', 
     backgroundColor: '#4CAF50',
     borderRadius: 4,
   },

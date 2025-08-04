@@ -4,11 +4,11 @@ import { router } from 'expo-router';
 
 export default function telaInicial() {
   const irCadastro = () => {
-    router.push('/cadastro'); // ← NAVEGA PARA login.tsx
+    router.push('/cadastro'); 
   };
 
   const telaLogin = () => {
-    router.push('/login'); // ← NAVEGA PARA login.tsx
+    router.push('/login'); 
   };
 
   return (
