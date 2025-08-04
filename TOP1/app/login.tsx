@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react';
 import { View, Text, StyleSheet, Image, TextInput, Alert, TouchableOpacity } from 'react-native';
 import { router } from 'expo-router';
+import AsyncStorage from '@react-native-async-storage/async-storage';
 import { initDB, verificarLogin } from '../database/db'; 
 
 export default function TelaLogin() {
@@ -9,7 +10,20 @@ export default function TelaLogin() {
 
   useEffect(() => {
     initDB();
+    verificarSessaoExistente();
   }, []);
+
+  const verificarSessaoExistente = async () => {
+    try {
+      const usuarioLogado = await AsyncStorage.getItem('usuarioLogado');
+      if (usuarioLogado) {
+        // Se já há um usuário logado, redireciona para home
+        router.push('/home');
+      }
+    } catch (error) {
+      console.error('Erro ao verificar sessão:', error);
+    }
+  };
 
   const fazerLogin = async () => {
     if (!email || !senha) {
@@ -29,6 +43,15 @@ export default function TelaLogin() {
       const resultado = await verificarLogin(email.trim().toLowerCase(), senha);
       
       if (resultado.success) {
+        // Salvar dados do usuário no AsyncStorage
+        const dadosUsuario = {
+          id: resultado.usuario.id,
+          nome: resultado.usuario.nome,
+          email: resultado.usuario.email
+        };
+
+        await AsyncStorage.setItem('usuarioLogado', JSON.stringify(dadosUsuario));
+
         Alert.alert(
           'Sucesso', 
           `Bem-vindo, ${resultado.usuario.nome}!`,
@@ -40,7 +63,7 @@ export default function TelaLogin() {
                 setEmail('');
                 setSenha('');
                 // Navegar para tela principal ou dashboard
-                router.push('/home'); // ou qualquer rota que você tenha
+                router.push('/home');
               }
             }
           ]

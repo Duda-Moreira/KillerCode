@@ -1,7 +1,5 @@
-// database.js - Para Expo SQLite versão 11+
 import * as SQLite from 'expo-sqlite';
 
-// Nova sintaxe para expo-sqlite 11+
 const db = SQLite.openDatabaseSync('cadastrarUsuarios.db');
 
 export const initDB = () => {
@@ -71,5 +69,45 @@ export const verificarEmailExiste = (email) => {
   } catch (error) {
     console.error('Erro ao verificar email:', error);
     return false;
+  }
+};
+
+// Novas funções para atualizar dados do usuário
+export const atualizarUsuario = (id, nome, email) => {
+  try {
+    const result = db.runSync(
+      'UPDATE usuarios SET nome = ?, email = ? WHERE id = ?;',
+      [nome, email, id]
+    );
+    return { success: true, rowsAffected: result.changes };
+  } catch (error) {
+    console.error('Erro ao atualizar usuário:', error);
+    return { success: false, error };
+  }
+};
+
+export const atualizarSenha = (id, novaSenha) => {
+  try {
+    const result = db.runSync(
+      'UPDATE usuarios SET senha = ? WHERE id = ?;',
+      [novaSenha, id]
+    );
+    return { success: true, rowsAffected: result.changes };
+  } catch (error) {
+    console.error('Erro ao atualizar senha:', error);
+    return { success: false, error };
+  }
+};
+
+export const buscarUsuarioPorId = (id) => {
+  try {
+    const usuario = db.getFirstSync(
+      'SELECT * FROM usuarios WHERE id = ?;',
+      [id]
+    );
+    return usuario;
+  } catch (error) {
+    console.error('Erro ao buscar usuário por ID:', error);
+    return null;
   }
 };
