@@ -17,7 +17,6 @@ export default function TelaLogin() {
     try {
       const usuarioLogado = await AsyncStorage.getItem('usuarioLogado');
       if (usuarioLogado) {
-        // Se já há um usuário logado, redireciona para home
         router.push('/home');
       }
     } catch (error) {
@@ -31,7 +30,6 @@ export default function TelaLogin() {
       return;
     }
 
-    // Validação de email
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     if (!emailRegex.test(email)) {
       Alert.alert('Erro', 'Digite um email válido!');
@@ -39,11 +37,9 @@ export default function TelaLogin() {
     }
 
     try {
-      // Verificar login no banco de dados
       const resultado = await verificarLogin(email.trim().toLowerCase(), senha);
       
       if (resultado.success) {
-        // Salvar dados do usuário no AsyncStorage
         const dadosUsuario = {
           id: resultado.usuario.id,
           nome: resultado.usuario.nome,
@@ -59,10 +55,8 @@ export default function TelaLogin() {
             {
               text: 'OK',
               onPress: () => {
-                // Limpar campos
                 setEmail('');
                 setSenha('');
-                // Navegar para tela principal ou dashboard
                 router.push('/home');
               }
             }
@@ -70,7 +64,6 @@ export default function TelaLogin() {
         );
       } else {
         Alert.alert('Erro', resultado.message);
-        // Limpar apenas a senha por segurança
         setSenha('');
       }
     } catch (error) {

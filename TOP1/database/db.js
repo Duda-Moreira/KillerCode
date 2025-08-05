@@ -86,19 +86,37 @@ export const atualizarUsuario = (id, nome, email) => {
   }
 };
 
-export const atualizarSenha = (id, novaSenha) => {
+// Substitua a função atualizarSenha existente no seu db.js por esta:
+
+export const atualizarSenha = (id, senhaAtual, novaSenha) => {
   try {
+    // Primeiro verificar se a senha atual está correta
+    const usuario = db.getFirstSync(
+      'SELECT senha FROM usuarios WHERE id = ?;',
+      [id]
+    );
+    
+    if (!usuario) {
+      return { success: false, error: 'Usuário não encontrado!' };
+    }
+    
+    // Verificar se a senha atual está correta
+    if (usuario.senha !== senhaAtual) {
+      return { success: false, error: 'Senha atual incorreta!' };
+    }
+    
+    // Se chegou até aqui, a senha atual está correta, pode atualizar
     const result = db.runSync(
       'UPDATE usuarios SET senha = ? WHERE id = ?;',
       [novaSenha, id]
     );
+    
     return { success: true, rowsAffected: result.changes };
   } catch (error) {
     console.error('Erro ao atualizar senha:', error);
-    return { success: false, error };
+    return { success: false, error: 'Erro interno do sistema' };
   }
 };
-
 export const buscarUsuarioPorId = (id) => {
   try {
     const usuario = db.getFirstSync(

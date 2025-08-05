@@ -1,15 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import {
-  View,
-  Text,
-  StyleSheet,
-  TouchableOpacity,
-  Image,
-  ScrollView,
-  Alert,
-  Modal,
-  TextInput
-} from 'react-native';
+import {View, Text, StyleSheet, TouchableOpacity, Image, ScrollView, Alert, Modal, TextInput} from 'react-native';
 import { router } from 'expo-router';
 import AsyncStorage from '@react-native-async-storage/async-storage';
 import { atualizarUsuario, atualizarSenha, buscarUsuarioPorId } from '../database/db';
@@ -32,46 +22,63 @@ const Settings = () => {
     carregarDadosUsuario();
   }, []);
 
-  const carregarDadosUsuario = async () => {
-    try {
-      const dadosUsuarioLogado = await AsyncStorage.getItem('usuarioLogado');
+
+const carregarDadosUsuario = async () => {
+  try {
+    const dadosUsuarioLogado = await AsyncStorage.getItem('usuarioLogado');
+    
+    if (dadosUsuarioLogado) {
+      const dadosUsuario = JSON.parse(dadosUsuarioLogado);
       
-      if (dadosUsuarioLogado) {
-        const dadosUsuario = JSON.parse(dadosUsuarioLogado);
+      const dadosAtualizados = buscarUsuarioPorId(dadosUsuario.id);
+      
+      if (dadosAtualizados) {
+        const dadosAtuais = {
+          id: dadosAtualizados.id,
+          nome: dadosAtualizados.nome,
+          email: dadosAtualizados.email
+        };
         
-        const dadosAtualizados = buscarUsuarioPorId(dadosUsuario.id);
+        setUsuario(dadosAtuais);
+        setNomeTemp(dadosAtualizados.nome);
+        setEmailTemp(dadosAtualizados.email);
         
-        if (dadosAtualizados) {
-          setUsuario({
-            id: dadosAtualizados.id,
-            nome: dadosAtualizados.nome,
-            email: dadosAtualizados.email
-          });
-          setNomeTemp(dadosAtualizados.nome);
-          setEmailTemp(dadosAtualizados.email);
-        } else {
-          setUsuario(dadosUsuario);
-          setNomeTemp(dadosUsuario.nome);
-          setEmailTemp(dadosUsuario.email);
+        const dadosAtuaisString = JSON.stringify(dadosAtuais);
+        if (dadosUsuarioLogado !== dadosAtuaisString) {
+          await AsyncStorage.setItem('usuarioLogado', dadosAtuaisString);
         }
       } else {
-
         Alert.alert(
           'Sessão Expirada',
-          'Você precisa fazer login novamente.',
+          'Dados do usuário não encontrados. Faça login novamente.',
           [
             {
               text: 'OK',
-              onPress: () => router.push('/')
+              onPress: async () => {
+                await AsyncStorage.removeItem('usuarioLogado');
+                router.push('/');
+              }
             }
           ]
         );
       }
-    } catch (error) {
-      console.error('Erro ao carregar dados do usuário:', error);
-      Alert.alert('Erro', 'Não foi possível carregar os dados do usuário.');
+    } else {
+      Alert.alert(
+        'Sessão Expirada',
+        'Você precisa fazer login novamente.',
+        [
+          {
+            text: 'OK',
+            onPress: () => router.push('/')
+          }
+        ]
+      );
     }
-  };
+  } catch (error) {
+    console.error('Erro ao carregar dados do usuário:', error);
+    Alert.alert('Erro', 'Não foi possível carregar os dados do usuário.');
+  }
+};
 
   const handleEditarConta = () => {
     setModalVisible(true);
@@ -118,39 +125,50 @@ const Settings = () => {
     setModalSenhaVisible(true);
   };
 
-  const handleSalvarSenha = () => {
-    if (!senhaAtual.trim() || !novaSenha.trim() || !confirmarSenha.trim()) {
-      Alert.alert('Erro', 'Por favor, preencha todos os campos.');
-      return;
-    }
 
-    if (novaSenha !== confirmarSenha) {
-      Alert.alert('Erro', 'As senhas não conferem.');
-      return;
-    }
+const handleSalvarSenha = async () => {
+  if (!senhaAtual.trim() || !novaSenha.trim() || !confirmarSenha.trim()) {
+    Alert.alert('Erro', 'Por favor, preencha todos os campos.');
+    return;
+  }
 
-    if (novaSenha.length < 6) {
-      Alert.alert('Erro', 'A nova senha deve ter pelo menos 6 caracteres.');
-      return;
-    }
+  if (novaSenha !== confirmarSenha) {
+    Alert.alert('Erro', 'As senhas não conferem.');
+    return;
+  }
 
-    try {
-      const resultado = atualizarSenha(usuario.id, senhaAtual, novaSenha);
+  if (novaSenha.length < 6) {
+    Alert.alert('Erro', 'A nova senha deve ter pelo menos 6 caracteres.');
+    return;
+  }
+
+  try {
+
+    const resultado = atualizarSenha(usuario.id, senhaAtual, novaSenha);
+    
+    if (resultado.success) {
+      setModalSenhaVisible(false);
+      setSenhaAtual('');
+      setNovaSenha('');
+      setConfirmarSenha('');
       
-      if (resultado.success) {
-        setModalSenhaVisible(false);
-        setSenhaAtual('');
-        setNovaSenha('');
-        setConfirmarSenha('');
-        Alert.alert('Sucesso', 'Senha alterada com sucesso!');
-      } else {
-        Alert.alert('Erro', resultado.error || 'Não foi possível alterar a senha.');
-      }
-    } catch (error) {
-      console.error('Erro ao alterar senha:', error);
-      Alert.alert('Erro', 'Ocorreu um erro ao alterar a senha.');
+      Alert.alert(
+        'Sucesso', 
+        'Senha alterada com sucesso! Sua nova senha já está ativa.',
+        [
+          {
+            text: 'OK'
+          }
+        ]
+      );
+    } else {
+      Alert.alert('Erro', resultado.error || 'Não foi possível alterar a senha.');
     }
-  };
+  } catch (error) {
+    console.error('Erro ao alterar senha:', error);
+    Alert.alert('Erro', 'Ocorreu um erro ao alterar a senha.');
+  }
+};
 
   const handleSairApp = () => {
     Alert.alert(
@@ -245,7 +263,7 @@ const Settings = () => {
             iconLocal={require('../assets/images/door_back_24dp_000000_FILL0_wght400_GRAD0_opsz24.png')}
             title="Sair do Aplicativo"
             onPress={handleSairApp}
-            showArrow={false}
+          
           />
         </View>
       </ScrollView>
@@ -385,7 +403,6 @@ const styles = StyleSheet.create({
     },
   ImageFlecha: {
     fontSize: 24,
-    color: '#FFE5B4 ',
     fontWeight: 'bold',
   },
   headerTitle: {
@@ -398,7 +415,8 @@ const styles = StyleSheet.create({
     marginTop: 26
   },
   profileSection: {
-    backgroundColor: '#fff',
+    backgroundColor: '#eceae6ff',
+    borderWidth: 1,
     alignItems: 'center',
     paddingVertical: 30,
     marginBottom: 20,
@@ -422,7 +440,7 @@ const styles = StyleSheet.create({
     width: 20,
     height: 20,
     borderRadius: 10,
-    backgroundColor: '#4CAF50',
+    backgroundColor: '#8bec8fff',
     borderWidth: 3,
     borderColor: '#fff',
   },
@@ -437,10 +455,11 @@ const styles = StyleSheet.create({
     color: '#333',
   },
   optionsContainer: {
-    backgroundColor: '#fff',
+    backgroundColor: '#eceae6ff',
     marginHorizontal: 10,
     marginTop: 40,
     borderRadius: 12,
+    borderWidth: 1,
     overflow: 'hidden',
   },
   optionContainer: {
@@ -450,7 +469,7 @@ const styles = StyleSheet.create({
     paddingHorizontal: 20,
     paddingVertical: 18,
     borderBottomWidth: 1,
-    borderBottomColor: '#FFE5B4',
+    borderBottomColor: '#050505ff',
   },
   optionLeft: {
     flexDirection: 'row',
@@ -468,7 +487,7 @@ const styles = StyleSheet.create({
   },
   arrow: {
     fontSize: 20,
-    color: '#ccc',
+    color: 'black',
     fontWeight: 'bold',
   },
   modalOverlay: {

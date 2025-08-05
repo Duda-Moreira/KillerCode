@@ -56,7 +56,7 @@ export default function OnboardingScreens() {
 
       <View style={styles.imageContainer}>   
             <Image 
-                source={currentData.image} // Agora usa a imagem específica de cada tela
+                source={currentData.image} 
                 style={styles.imagem}
                 resizeMode="contain"
             />

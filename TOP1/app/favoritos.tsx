@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import { View, Text, StyleSheet, TouchableOpacity, ScrollView, SafeAreaView, Image, Alert } from 'react-native';
 import { router, useLocalSearchParams } from 'expo-router';
-import receitasData from '../assets/dados'; // import direto do JSON
+import receitasData from '../assets/dados';
 
 interface Receita {
   nome: string;
@@ -22,19 +22,15 @@ export default function Favoritos() {
 
   const loadFavorites = () => {
     try {
-      // Se vem da navegação com lista de favoritos
       if (favoritesList) {
         const parsedFavorites = JSON.parse(favoritesList as string);
         setFavoriteNames(parsedFavorites);
-        
-        // Busca as receitas completas baseado nos nomes favoritados
+
         const favoriteRecipesList = receitasData.filter(recipe => 
           parsedFavorites.includes(recipe.nome)
         );
         setFavoriteRecipes(favoriteRecipesList);
       } else {
-        // Se não tem parâmetros, verifica se há favoritos salvos localmente
-        // (em uma implementação real, você usaria AsyncStorage aqui)
         setFavoriteRecipes([]);
         setFavoriteNames([]);
       }
@@ -80,7 +76,6 @@ export default function Favoritos() {
     );
   };
 
-  // Dados fictícios para tempo e porções (mesma lógica da tela de visualização)
   const getRecipeTime = (recipeName: string) => {
     const times = ['15 min', '20 min', '25 min', '30 min', '35 min', '40 min', '45 min'];
     return times[Math.floor(Math.random() * times.length)];
