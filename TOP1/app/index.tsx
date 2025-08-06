@@ -15,7 +15,7 @@ export default function telaInicial() {
     <View style={styles.container}>
       <View style={styles.conteudoCentral}>
         <Image 
-            source={require('../assets/images/LOGO.png')} 
+            source={require('../assets/images/ChatGPT_Image_5_de_ago._de_2025__16_53_19-removebg-preview.png')} 
             style={styles.imagem}
             resizeMode="contain"
         />
