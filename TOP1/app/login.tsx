@@ -89,14 +89,14 @@ export default function TelaLogin() {
 
   return (
     <View style={styles.container}>
-      {/* Botão voltar */}
+    
       <TouchableOpacity onPress={voltarInicial}>
         <Image source={require('../assets/images/Arrow.png')} style={styles.imagem} resizeMode="contain" />
       </TouchableOpacity>
 
       <Text style={styles.textoLogin}>Login</Text>
 
-      {/* Campo Email */}
+ 
       <Text style={styles.campoLabel}>Email:</Text>
       <TextInput 
         style={styles.inputs} 
@@ -108,7 +108,6 @@ export default function TelaLogin() {
         accessibilityLabel="Campo de email"
       />
 
-      {/* Campo Senha */}
       <Text style={styles.campoLabel}>Senha:</Text>
       <TextInput 
         style={styles.inputs} 
@@ -118,31 +117,26 @@ export default function TelaLogin() {
         accessibilityLabel="Campo de senha"
       />
 
-      {/* Link Esqueceu Senha */}
       <TouchableOpacity onPress={esqueceuSenha} style={styles.containerEsqueceu}>
         <Text style={styles.linkEsqueceu}>Esqueceu sua senha?</Text>
       </TouchableOpacity>
 
-      {/* Botão Login */}
       <TouchableOpacity style={styles.botao} onPress={fazerLogin}>
         <Text style={styles.textoBotao}>Entrar</Text>
       </TouchableOpacity>
 
       <Text style={styles.textoOu}>Ou</Text>
 
-      {/* Botão Google */}
       <TouchableOpacity style={styles.botaoGoogle} onPress={loginComGoogle}>
         <Image source={require('../assets/images/logos_google-icon.png')} style={styles.iconGoogleImg} resizeMode="contain" />
         <Text style={styles.textoBotaoGoogle}>Entrar com Google</Text>
       </TouchableOpacity>
 
-      {/* Botão Facebook */}
       <TouchableOpacity style={styles.botaoFacebook} onPress={loginComFacebook}>
         <Image source={require('../assets/images/logos_facebook.png')} style={styles.iconFacebookImg} resizeMode="contain" />
         <Text style={styles.textoBotaoFacebook}>Entrar com Facebook</Text>
       </TouchableOpacity>
 
-      {/* Link para Cadastro */}
       <View style={styles.containerCadastro}>
         <Text style={styles.textoNaoTem}>Não tem uma conta? </Text>
         <TouchableOpacity onPress={irParaCadastro}>
@@ -156,7 +150,7 @@ export default function TelaLogin() {
 const styles = StyleSheet.create({
   container: { 
     flex: 1, 
-    backgroundColor: "#FFE5B4" 
+    backgroundColor: "#F2EAE3" 
   },
   imagem: { 
     marginTop: 60, 
@@ -169,7 +163,8 @@ const styles = StyleSheet.create({
     fontSize: 22 
   },
   inputs: {
-    backgroundColor: "#eceae6ff", 
+    backgroundColor: "#290000", 
+    color: 'white',
     height: 40, 
     borderRadius: 12,
     paddingHorizontal: 13, 
@@ -190,12 +185,12 @@ const styles = StyleSheet.create({
   },
   linkEsqueceu: {
     fontSize: 14,
-    color: "#FF6B35",
+    color: "#FF5500",
     fontWeight: "600",
     textDecorationLine: "underline"
   },
   botao: {
-    backgroundColor: "#FF6B35", 
+    backgroundColor: "#FF5500", 
     height: 45, 
     borderRadius: 12,
     marginHorizontal: 10, 
@@ -268,7 +263,7 @@ const styles = StyleSheet.create({
   },
   linkCadastro: { 
     fontSize: 16, 
-    color: "#FF6B35", 
+    color: "#FF5500", 
     fontWeight: "600", 
     textDecorationLine: "underline" 
   }

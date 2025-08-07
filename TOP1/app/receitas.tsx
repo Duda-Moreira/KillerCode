@@ -252,7 +252,7 @@ export default function Receitas() {
           placeholder="Buscar ingredientes..."
           value={searchText}
           onChangeText={setSearchText}
-          placeholderTextColor="#999"
+          placeholderTextColor="white"
         />
         <Image source={require('../assets/images/Search.png')} style={styles.searchIcon} resizeMode="contain" />
       </View>
@@ -349,7 +349,7 @@ export default function Receitas() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#FFE5B4',
+    backgroundColor: '#F2EAE3',
   },
   loadingContainer: {
     flex: 1,
@@ -387,7 +387,7 @@ const styles = StyleSheet.create({
     lineHeight: 20,
   },
   backButton: {
-    backgroundColor: '#FF8C42',
+    backgroundColor: '#FF5500',
     paddingVertical: 12,
     paddingHorizontal: 32,
     borderRadius: 8,
@@ -404,11 +404,11 @@ const styles = StyleSheet.create({
     paddingHorizontal: 20,
     paddingTop: 50,
     paddingBottom: 20,
-    backgroundColor: '#FFE5B4',
+    backgroundColor: '#F2EAE3',
   },
   imageIcone:{
     marginBottom: 10,
-    color: '#FF8C42',
+    color: '#FF5500',
   },
   imageFlecha: {
     fontSize: 24,
@@ -423,7 +423,7 @@ const styles = StyleSheet.create({
   titleContainer: {
     paddingHorizontal: 20,
     paddingVertical: 20,
-    backgroundColor: '#FFE5B4',
+    backgroundColor: '#F2EAE3',
     marginBottom: 20,
   },
   mainTitle: {
@@ -442,7 +442,7 @@ const styles = StyleSheet.create({
   },
   recipeCountText: {
     fontSize: 14,
-    color: '#FF8C42',
+    color: '#FF5500',
     textAlign: 'center',
     fontWeight: '600',
   },
@@ -452,7 +452,8 @@ const styles = StyleSheet.create({
     position: 'relative',
   },
   searchInput: {
-    backgroundColor: '#FFFFFF',
+    backgroundColor: '#290000',
+    color: 'white',
     paddingVertical: 15,
     paddingHorizontal: 20,
     paddingRight: 50,
@@ -476,7 +477,7 @@ const styles = StyleSheet.create({
   },
   counterText: {
     fontSize: 16,
-    color: '#FF8C42',
+    color: '#FF5500',
     fontWeight: '600',
   },
   clearText: {
@@ -513,8 +514,8 @@ const styles = StyleSheet.create({
     borderColor: '#E5E5E5',
   },
   selectedChip: {
-    backgroundColor: '#FF8C42',
-    borderColor: '#FF8C42',
+    backgroundColor: '#FF5500',
+    borderColor: '#FF5500',
   },
   ingredientText: {
     fontSize: 14,
@@ -540,7 +541,7 @@ const styles = StyleSheet.create({
     backgroundColor: '#FFFFFF',
   },
   continueButton: {
-    backgroundColor: '#FF8C42',
+    backgroundColor: '#FF5500',
     paddingVertical: 16,
     borderRadius: 12,
     alignItems: 'center',
@@ -574,10 +575,10 @@ const styles = StyleSheet.create({
   },
   navText: {
     fontSize: 12,
-    color: '#FF8C42',
+    color: '#FF5500',
   },
   activeNavText: {
-    color: '#FF8C42',
+    color: '#FF5500',
     fontWeight: '600',
   },
 });

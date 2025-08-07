@@ -215,7 +215,7 @@ export default function VisualizarReceita() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#FFE5B4',
+    backgroundColor: '#F2EAE3',
   },
   loadingContainer: {
     flex: 1,
@@ -233,7 +233,7 @@ const styles = StyleSheet.create({
     paddingHorizontal: 20,
     paddingTop: 50,
     paddingBottom: 20,
-    backgroundColor: '#FFE5B4',
+    backgroundColor: '##F2EAE3',
   },
   imageFlecha: {
     fontSize: 24,
@@ -248,7 +248,7 @@ const styles = StyleSheet.create({
   },
   tabHeader: {
     flexDirection: 'row',
-    backgroundColor: '#FFFFFF',
+    backgroundColor: '#290000',
     marginHorizontal: 20,
     marginBottom: 10,
     borderRadius: 12,
@@ -261,11 +261,11 @@ const styles = StyleSheet.create({
     borderRadius: 8,
   },
   activeTabButton: {
-    backgroundColor: '#FF8C42',
+    backgroundColor: '#FF5500',
   },
   tabHeaderText: {
     fontSize: 14,
-    color: '#666',
+    color: 'white',
     fontWeight: '500',
   },
   activeTabText: {
@@ -274,7 +274,7 @@ const styles = StyleSheet.create({
   },
   contentContainer: {
     flex: 1,
-    marginTop: 65
+    marginTop: 55,
   },
   imageContainer: {
     height: 200,
@@ -306,6 +306,7 @@ const styles = StyleSheet.create({
     fontWeight: 'bold',
     color: '#333',
     marginBottom: 12,
+    textAlign: 'center'
   },
   recipeDetails: {
     flexDirection: 'row',
@@ -314,7 +315,7 @@ const styles = StyleSheet.create({
   detailItem: {
     flexDirection: 'row',
     alignItems: 'center',
-    backgroundColor: '#FFFFFF',
+    backgroundColor: '#290000',
     paddingHorizontal: 16,
     paddingVertical: 8,
     borderRadius: 20,
@@ -330,7 +331,7 @@ const styles = StyleSheet.create({
   },
   detailText: {
     fontSize: 14,
-    color: '#666',
+    color: 'white',
     fontWeight: '500',
   },
   tabButtons: {
@@ -345,15 +346,15 @@ const styles = StyleSheet.create({
     alignItems: 'center',
   },
   ingredientsTabButton: {
-    backgroundColor: '#FFFFFF',
+     backgroundColor: '#290000'
   },
   instructionsTabButton: {
-    backgroundColor: '#FFFFFF',
+     backgroundColor: '#290000'
   },
   tabButtonText: {
     fontSize: 16,
     fontWeight: '600',
-    color: '#333',
+    color: 'white',
   },
   ingredientsContainer: {
     paddingHorizontal: 20,
@@ -363,7 +364,7 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     justifyContent: 'space-between',
     alignItems: 'center',
-    backgroundColor: '#FFFFFF',
+    backgroundColor: '#290000',
     paddingVertical: 16,
     paddingHorizontal: 20,
     marginBottom: 8,
@@ -371,13 +372,13 @@ const styles = StyleSheet.create({
   },
   ingredientName: {
     fontSize: 16,
-    color: '#333',
+    color: 'white',
     fontWeight: '500',
     flex: 1,
   },
   ingredientQuantity: {
     fontSize: 14,
-    color: '#666',
+    color: 'white',
     fontWeight: '400',
   },
   instructionsContainer: {
@@ -386,14 +387,14 @@ const styles = StyleSheet.create({
   },
   instructionStep: {
     flexDirection: 'row',
-    backgroundColor: '#FFFFFF',
+    backgroundColor: '#290000',
     padding: 20,
     marginBottom: 12,
     borderRadius: 12,
     alignItems: 'flex-start',
   },
   stepNumber: {
-    backgroundColor: '#FF8C42',
+    backgroundColor: '#FF5500',
     width: 24,
     height: 24,
     borderRadius: 12,
@@ -409,7 +410,7 @@ const styles = StyleSheet.create({
   },
   stepText: {
     fontSize: 16,
-    color: '#333',
+    color: 'white',
     lineHeight: 24,
     flex: 1,
   },
@@ -427,14 +428,14 @@ const styles = StyleSheet.create({
   },
   imageIcone: {
     marginBottom: 10,
-    color: '#FF8C42',
+    color: '#FF5500',
   },
   navText: {
     fontSize: 12,
-    color: '#FF8C42',
+    color: '#FF5500',
   },
   activeNavText: {
-    color: '#FF8C42',
+    color: '#FF5500',
     fontWeight: '600',
   },
 });

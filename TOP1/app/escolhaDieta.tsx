@@ -91,7 +91,7 @@ export default function EscolhaDieta() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#FFE5B4',
+    backgroundColor: '#F2EAE3',
     paddingHorizontal: 20,
   },
   header: {
@@ -131,7 +131,7 @@ const styles = StyleSheet.create({
     marginBottom: 20,
   },
   dietOption: {
-    backgroundColor: '#FFFFFF',
+    backgroundColor: '#290000',
     paddingVertical: 18,
     paddingHorizontal: 20,
     borderRadius: 12,
@@ -141,11 +141,11 @@ const styles = StyleSheet.create({
   },
   selectedOption: {
     backgroundColor: '#dad3d3ff',
-    borderColor: '#FF8C42',
+    borderColor: '#FF5500',
   },
   dietText: {
     fontSize: 16,
-    color: '#333',
+    color: 'white',
     fontWeight: '500',
   },
   selectedText: {
@@ -156,7 +156,7 @@ const styles = StyleSheet.create({
     paddingBottom: 30,
   },
   continueButton: {
-    backgroundColor: '#FF8C42',
+    backgroundColor: '#FF5500',
     paddingVertical: 16,
     borderRadius: 12,
     alignItems: 'center',

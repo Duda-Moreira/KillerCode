@@ -40,7 +40,7 @@ export default function telaInicial() {
 const styles = StyleSheet.create({
     container: {
       flex: 1,
-      backgroundColor: "#FFE5B4"
+      backgroundColor: "#F2EAE3"
     },
     conteudoCentral: {
       flex: 1,
@@ -58,7 +58,7 @@ const styles = StyleSheet.create({
       marginTop: 50
     },
     botao: {
-      backgroundColor: "#FF8C00",
+      backgroundColor: "#FF5500",
       paddingVertical: 15,
       paddingHorizontal: 80,
       borderRadius: 25,
@@ -79,7 +79,7 @@ const styles = StyleSheet.create({
     },
 
     linkLogin:{
-      color: "#FF8C00",
+      color: "#FF5500",
       fontWeight: "bold",
       textDecorationLine: "underline",
     }

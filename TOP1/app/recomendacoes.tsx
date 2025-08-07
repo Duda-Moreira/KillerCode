@@ -222,7 +222,7 @@ export default function Recomendacoes() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#FFE5B4',
+    backgroundColor: '#F2EAE3',
   },
   header: {
     flexDirection: 'row',
@@ -231,7 +231,7 @@ const styles = StyleSheet.create({
     paddingHorizontal: 20,
     paddingTop: 50,
     paddingBottom: 20,
-    backgroundColor: '#FFE5B4',
+    backgroundColor: '#F2EAE3',
   },
   imageFlecha: {
     fontSize: 24,
@@ -246,7 +246,7 @@ const styles = StyleSheet.create({
   summaryContainer: {
     paddingHorizontal: 20,
     paddingVertical: 20,
-    backgroundColor: '#FFE5B4',
+    backgroundColor: '#F2EAE3',
     marginBottom: 10,
   },
   summaryTitle: {
@@ -276,7 +276,7 @@ const styles = StyleSheet.create({
     paddingBottom: 20,
   },
   recipeCard: {
-    backgroundColor: '#FFFFFF',
+    backgroundColor: '#290000',
     borderRadius: 12,
     marginBottom: 16,
     overflow: 'hidden',
@@ -345,7 +345,7 @@ const styles = StyleSheet.create({
   recipeName: {
     fontSize: 16,
     fontWeight: 'bold',
-    color: '#333',
+    color: 'white',
     marginBottom: 4,
   },
   compatibilityText: {
@@ -362,7 +362,7 @@ const styles = StyleSheet.create({
   },
   ingredientsCount: {
     fontSize: 14,
-    color: '#666',
+    color: 'white',
     marginBottom: 4,
   },
   missingIngredientsContainer: {
@@ -370,7 +370,7 @@ const styles = StyleSheet.create({
   },
   missingLabel: {
     fontSize: 12,
-    color: '#999',
+    color: 'white',
     fontWeight: '600',
   },
   missingIngredients: {
@@ -403,14 +403,14 @@ const styles = StyleSheet.create({
   },
   imageIcone: {
     marginBottom: 10,
-    color: '#FF8C42',
+    color: '#FF5500',
   },
   navText: {
     fontSize: 12,
-    color: '#FF8C42',
+    color: '#FF5500',
   },
   activeNavText: {
-    color: '#FF8C42',
+    color: '#FF5500',
     fontWeight: '600',
   },
 });

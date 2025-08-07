@@ -218,7 +218,7 @@ export default function Favoritos() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#FFE5B4',
+    backgroundColor: '#F2EAE3',
   },
   header: {
     flexDirection: 'row',
@@ -227,7 +227,7 @@ const styles = StyleSheet.create({
     paddingHorizontal: 20,
     paddingTop: 50,
     paddingBottom: 20,
-    backgroundColor: '#FFE5B4',
+    backgroundColor: '#F2EAE3',
   },
   imageFlecha: {
     fontSize: 24,
@@ -270,14 +270,14 @@ const styles = StyleSheet.create({
   },
   emptyHint: {
     fontSize: 14,
-    color: '#FF8C42',
+    color: '#FF5500',
     textAlign: 'center',
     fontWeight: '500',
     marginBottom: 32,
     lineHeight: 20,
   },
   exploreButton: {
-    backgroundColor: '#FF8C42',
+    backgroundColor: '#FF5500',
     paddingVertical: 16,
     paddingHorizontal: 32,
     borderRadius: 12,
@@ -290,7 +290,7 @@ const styles = StyleSheet.create({
   summaryContainer: {
     paddingHorizontal: 20,
     paddingVertical: 20,
-    backgroundColor: '#FFE5B4',
+    backgroundColor: '#F2EAE3',
     marginBottom: 10,
   },
   summaryTitle: {
@@ -314,7 +314,7 @@ const styles = StyleSheet.create({
     paddingBottom: 20,
   },
   recipeCard: {
-    backgroundColor: '#FFFFFF',
+    backgroundColor: '#290000',
     borderRadius: 12,
     marginBottom: 16,
     overflow: 'hidden',
@@ -366,12 +366,12 @@ const styles = StyleSheet.create({
   recipeName: {
     fontSize: 16,
     fontWeight: 'bold',
-    color: '#333',
+    color: 'white',
     marginBottom: 4,
   },
   recipeDiet: {
     fontSize: 14,
-    color: '#FF8C42',
+    color: '#FF5500',
     fontWeight: '600',
     marginBottom: 8,
   },
@@ -399,7 +399,7 @@ const styles = StyleSheet.create({
   },
   ingredientsCount: {
     fontSize: 14,
-    color: '#666',
+    color: 'white',
   },
   bottomNav: {
     flexDirection: 'row',

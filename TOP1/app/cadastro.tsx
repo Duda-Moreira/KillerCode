@@ -109,7 +109,7 @@ export default function TelaCadastro() {
 const styles = StyleSheet.create({
   container: { 
     flex: 1, 
-    backgroundColor: "#FFE5B4" 
+    backgroundColor: "#F2EAE3" 
   },
   imagem: { 
     marginTop: 60, 
@@ -122,7 +122,8 @@ const styles = StyleSheet.create({
     fontSize: 22 
   },
   inputs: {
-    backgroundColor: "#eceae6ff", 
+    backgroundColor: "#290000",
+    color: 'white', 
     height: 40, 
     borderRadius: 12,
     paddingHorizontal: 13, 
@@ -166,11 +167,11 @@ const styles = StyleSheet.create({
   },
   linkTermos: { 
     textDecorationLine: "underline",
-    color: "#FF6B35", 
+    color: "#FF5500", 
     fontWeight: "600" 
   },
   botao: {
-    backgroundColor: "#FF6B35", 
+    backgroundColor: "#FF5500", 
     height: 45, 
     borderRadius: 12,
     marginHorizontal: 10, 

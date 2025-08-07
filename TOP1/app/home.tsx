@@ -11,21 +11,21 @@ export default function OnboardingScreens() {
       title: "Planejamento de refeições personalizado",
       description: "Escolha suas refeições da semana em minutos, coma exatamente do jeito que você quer.",
       image: require('../assets/images/eating a variety of foods-bro 1.png'),
-      backgroundColor: "#FFE5B4"
+      backgroundColor: "#F2EAE3"
     },
     {
       id: 1,
       title: "Receitas simples, sem estresse",
       description: "As mais variadas receitas em apenas um lugar só",
       image:  require('../assets/images/Eco shopping-bro 1.png'),
-      backgroundColor: "#FFE5B4"
+      backgroundColor: "#F2EAE3"
     },
     {
       id: 2,
       title: "Refeições deliciosas e saudáveis feitas de forma fácil.",
       description: "Cozinhe facilmente refeições saudáveis e deliciosas em cerca de 30 minutos, do início ao fim.",
       image: require('../assets/images/Eating healthy food-bro 1.png'),
-      backgroundColor: "#FFE5B4"
+      backgroundColor: "#F2EAE3"
     }
   ];
 
@@ -152,7 +152,7 @@ const styles = StyleSheet.create({
     marginHorizontal: 4,
   },
   activeIndicator: {
-    backgroundColor: '#FF8C42',
+    backgroundColor: '#FF5500',
     width: 14,
     height: 14,
     borderRadius: 7,
@@ -185,7 +185,7 @@ const styles = StyleSheet.create({
     marginTop: 30,
   },
   continueButton: {
-    backgroundColor: '#FF8C42',
+    backgroundColor: '#FF5500',
     paddingVertical: 15,
     paddingHorizontal: 40,
     borderRadius: 12,

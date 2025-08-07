@@ -241,26 +241,26 @@ const handleSalvarSenha = async () => {
         
         <View style={styles.optionsContainer}>
             <ConfigOption
-                iconLocal={require('../assets/images/manage_accounts_24dp_000000_FILL0_wght400_GRAD0_opsz24.png')}
+                iconLocal={require('../assets/images/manage_accounts_24dp_FFFFFF_FILL0_wght400_GRAD0_opsz24.png')}
                 title="Editar Conta"
                 onPress={handleEditarConta}
             />
 
           
           <ConfigOption
-            iconLocal={require('../assets/images/lock_24dp_000000_FILL0_wght400_GRAD0_opsz24.png')}
+            iconLocal={require('../assets/images/lock_24dp_FFFFFF_FILL0_wght400_GRAD0_opsz24.png')}
             title="Editar Senha"
             onPress={handleAlterarSenha}
           />
 
           <ConfigOption
-            iconLocal={require('../assets/images/info_24dp_000000_FILL0_wght400_GRAD0_opsz24.png')}
+            iconLocal={require('../assets/images/info_24dp_FFFFFF_FILL0_wght400_GRAD0_opsz24.png')}
             title="Sobre o App"
             onPress={() => Alert.alert('Sobre', 'Versão 1.0.0\nDesenvolvido com React Native')}
           />
           
           <ConfigOption
-            iconLocal={require('../assets/images/door_back_24dp_000000_FILL0_wght400_GRAD0_opsz24.png')}
+            iconLocal={require('../assets/images/door_back_24dp_FFFFFF_FILL0_wght400_GRAD0_opsz24.png')}
             title="Sair do Aplicativo"
             onPress={handleSairApp}
           
@@ -382,7 +382,7 @@ const handleSalvarSenha = async () => {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#FFE5B4',
+    backgroundColor: '#F2EAE3',
   },
   header: {
     flexDirection: 'row',
@@ -415,7 +415,7 @@ const styles = StyleSheet.create({
     marginTop: 26
   },
   profileSection: {
-    backgroundColor: '#eceae6ff',
+    backgroundColor: '#290000',
     borderWidth: 1,
     alignItems: 'center',
     paddingVertical: 30,
@@ -446,16 +446,17 @@ const styles = StyleSheet.create({
   },
   userEmail: {
     fontSize: 16,
-    color: '#666',
+    color: 'white',
     marginBottom: 5,
   },
   userName: {
     fontSize: 18,
     fontWeight: 'bold',
-    color: '#333',
+    color: 'white',
   },
   optionsContainer: {
-    backgroundColor: '#eceae6ff',
+    backgroundColor: '#290000',
+    color: 'white',
     marginHorizontal: 10,
     marginTop: 40,
     borderRadius: 12,
@@ -469,7 +470,7 @@ const styles = StyleSheet.create({
     paddingHorizontal: 20,
     paddingVertical: 18,
     borderBottomWidth: 1,
-    borderBottomColor: '#050505ff',
+    borderBottomColor: '#fcfcfcff',
   },
   optionLeft: {
     flexDirection: 'row',
@@ -479,15 +480,16 @@ const styles = StyleSheet.create({
     fontSize: 20,
     marginRight: 15,
     width: 25,
+    color: 'white'
   },
   optionTitle: {
     fontSize: 16,
-    color: '#333',
+    color: 'white',
     fontWeight: '500',
   },
   arrow: {
     fontSize: 20,
-    color: 'black',
+    color: 'white',
     fontWeight: 'bold',
   },
   modalOverlay: {
@@ -538,7 +540,7 @@ const styles = StyleSheet.create({
     borderColor: '#ddd',
   },
   saveButton: {
-    backgroundColor: '#FF6B35',
+    backgroundColor: '#FF5500',
   },
   cancelButtonText: {
     color: '#666',
