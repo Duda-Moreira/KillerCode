@@ -4,7 +4,7 @@
     "slug": "TOP1",
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./assets/images/ChatGPT_Image_5_de_ago._de_2025__16_53_19-removebg-preview.png",
+    "icon": "./assets/images/nutri.png",
     "scheme": "top1",
     "userInterfaceStyle": "automatic",
     "newArchEnabled": true,
@@ -16,7 +16,8 @@
         "foregroundImage": "./assets/images/adaptive-icon.png",
         "backgroundColor": "#ffffff"
       },
-      "edgeToEdgeEnabled": true
+      "edgeToEdgeEnabled": true,
+      "package": "com.eopapas.TOP1"
     },
     "web": {
       "bundler": "metro",
@@ -39,6 +40,12 @@
     ],
     "experiments": {
       "typedRoutes": true
+    },
+    "extra": {
+      "router": {},
+      "eas": {
+        "projectId": "e6685e76-70e2-4a23-a6f4-738cc59a6d3d"
+      }
     }
   }
 }
